@@ -1,0 +1,432 @@
+[
+  {
+    "Btntype": "Radiobtn",
+    "questionText": "Which best describes your eating habits?",
+    "answerOptions": [
+      {
+        "answerText": {
+          "key": "Vegan",
+          "val": 17,
+          "dependsOn": "days"
+        }
+      },
+      {
+        "answerText": {
+          "key": "Vegetarian",
+          "val": 17,
+          "dependsOn": "days"
+        }
+      },
+      {
+        "answerText": {
+          "key": "Pescetarian",
+          "val": 52,
+          "dependsOn": "days"
+        }
+      },
+      {
+        "answerText": {
+          "key": "I try eating less meat",
+          "val": 52,
+          "dependsOn": "days"
+        }
+      },
+      {
+        "answerText": {
+          "key": "I eat everything",
+          "val": 52,
+          "dependsOn": "days"
+        }
+      }
+    ]
+  },
+  {
+    "questionText": "In a week how much do you spend on restaurants, canteen and takeaways?",
+    "answerText": {
+      "key": "Incremental",
+      "val": 0,
+      "multiplyFact": 0.12
+    }
+  },
+  {
+    "Btntype": "Radiobtn",
+    "questionText": "How often do you use home grown food or local food coming from the community? ",
+    "answerOptions": [
+      {
+        "answerText": {
+          "key": "Never",
+          "val": 17,
+          "dependsOn": "days"
+        }
+      },
+      {
+        "answerText": {
+          "key": "Once  A Week",
+          "val": 17,
+          "dependsOn": "days"
+        }
+      },
+      {
+        "answerText": {
+          "key": "Couple of times a week",
+          "val": 52,
+          "dependsOn": "days"
+        }
+      },
+      {
+        "answerText": {
+          "key": "Daily",
+          "val": 52,
+          "dependsOn": "days"
+        }
+      }
+    ]
+  },
+  {
+    "Btntype": "Radiobtn",
+    "questionText": "What kind of vehicle do you own?",
+    "answerOptions": [
+      {
+        "answerText": {
+          "key": "Bike",
+          "val": 17,
+          "dependsOn": "days"
+        }
+      },
+      {
+        "answerText": {
+          "key": "Petrol Car",
+          "val": 17,
+          "dependsOn": "days"
+        }
+      },
+      {
+        "answerText": {
+          "key": "Electric Car",
+          "val": 52,
+          "dependsOn": "days"
+        }
+      },
+      {
+        "answerText": {
+          "key": "Hybrid Car",
+          "val": 52,
+          "dependsOn": "days"
+        }
+      },
+      {
+        "answerText": {
+          "key": "SUV or other luxury car",
+          "val": 52,
+          "dependsOn": "days"
+        }
+      }
+    ]
+  },
+  {
+    "questionText": "How many KMs do you travel in a week?",
+    "answerText": {
+      "key": "Incremental",
+      "val": 0,
+      "multiplyFact": 0.12
+    }
+  },
+  {
+    "questionText": "How many flights (round trip) do you take in 3 months?",
+    "answerText": {
+      "key": "Incremental",
+      "val": 0,
+      "multiplyFact": 0.12
+    }
+  },
+  {
+    "questionText": "How many KMs do you travel in Trains?",
+    "answerText": {
+      "key": "Incremental",
+      "val": 0,
+      "multiplyFact": 0.12
+    }
+  },
+  {
+    "Btntype": "Radiobtn",
+    "questionText": "How often do you use public transport (bus, shared taxi, metro, auto)? ",
+    "answerOptions": [
+      {
+        "answerText": {
+          "key": "Never",
+          "val": 17,
+          "dependsOn": "days"
+        }
+      },
+      {
+        "answerText": {
+          "key": "Daily",
+          "val": 17,
+          "dependsOn": "days"
+        }
+      },
+      {
+        "answerText": {
+          "key": "Twice a Week",
+          "val": 52,
+          "dependsOn": "days"
+        }
+      },
+      {
+        "answerText": {
+          "key": "Rarely",
+          "val": 52,
+          "dependsOn": "days"
+        }
+      }
+    ]
+  },
+  {
+    "Btntype": "Radiobtn",
+    "questionText": "What kind of house do you live in?",
+    "answerOptions": [
+      {
+        "answerText": {
+          "key": "Flat",
+          "val": 17,
+          "dependsOn": "days"
+        }
+      },
+      {
+        "answerText": {
+          "key": "Duplex",
+          "val": 17,
+          "dependsOn": "days"
+        }
+      },
+      {
+        "answerText": {
+          "key": "Detached House",
+          "val": 52,
+          "dependsOn": "days"
+        }
+      },
+      {
+        "answerText": {
+          "key": "Bunglow",
+          "val": 52,
+          "dependsOn": "days"
+        }
+      }
+    ]
+  },
+  {
+    "Btntype": "Radiobtn",
+    "questionText": "How many bedrooms do you have?",
+    "answerOptions": [
+      {
+        "answerText": {
+          "key": "2",
+          "val": 17,
+          "dependsOn": "days"
+        }
+      },
+      {
+        "answerText": {
+          "key": "3",
+          "val": 17,
+          "dependsOn": "days"
+        }
+      },
+      {
+        "answerText": {
+          "key": "4",
+          "val": 52,
+          "dependsOn": "days"
+        }
+      },
+      {
+        "answerText": {
+          "key": "More than 4",
+          "val": 52,
+          "dependsOn": "days"
+        }
+      }
+    ]
+  },
+  {
+    "Btntype": "Radiobtn",
+    "questionText": "How many people stay with you in your house?",
+    "answerOptions": [
+      {
+        "answerText": {
+          "key": "1",
+          "val": 52,
+          "dependsOn": "days"
+        }
+      },
+      {
+        "answerText": {
+          "key": "2",
+          "val": 52,
+          "dependsOn": "days"
+        }
+      },
+      {
+        "answerText": {
+          "key": "3",
+          "val": 52,
+          "dependsOn": "days"
+        }
+      },
+      {
+        "answerText": {
+          "key": "4",
+          "val": 52,
+          "dependsOn": "days"
+        }
+      },
+      {
+        "answerText": {
+          "key": "More than 4",
+          "val": 52,
+          "dependsOn": "days"
+        }
+      }
+    ]
+  },
+  {
+    "Btntype": "CheckBox",
+    "questionText": "What kind of accessories do you have at your place?",
+    "answerOptions": [
+      {
+        "answerText": {
+          "key": "Air Conditioner",
+          "val": 52,
+          "dependsOn": "days"
+        }
+      },
+      {
+        "answerText": {
+          "key": "Refrigerator",
+          "val": 52,
+          "dependsOn": "days"
+        }
+      },
+      {
+        "answerText": {
+          "key": "Coolers/Fans",
+          "val": 52,
+          "dependsOn": "days"
+        }
+      },
+      {
+        "answerText": {
+          "key": "Washing Machine",
+          "val": 52,
+          "dependsOn": "days"
+        }
+      },
+      {
+        "answerText": {
+          "key": "Geyser",
+          "val": 52,
+          "dependsOn": "days"
+        }
+      }
+    ]
+  },
+  {
+    "Btntype": "Radiobtn",
+    "questionText": "How often do you go shopping in a mall or a retail store?",
+    "answerOptions": [
+      {
+        "answerText": {
+          "key": "once A week",
+          "val": 52,
+          "dependsOn": "days"
+        }
+      },
+      {
+        "answerText": {
+          "key": "Once  A month",
+          "val": 52,
+          "dependsOn": "days"
+        }
+      },
+      {
+        "answerText": {
+          "key": "Twice a month",
+          "val": 52,
+          "dependsOn": "days"
+        }
+      },
+      {
+        "answerText": {
+          "key": "I am a shopaholic",
+          "val": 52,
+          "dependsOn": "days"
+        }
+      }
+    ]
+  },
+  {
+    "Btntype": "CheckBox",
+    "questionText": "What kind of electronic items have you purchased in the last one year?",
+    "answerOptions": [
+      {
+        "answerText": {
+          "key": "Phone",
+          "val": 52,
+          "dependsOn": "days"
+        }
+      },
+      {
+        "answerText": {
+          "key": "Laptop",
+          "val": 52,
+          "dependsOn": "days"
+        }
+      },
+      {
+        "answerText": {
+          "key": "TV",
+          "val": 52,
+          "dependsOn": "days"
+        }
+      },
+      {
+        "answerText": {
+          "key": "Air Conditioner",
+          "val": 52,
+          "dependsOn": "days"
+        }
+      },
+      {
+        "answerText": {
+          "key": "Kitchen Appliances",
+          "val": 52,
+          "dependsOn": "days"
+        }
+      },
+      {
+        "answerText": {
+          "key": "Miscellaneous Uses ( hair dryer, table lamps, musical boxes, smart appliances)",
+          "val": 52,
+          "dependsOn": "days"
+        }
+      }
+    ]
+  },
+  {
+    "questionText": "How much do you spend on clothes, footwear and accessories monthly?",
+    "answerText": {
+      "key": "Incremental",
+      "val": 0,
+      "multiplyFact": 0.12
+    }
+  },
+  {
+    "questionText": "How much would you spend on movies, beauty products, and parties weekly?",
+    "answerText": {
+      "key": "Incremental",
+      "val": 0,
+      "multiplyFact": 0.12
+    }
+  }
+]

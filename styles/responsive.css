@@ -1,0 +1,1247 @@
+/* XL Device :1200px. */
+@media (min-width: 1200px) and (max-width: 1399px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1140px;
+    }
+
+}
+
+
+
+
+
+
+/* LG Device :992px. */
+@media (min-width: 992px) and (max-width: 1110px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 960px;
+    }
+
+    .hero__main__blk>h1 {
+        font-size: 60px;
+        line-height: 70px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .hero__btn__blk {
+        margin-top: 40px;
+    }
+
+    .hero__btn__blk a {
+        width: 220px;
+        height: 60px;
+        font-size: 17px;
+        margin: 0px 10px;
+    }
+
+    .hero__area {
+        height: 800px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-size: 43px;
+    }
+
+    .collaborator__title__blk h2 {
+        margin-bottom: 20px;
+    }
+
+    .collaborator__title__blk {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .usage__title.collaborator__title__blk {
+        margin-bottom: 65px;
+    }
+
+    .usage__img__blk {
+        height: 200px;
+        border-radius: 25px;
+        margin-bottom: 18px;
+    }
+
+    .usage__content__blk h4 {
+        font-size: 21px;
+        margin-bottom: 15px;
+    }
+
+    .vision__right__blk {
+        padding-left: 50px;
+    }
+
+    .vision__right__blk span {
+        margin-bottom: 16px;
+    }
+
+    .vision__right__blk h2 {
+        margin-bottom: 20px;
+    }
+
+    .vision__right__blk p {
+        margin-bottom: 40px;
+    }
+
+    .vision__right__blk a {
+        width: 210px;
+        height: 54px;
+        font-size: 16px;
+    }
+
+    .vision__right__blk.mission__left__blk {
+        padding-left: 0;
+        padding-right: 50px;
+    }
+
+    .know__main__blk span {
+        font-size: 16px;
+        letter-spacing: 3px;
+        margin-bottom: 25px;
+    }
+
+    .know__main__blk h2 {
+        margin-bottom: 35px;
+    }
+
+    .media__content h4 {
+        font-size: 32px;
+        margin-bottom: 35px;
+    }
+
+    .media__content p {
+        font-size: 20px;
+    }
+
+    .media__content a {
+        font-size: 16px;
+        letter-spacing: -0.3px;
+    }
+
+    .measure__title h2 {
+        margin-bottom: 20px;
+    }
+
+    .measure__title {
+        margin-bottom: 35px;
+    }
+
+    .team__title {
+        margin-bottom: 65px;
+    }
+
+    .team__img__blk {
+        height: 220px;
+        margin-bottom: 20px;
+        border-radius: 20px;
+    }
+
+    .team__img__blk img {
+        border-radius: 20px;
+    }
+
+    .subscribe__topbar {
+        text-align: center;
+        margin-bottom: 55px;
+    }
+
+    .footer__menu ul li {
+        margin-right: 25px;
+    }
+
+    .footer__menu ul li a {
+        font-size: 14px;
+    }
+
+    .footer__socials ul li {
+        margin-left: 17px;
+    }
+
+    .header__menu ul li {
+        margin: 0px 15px;
+    }
+
+    .header__btn a {
+        height: 52px;
+        font-size: 14px;
+    }
+
+    .question__title h2 {
+        font-size: 22px;
+    }
+
+    .question__title {
+        margin-bottom: 22px;
+    }
+
+    .question__radio .form-check {
+        height: 60px;
+    }
+
+    .question__input input {
+        height: 60px;
+    }
+
+    .question__form__blk {
+        max-width: 450px;
+        margin-bottom: 46px;
+    }
+
+    .trip__details__wrap .nav-link {
+        width: 107px;
+    }
+
+    .project__topbar__content h1 {
+        font-size: 50px;
+        margin-bottom: 26px;
+    }
+
+    .project__topbar__area .container {
+        max-width: 700px;
+    }
+
+    .project__info h4 {
+        font-size: 18px;
+    }
+
+    .project__topbar__area {
+        padding-bottom: 45px;
+    }
+
+    .project2__right__blk h4 {
+        font-size: 34px;
+    }
+
+    .project2__right__blk span {
+        margin-bottom: 15px;
+    }
+
+    .project__single__wrap {
+        margin-bottom: 100px;
+    }
+
+    .project3__right__blk ul li {
+        font-size: 16px;
+    }
+
+    .project3__back__btn a {
+        font-size: 22px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+/* MD Device :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 720px;
+    }
+
+    .header__menu ul li {
+        margin: 0px 10px;
+    }
+
+    .header__menu ul li a {
+        font-size: 14px;
+        letter-spacing: -0.355556px;
+    }
+
+    .header__dropdown li {
+        padding: 8px !important;
+    }
+
+    .header__btn a {
+        width: 100%;
+        height: 40px;
+        font-size: 12px;
+    }
+
+    .header__area {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .hero__main__blk>h1 {
+        font-size: 50px;
+        line-height: 58px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .hero__btn__blk a {
+        width: 180px;
+        height: 54px;
+        font-size: 14px;
+        margin: 0px 12px;
+    }
+
+    .hero__btn__blk {
+        margin-top: 38px;
+    }
+
+    .hero__area {
+        height: 675px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-size: 35px;
+    }
+
+    .collaborator__title__blk h2 {
+        margin-bottom: 15px;
+    }
+
+    .collaborator__title__blk p {
+        max-width: 427px;
+    }
+
+    .collaborator__title__blk {
+        margin-bottom: 45px;
+    }
+
+    .collaborators__single__blk {
+        margin-bottom: 25px;
+    }
+
+    .usage__title.collaborator__title__blk {
+        margin-bottom: 50px;
+    }
+
+    .usage__img__blk {
+        height: 140px;
+        border-radius: 15px;
+        margin-bottom: 20px;
+    }
+
+    .usage__content__blk h4 {
+        font-size: 16px;
+        margin-bottom: 14px;
+    }
+
+    .vision__left__blk img {
+        border-radius: 15px;
+    }
+
+    .vision__right__blk {
+        padding-left: 30px;
+    }
+
+    .vision__right__blk span {
+        margin-bottom: 10px;
+    }
+
+    .vision__right__blk h2 {
+        margin-bottom: 16px;
+    }
+
+    .vision__right__blk p {
+        margin-bottom: 20px;
+    }
+
+    .vision__right__blk a {
+        width: 180px;
+        height: 48px;
+        font-size: 14px;
+    }
+
+    .vision__right__blk.mission__left__blk {
+        padding-right: 30px;
+    }
+
+    .vision__area {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .know__main__blk span {
+        font-size: 14px;
+        margin-bottom: 27px;
+    }
+
+    .know__main__blk a {
+        width: 210px;
+        height: 50px;
+        font-size: 14px;
+    }
+
+    .media__title {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .media__single__blk {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .media__topbar__wrap {
+        padding-bottom: 50px;
+    }
+
+    .media__bottom__wrap {
+        margin-top: 45px;
+    }
+
+    .media__content h4 {
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+
+    .media__content p {
+        margin-bottom: 3px;
+        font-size: 16px;
+    }
+
+    .media__content a {
+        font-size: 16px;
+    }
+
+    .measure__title {
+        margin-bottom: 40px;
+    }
+
+    .measure__title h2 {
+        margin-bottom: 20px;
+    }
+
+    .team__title {
+        margin-bottom: 50px;
+    }
+
+    .team__img__blk img {
+        border-radius: 15px;
+    }
+
+    .team__img__blk {
+        height: 170px;
+        margin-bottom: 20px;
+        border-radius: 15px;
+    }
+
+    .team__content h4 {
+        font-size: 20px;
+        margin-bottom: 6px;
+    }
+
+    .subscribe__topbar h2 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .subscribe__topbar span {
+        letter-spacing: 2px;
+        margin-bottom: 9px;
+    }
+
+    .subscribe__topbar {
+        margin-bottom: 36px;
+    }
+
+    .subscribe__input {
+        width: 270px;
+        height: 50px;
+        margin-right: 15px;
+    }
+
+    .subscribe__input input {
+        font-size: 14px;
+        padding-left: 46px;
+    }
+
+    .subscribe__input img {
+        left: 16px;
+        width: 20px;
+    }
+
+    .subscribe__btn button {
+        width: 130px;
+        height: 50px;
+        font-size: 14px;
+    }
+
+    .footer__menu ul li a {
+        font-size: 13px;
+    }
+
+    .footer__menu ul li {
+        margin-right: 12px;
+    }
+
+    .footer__socials ul li:first-child {
+        font-size: 13px;
+    }
+
+    .footer__socials ul li {
+        margin-left: 12px;
+    }
+
+    .footer__socials ul li img {
+        width: 20px;
+    }
+
+    .footer__topbar__wrap {
+        padding-bottom: 35px;
+    }
+
+    .footer__bottombar__wrap {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .measure__area .container {
+        max-width: 700px;
+    }
+
+    .question__title h2 {
+        font-size: 18px;
+    }
+
+    .question__page__number {
+        margin-bottom: 18px;
+    }
+
+    .question__title {
+        margin-bottom: 20px;
+        padding-right: 15px;
+    }
+
+    .question__radio .form-check {
+        height: 55px;
+    }
+
+    .question__radio .form-check label {
+        font-size: 15px;
+    }
+
+    .question__radio .form-check-input {
+        width: 20px;
+        height: 20px;
+    }
+
+    .question__input input {
+        width: 100%;
+        height: 55px;
+        font-size: 15px;
+    }
+
+    .question__form__blk {
+        margin-bottom: 30px;
+    }
+
+    .question__wrap {
+        padding: 40px;
+    }
+
+    .question__btn__blk.question__two a {
+        width: 145px;
+        height: 56px;
+        margin-right: 15px;
+    }
+
+    .question__form__blk.question__8 {
+        margin-bottom: 55px;
+    }
+
+    .trip__details__wrap .nav-link {
+        width: 75px;
+        font-size: 14px;
+    }
+
+    .trip__details__single {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .trip__details__single span {
+        margin-left: 0;
+        flex: 0 0 auto;
+        margin-top: 5px;
+    }
+
+    .project__topbar__content h1 {
+        font-size: 40px;
+        margin-bottom: 14px;
+    }
+
+    .project__topbar__area .container {
+        max-width: 600px;
+    }
+
+    .project__topbar__area {
+        padding-top: 140px;
+        padding-bottom: 40px;
+    }
+
+    .project__img__blk {
+        height: 140px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    .project__info h4 {
+        font-size: 16px;
+        letter-spacing: -0.2px;
+    }
+
+    .project__info span {
+        margin-bottom: 7px;
+    }
+
+    .project__btn__blk {
+        margin-top: 10px;
+    }
+
+    .common__btn {
+        width: 150px;
+        height: 50px;
+        font-size: 14px;
+    }
+
+    .project2__right__blk h4 {
+        font-size: 26px;
+    }
+
+    .project2__right__blk span {
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+
+    .common__btn.green {
+        margin-right: 9px;
+        width: 200px;
+    }
+
+    .project2__img__blk {
+        border-radius: 20px;
+    }
+
+    .project__single__wrap {
+        margin-bottom: 80px;
+    }
+
+    .quote__right__blk p {
+        font-size: 18px;
+    }
+
+    .quote__left__blk {
+        max-width: 100px;
+    }
+
+    .project3__left__btn {
+        margin-bottom: 30px;
+    }
+
+    .project3__other {
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    .project__img__blk.project3 {
+        height: 200px;
+    }
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+/* SM Small Device :320px. */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+
+    .mobile__menu {
+        align-items: center;
+        justify-content: end;
+        height: 100%;
+    }
+
+    .header__area .container {
+        padding: 0px 25px;
+    }
+
+    .hero__main__blk>h1 {
+        font-size: 52px;
+        line-height: 58px;
+        margin-bottom: 31px;
+    }
+
+    .hero__main__blk>p {
+        max-width: 190px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero__btn__blk {
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .hero__btn__blk a {
+        font-size: 18px;
+        margin: 15px 0px;
+    }
+
+    .hero__area {
+        height: 875px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-size: 38px;
+        letter-spacing: -1px;
+    }
+
+    .collaborator__title__blk p {
+        padding: 0px 20px;
+    }
+
+    .collaborator__title__blk h2 {
+        margin-bottom: 25px;
+    }
+
+    .collaborator__title__blk {
+        margin-bottom: 55px;
+    }
+
+    .collaborators__single__blk {
+        margin-bottom: 25px;
+    }
+
+    .collaborators__area {
+        padding-top: 80px;
+        padding-bottom: 55px;
+    }
+
+    .usage__title.collaborator__title__blk {
+        margin-bottom: 70px;
+    }
+
+    .usage__single__blk {
+        max-width: 330px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 70px;
+    }
+
+    .usage__area {
+        padding-top: 80px;
+        padding-bottom: 30px;
+    }
+
+    .vision__left__blk {
+        max-width: 330px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+    }
+
+    .vision__right__blk {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .vision__right__blk h2 {
+        margin-bottom: 20px;
+    }
+
+    .vision__area {
+        padding-top: 80px;
+        padding-bottom: 20px;
+    }
+
+    .vision__right__blk.mission__left__blk {
+        padding-left: 20px;
+        padding-bottom: 60px;
+    }
+
+    .media__single__blk {
+        margin-bottom: 41px;
+    }
+
+    .media__single__blk a img {
+        height: 33px;
+    }
+
+    .media__topbar__wrap {
+        padding-bottom: 30px;
+    }
+
+    .media__content h4 {
+        font-size: 30px;
+        margin-bottom: 44px;
+    }
+
+    .measure__img__blk {
+        max-width: 330px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .measure__area .container {
+        max-width: 420px;
+    }
+
+    .team__title {
+        text-align: center;
+        margin-bottom: 76px;
+    }
+
+    .team__single__blk {
+        text-align: center;
+        max-width: 330px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+    }
+
+    .team__area {
+        padding-top: 80px;
+        padding-bottom: 40px;
+    }
+
+    .subscribe__topbar h2 {
+        font-size: 27px;
+        line-height: 39px;
+        margin-bottom: 0;
+    }
+
+    .subscribe__form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 86%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .subscribe__input {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: 56px;
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
+
+    .subscribe__btn button {
+        width: 100%;
+    }
+
+    .subscribe__btn {
+        width: 100%;
+    }
+
+    .footer__menu ul li {
+        margin-right: 8px;
+        margin-left: 8px;
+    }
+
+    .footer__menu ul li a {
+        font-size: 14px;
+    }
+
+    .footer__menu {
+        display: flex;
+        align-items: center;
+        height: auto;
+        justify-content: center;
+        margin-bottom: 25px;
+    }
+
+    .footer__logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        margin-bottom: 25px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer__socials {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+
+    .footer__topbar__wrap {
+        padding-bottom: 45px;
+    }
+
+    .footer__bottombar__wrap {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .question__wrap {
+        border-radius: 16px;
+        padding: 32px;
+    }
+
+    .question__title {
+        margin-bottom: 20px;
+        padding-right: 0;
+    }
+
+    .question__title h2 {
+        font-size: 18px;
+    }
+
+    .question__radio .form-check {
+        height: 50px;
+    }
+
+    .question__radio .form-check label {
+        font-size: 14px;
+    }
+
+    .question__radio .form-check-input {
+        width: 20px;
+        height: 20px;
+    }
+
+    .question__input input {
+        height: 50px;
+        font-size: 14px;
+    }
+
+    .question__form__blk {
+        margin-bottom: 35px;
+    }
+
+    .question__right__blk {
+        height: 400px;
+        overflow: hidden;
+        border-radius: 16px;
+        margin-bottom: 28px;
+    }
+
+    .question__right__blk img {
+        width: 100%;
+        border-radius: 0;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .question__footer__content span {
+        font-size: 12px;
+    }
+
+    .question__btn__blk.question__two {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .question__btn__blk.question__two a {
+        margin-bottom: 15px;
+    }
+
+    .question__form__blk.question__flex {
+        display: block;
+    }
+
+    .slider-wrapper {
+        margin: 98px auto;
+    }
+
+    .question__form__blk.question__8 {
+        margin-bottom: 35px;
+    }
+
+    .trip__tab__img__blk {
+        position: relative;
+        top: 0;
+        margin-bottom: 22px;
+    }
+
+    .trip__details__wrap .nav-link {
+        margin-bottom: 16px !important;
+    }
+
+    .trip__details__wrap {
+        margin-bottom: 14px;
+    }
+
+    .trip__details__wrap .nav-tabs {
+        border-bottom: none;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .project__topbar__content h1 {
+        font-size: 33px;
+        margin-bottom: 14px;
+    }
+
+    .project__topbar__content p {
+        font-size: 16px;
+    }
+
+    .project__topbar__area {
+        padding-top: 150px;
+        padding-bottom: 37px;
+    }
+
+    .project__single__blk {
+        height: auto;
+        max-width: 330px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+    }
+
+    .project2__img__blk {
+        height: auto;
+        border-radius: 20px;
+        max-width: 330px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+    }
+
+    .project2__right__blk {
+        text-align: center;
+    }
+
+    .project2__right__blk h4 {
+        font-size: 22px;
+    }
+
+    .project2__right__blk p {
+        font-size: 14px;
+    }
+
+    .project2__btn__blk {
+        justify-content: center;
+    }
+
+    .project2__btn__blk a {
+        font-size: 12px;
+    }
+
+    .common__btn.green {
+        width: 200px;
+    }
+
+    .project__single__wrap {
+        margin-bottom: 70px;
+    }
+
+    .quote__left__blk {
+        max-width: 100px;
+        margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .quote__right__blk p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .quote__area {
+        padding-top: 60px;
+        padding-bottom: 70px;
+    }
+
+    .project3__back__btn a {
+        font-size: 18px;
+    }
+
+    .project3__topbar__title h2 {
+        margin-bottom: 0;
+        font-size: 23px;
+    }
+
+    .project3__topbar__title {
+        text-align: center;
+    }
+
+    .project3__left__btn a {
+        font-size: 14px;
+        height: 50px;
+        margin-bottom: 30px;
+    }
+
+    .project3__right__blk p {
+        font-size: 14px;
+    }
+
+    .project3__right__blk ul li {
+        font-size: 13px;
+    }
+
+    .project3__other {
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    .project3__area {
+        padding-bottom: 35px;
+    }
+
+    .project5__content p {
+        font-size: 14px;
+    }
+
+
+
+
+}
+
+
+
+
+
+
+/* SM Small Device :576px. */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 540px;
+    }
+
+    .hero__main__blk>p {
+        max-width: 350px;
+    }
+
+    .hero__area {
+        height: 735px;
+    }
+
+    .vision__left__blk {
+        max-width: 400px;
+    }
+
+    .measure__area .container {
+        max-width: 520px;
+    }
+
+    .measure__img__blk {
+        max-width: 520px;
+    }
+
+    .question__btn__blk.question__two {
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .question__btn__blk.question__two a {
+        margin-bottom: 0px;
+    }
+
+    .slider-wrapper {
+        margin: 116px auto;
+    }
+
+    .trip__details__wrap .nav-link {
+        width: 100px;
+        font-size: 15px;
+    }
+
+    .project__topbar__area .container {
+        max-width: 500px;
+    }
+
+    .project__img__blk {
+        height: 166px;
+        border-radius: 9px;
+        margin-bottom: 18px;
+    }
+
+    .project__info h4 {
+        font-size: 18px;
+        letter-spacing: -0.3px;
+    }
+
+    .project__single__blk {
+        height: auto;
+        min-height: 385px;
+    }
+
+
+
+
+
+
+
+
+
+
+}

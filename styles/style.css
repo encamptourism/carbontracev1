@@ -1,0 +1,1825 @@
+/* Base CSS */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+body {
+    font-family: 'DM Sans';
+    background-color: #F8F8F8;
+}
+
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+
+a:focus {
+    outline: 0 solid
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    color: #12022F;
+    font-weight: 700;
+    font-size: 48px;
+    letter-spacing: -2px;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #594D6D;
+    letter-spacing: -0.4px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+    max-width: 1110px;
+}
+
+
+/*-------------------- Scroll Bar css start --------------------*/
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #C9FDDF;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #1fb861;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #0e3a20;
+}
+
+html {
+    scrollbar-color: #1fb861 #C9FDDF;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+}
+
+/*-------------------- Scroll Bar css end --------------------*/
+
+
+/*-------------------- Offcanvas area css start --------------------*/
+
+.menu-close {
+    font-size: 26px;
+    color: #fff;
+    position: absolute;
+    top: 30px;
+    right: 26px;
+    cursor: pointer;
+    transition: .4s;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-close:hover {
+    color: #000;
+    background: #fff;
+}
+
+.offcanvas-area {
+    position: fixed;
+    right: -100%;
+    height: 100%;
+    width: 318px;
+    background: #219653;
+    z-index: 6;
+    padding-top: 35px;
+    -webkit-transition: .4s;
+    transition: .4s;
+    visibility: hidden;
+    top: 0;
+}
+
+.offcanvas-area.active {
+    right: 0;
+    visibility: visible;
+}
+
+.offcanvas-area .main-menu ul li a {
+    font-size: 18px;
+    color: #fff;
+    display: block;
+    transition: .3s;
+    padding: 16px 50px;
+    text-decoration: none;
+}
+
+.offcanvas-area .main-menu ul li a:hover,
+.offcanvas-area .main-menu ul li a[aria-expanded="true"] {
+    color: #D5D5D5;
+}
+
+.offcanvas-menu .main-menu ul {
+    display: block;
+    padding-top: 60px;
+    padding-left: 0;
+    margin-bottom: 40px;
+    list-style: none;
+}
+
+.offcanvas-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: .4s;
+    transition: .4s;
+    z-index: 5;
+}
+
+.offcanvas-overlay.active {
+    opacity: .4;
+    visibility: visible;
+}
+
+.menu-open {
+    font-size: 27px;
+    color: #000000;
+    cursor: pointer;
+    position: relative;
+    top: 2px;
+    margin-right: 8px;
+}
+
+.offcanvas-menu .common-btn {
+    font-size: 17px;
+    padding: 9px 30px;
+    border-radius: 12px;
+}
+
+.offcanvas-btn a {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 15px;
+    width: 176px;
+    height: 60px;
+    text-decoration: none;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    margin: 0 auto;
+    border-radius: 35px;
+}
+
+.offcanvas-btn a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.offcanvas-menu .accordion-button {
+    background-color: transparent;
+}
+
+.offcanvas-menu .accordion-button:focus {
+    border-color: transparent;
+    box-shadow: none;
+}
+
+.offcanvas-area .main-menu ul li a i {
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.mobile__drop {
+    padding-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.mobile__drop li a {
+    padding-left: 70px !important;
+}
+
+
+/*-------------------- Offcanvas area css end --------------------*/
+
+
+/*-------------------- Header area css start --------------------*/
+
+.header__area {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 4;
+    padding-top: 22px;
+    padding-bottom: 22px;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    max-width: 140px;
+}
+
+.header__menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.header__menu ul li {
+    display: inline-block;
+    margin: 0px 20px;
+    position: relative;
+    z-index: 1;
+    padding: 15px 0;
+}
+
+.header__menu ul li a {
+    display: inline-block;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -0.355556px;
+    text-transform: capitalize;
+    transition: .3s;
+}
+
+.header__menu ul li a:hover {
+    color: #219653;
+}
+
+.header__menu ul li a i {
+    margin-left: 6px;
+    font-size: 12px;
+}
+
+.header__btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.header__menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.header__btn a {
+    width: 148px;
+    height: 56px;
+    border: 1px solid #000000;
+    border-radius: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -0.36px;
+    transition: .3s;
+}
+
+.header__btn a:hover {
+    background-color: #219653;
+    color: #fff;
+    border: 1px solid #219653;
+}
+
+.header__dropdown {
+    position: absolute;
+    left: 0;
+    top: 51px;
+    width: 200px;
+    height: auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px #00000017;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.header__dropdown li {
+    display: block !important;
+    text-align: center;
+    padding: 10px !important;
+    margin: 0 !important;
+    transition: .3s;
+    border-bottom: 1px solid #0000000a;
+}
+
+.header__dropdown li:hover {
+    background-color: #219653;
+}
+
+.header__dropdown li:hover a {
+    color: #fff !important;
+}
+
+.header__dropdown li:last-child {
+    border-bottom: none;
+}
+
+.header__menu ul li:hover .header__dropdown {
+    opacity: 1;
+    visibility: visible;
+}
+
+/*-------------------- Header area css end --------------------*/
+
+
+/*-------------------- Hero area css start --------------------*/
+
+.hero__area {
+    height: 975px;
+    background-image: url(../public/assets/img/home/hero__bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.hero__main__blk {
+    text-align: center;
+    padding-top: 200px;
+}
+
+.hero__main__blk>h1 {
+    color: #000000;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 78px;
+    letter-spacing: -3px;
+    margin-bottom: 20px;
+}
+
+.hero__main__blk>h1 span {
+    color: #219653;
+}
+
+.hero__main__blk>p {
+    color: #000000;
+    text-transform: lowercase;
+    margin-bottom: 0;
+}
+
+.hero__btn__blk {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero__btn__blk a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 66px;
+    background-color: #000000;
+    border-radius: 98px;
+    letter-spacing: -0.36px;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin: 0px 12px;
+    transition: .3s;
+}
+
+.hero__btn__blk a:hover {
+    background-color: #219653;
+}
+
+/*-------------------- Hero area css end --------------------*/
+
+
+/*-------------------- Collaborators area css start --------------------*/
+
+.collaborators__area {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.collaborator__title__blk {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.collaborator__title__blk h2 {
+    margin-bottom: 40px;
+}
+
+.collaborator__title__blk p {
+    margin-bottom: 0;
+    max-width: 510px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.collaborators__single__blk {
+    height: 80px;
+    width: 100%;
+    border: 2px solid #12022F17;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.collaborators__single__blk img {
+    height: 24px;
+}
+
+/*-------------------- Collaborators area css end --------------------*/
+
+
+/*-------------------- Usage area css start --------------------*/
+
+.usage__area {
+    background-color: #219653;
+    padding-top: 80px;
+    padding-bottom: 98px;
+}
+
+.usage__title.collaborator__title__blk h2 {
+    color: #FFFFFF;
+}
+
+.usage__title.collaborator__title__blk p {
+    color: #FFFFFF;
+}
+
+.usage__title.collaborator__title__blk {
+    margin-bottom: 100px;
+}
+
+.usage__img__blk {
+    width: 100%;
+    height: 240px;
+    border-radius: 32px;
+    overflow: hidden;
+    margin-bottom: 34px;
+}
+
+.usage__img__blk img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .3s;
+}
+
+.usage__content__blk h4 {
+    color: #FFFFFF;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.4px;
+    margin-bottom: 26px;
+}
+
+.usage__content__blk {
+    text-align: center;
+}
+
+.usage__content__blk p {
+    color: #fff;
+    margin-bottom: 0;
+}
+
+/*-------------------- Usage area css end --------------------*/
+
+
+/*-------------------- Vision area css start --------------------*/
+
+.vision__area {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.vision__left__blk img {
+    width: 100%;
+    border-radius: 32px;
+}
+
+.vision__right__blk {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    padding-left: 100px;
+}
+
+.vision__right__blk span {
+    color: #12022F;
+    opacity: .5;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 24px;
+}
+
+.vision__right__blk h2 {
+    margin-bottom: 40px;
+}
+
+.vision__right__blk p {
+    margin-bottom: 64px;
+}
+
+.vision__right__blk a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 255px;
+    height: 56px;
+    border-radius: 28px;
+    background-color: #C9FDDF;
+    font-size: 16px;
+    font-weight: 700;
+    color: #12022F;
+    transition: .3s;
+    letter-spacing: -0.36px;
+}
+
+.vision__right__blk a:hover {
+    background-color: #219653;
+    color: #fff;
+}
+
+/*-------------------- Vision area css end --------------------*/
+
+
+/*-------------------- Mission area css start --------------------*/
+
+.vision__right__blk.mission__left__blk {
+    padding-left: 0;
+    padding-right: 80px;
+}
+
+/*-------------------- Mission area css end --------------------*/
+
+
+/*-------------------- Know area css start --------------------*/
+
+.know__area {
+    padding-top: 80px;
+    padding-bottom: 100px;
+    position: relative;
+    z-index: 1;
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+    background-image: url(../public/assets/img/home/know_bg.jpg);
+}
+
+.know__area::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    content: "";
+    z-index: -1;
+    opacity: .6;
+}
+
+.know__main__blk {
+    text-align: center;
+}
+
+.know__main__blk span {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 48px;
+    display: block;
+}
+
+.know__main__blk h2 {
+    color: #fff;
+    letter-spacing: -2px;
+    margin-bottom: 46px;
+}
+
+.know__main__blk a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 255px;
+    height: 56px;
+    background-color: #FFFFFF;
+    border-radius: 28px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+    font-weight: 700;
+    color: #12022F;
+    letter-spacing: -0.36px;
+    transition: .3s;
+}
+
+.know__main__blk a:hover {
+    background-color: #219653;
+    color: #fff;
+}
+
+/*-------------------- Know area css end --------------------*/
+
+
+/*-------------------- Media area css start --------------------*/
+
+.media__area {
+    padding-top: 90px;
+    padding-bottom: 76px;
+}
+
+.media__topbar__wrap {
+    border-bottom: 1px solid #E7E5EA;
+    padding-bottom: 80px;
+}
+
+.media__title {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.media__title h2 {
+    margin-bottom: 0;
+}
+
+.media__single__blk {
+    text-align: center;
+}
+
+.media__single__blk a img {
+    height: 25px;
+}
+
+.media__bottom__wrap {
+    margin-top: 70px;
+}
+
+.media__content {
+    text-align: center;
+}
+
+.media__content h4 {
+    font-size: 36px;
+    letter-spacing: -1.6px;
+    margin-bottom: 70px;
+}
+
+.media__content p {
+    margin-bottom: 8px;
+    color: #333333;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.media__content a {
+    display: block;
+    color: #219653;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: capitalize;
+    letter-spacing: -0.3px;
+}
+
+/*-------------------- Media area css end --------------------*/
+
+
+/*-------------------- Measure area css start --------------------*/
+
+.measure__area {
+    background-color: #F8F8F8;
+    padding-top: 80px;
+    padding-bottom: 57px;
+}
+
+.measure__main__blk {
+    text-align: center;
+}
+
+.measure__title h2 {
+    margin-bottom: 40px;
+}
+
+.measure__title p {
+    max-width: 730px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+}
+
+.measure__title {
+    margin-bottom: 65px;
+}
+
+.measure__img__blk img {
+    width: 100%;
+    border-radius: 32px;
+}
+
+.measure__area .container {
+    max-width: 980px;
+}
+
+/*-------------------- Measure area css end --------------------*/
+
+
+/*-------------------- Team area css start --------------------*/
+
+.team__area {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.team__title {
+    text-align: center;
+    margin-bottom: 130px;
+}
+
+.team__single__blk {
+    text-align: center;
+}
+
+.team__img__blk {
+    width: 100%;
+    height: 280px;
+    margin-bottom: 32px;
+    border-radius: 32px;
+    overflow: hidden;
+}
+
+.team__img__blk img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 32px;
+}
+
+.team__content h4 {
+    font-size: 22px;
+    margin-bottom: 8px;
+    letter-spacing: -0.4px;
+}
+
+.team__content p {
+    margin-bottom: 0;
+}
+
+/*-------------------- Team area css end --------------------*/
+
+
+/*-------------------- Subscribe area css start --------------------*/
+
+.subscribe__area {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #219653;
+}
+
+.subscribe__topbar {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.subscribe__topbar span {
+    display: block;
+    color: #fff;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    opacity: .5;
+    margin-bottom: 24px;
+}
+
+.subscribe__topbar h2 {
+    color: #fff;
+    font-size: 36px;
+    letter-spacing: -1.6px;
+    line-height: 46px;
+    margin-bottom: 0;
+}
+
+.subscribe__form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subscribe__input {
+    position: relative;
+    z-index: 1;
+    width: 350px;
+    height: 56px;
+    margin-right: 30px;
+}
+
+.subscribe__input input {
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 28px;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -0.36px;
+    color: rgba(255, 255, 255, 0.6);
+    padding-left: 64px;
+    padding-right: 20px;
+    outline: none;
+}
+
+.subscribe__input img {
+    position: absolute;
+    left: 22px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    z-index: 2;
+}
+
+.subscribe__btn button {
+    width: 160px;
+    height: 56px;
+    background: #FFFFFF;
+    border-radius: 28px;
+    border: none;
+    outline: none;
+    transition: .3s;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -0.36px;
+    color: #12022F;
+}
+
+.subscribe__btn button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/*-------------------- Subscribe area css end --------------------*/
+
+
+/*-------------------- Footer area css start --------------------*/
+
+.footer__area {
+    padding-top: 80px;
+}
+
+.footer__topbar__wrap {
+    border-bottom: 1px solid #E7E5EA;
+    padding-bottom: 80px;
+}
+
+.footer__menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer__menu ul li {
+    display: inline-block;
+    margin-right: 40px;
+}
+
+.footer__menu ul li:last-child {
+    margin-right: 0;
+}
+
+.footer__menu ul li a {
+    color: #12022F;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -0.355556px;
+    transition: .3s;
+}
+
+.footer__menu ul li a:hover {
+    color: #219653;
+}
+
+.footer__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    max-width: 140px;
+}
+
+.footer__logo a img {
+    width: 100%;
+}
+
+.footer__socials {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.footer__menu {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.footer__socials ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer__socials ul li {
+    display: inline-block;
+    margin-left: 32px;
+}
+
+.footer__socials ul li:first-child {
+    margin-left: 0;
+    letter-spacing: -0.355556px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #12022F;
+}
+
+.footer__socials ul li img {
+    width: 24px;
+}
+
+.footer__bottombar__wrap {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.footer__copyright {
+    text-align: center;
+}
+
+.footer__copyright span {
+    letter-spacing: -0.3px;
+    font-size: 14px;
+    font-weight: 400;
+    display: block;
+    color: #594D6D;
+}
+
+/*-------------------- Footer area css end --------------------*/
+
+
+/*-------------------- Question area css start --------------------*/
+
+.question__area {
+    padding-top: 137px;
+    padding-bottom: 55px;
+}
+
+.question__wrap {
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    padding: 50px;
+}
+
+.question__main__blk {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.question__page__number span {
+    display: flex;
+    width: 48px;
+    height: 38px;
+    border: 0.75px solid #979797;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    letter-spacing: -0.36px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.question__page__number {
+    margin-bottom: 31px;
+}
+
+.question__title h2 {
+    font-size: 24px;
+    letter-spacing: -1.6px;
+    margin-bottom: 0;
+}
+
+.question__title {
+    margin-bottom: 38px;
+    padding-right: 50px;
+}
+
+.question__form__blk {
+    max-width: 450px;
+    margin-bottom: 95px;
+}
+
+.question__input input {
+    width: 100%;
+    height: 68px;
+    background-color: #F8F7F9;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 5px 30px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.question__btn__blk button {
+    width: 100%;
+    height: 56px;
+    background-color: #219653;
+    border: none;
+    outline: none;
+    border-radius: 28px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -0.36px;
+    transition: .3s;
+}
+
+.question__btn__blk button:hover {
+    background-color: #135831;
+}
+
+.question__btn__blk {
+    padding-right: 20px;
+}
+
+.question__radio .form-check {
+    display: flex;
+    height: 68px;
+    padding-left: 50px;
+    margin-bottom: 16px;
+    width: 100%;
+    background-color: #F8F7F9;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.question__radio .form-check-input {
+    width: 24px;
+    height: 24px;
+    margin-top: 0;
+    border: 1px solid rgba(0, 0, 0, .15);
+    outline: none;
+}
+
+.question__radio .form-check-input:checked {
+    background-color: #219653;
+    border-color: #219653;
+    border-width: 5px;
+}
+
+.question__radio .form-check-input:focus {
+    box-shadow: none;
+}
+
+.question__radio .form-check label {
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.36px;
+    margin-left: 16px;
+    cursor: pointer;
+}
+
+.question__right__blk img {
+    width: 100%;
+    border-radius: 32px;
+}
+
+
+.question__footer__content {
+    padding-bottom: 46px;
+    text-align: center;
+}
+
+.question__footer__content span {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #979797;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.question__btn__blk.question__two {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 450px;
+    padding-right: 0;
+}
+
+.question__btn__blk.question__two a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 210px;
+    height: 56px;
+    border-radius: 28px;
+    border: 1px solid #219653;
+    font-size: 16px;
+    font-weight: 700;
+    color: #219653;
+    letter-spacing: -0.36px;
+    transition: .3s;
+}
+
+.question__btn__blk.question__two a:hover {
+    background-color: #135831;
+    color: #fff;
+    border-color: #135831;
+}
+
+.question__btn__blk.question__two button {
+    width: 210px;
+}
+
+.question__form__blk.question__flex {
+    display: flex;
+    width: 100%;
+    column-gap: 15px;
+}
+
+.question__form__blk.question__flex .question__radio {
+    flex: 50%;
+}
+
+.slider-wrapper {
+    width: 100%;
+    margin: 170px auto;
+}
+
+.noUi-target {
+    border-radius: 4px;
+    border: none;
+    box-shadow: none;
+    height: 6px;
+    background: #E5E5E5;
+}
+
+.noUi-connect {
+    background: #219653;
+}
+
+.noUi-horizontal .noUi-handle {
+    width: 9px;
+    height: 9px;
+    right: -8px;
+    top: -1px;
+    background: #219653;
+    border-radius: 50%;
+}
+
+.noUi-handle {
+    border: none;
+    border-radius: 3px;
+    background: #FFF;
+    cursor: default;
+    box-shadow: none;
+}
+
+.noUi-handle::before {
+    display: none;
+}
+
+.noUi-tooltip {
+    display: flex;
+    position: absolute;
+    border: none;
+    border-radius: 50%;
+    background: #219653;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    white-space: nowrap;
+    width: 60px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.noUi-horizontal .noUi-tooltip {
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    left: 50%;
+    bottom: 36px;
+}
+
+.noUi-handle::after {
+    height: 42px;
+    width: 4px;
+    background: #219653;
+    left: 12px;
+    top: -34px;
+    z-index: -1;
+}
+
+.noUi-handle::after {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.noUi-value.noUi-value-horizontal.noUi-value-large {
+    color: #12022F;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+.noUi-marker-large {
+    background: #C4C4C4;
+}
+
+.question__form__blk.question__range {
+    max-width: 90%;
+}
+
+.question__tab__btn {
+    width: 196px;
+    height: 38px;
+    margin-bottom: 24px;
+    background: rgba(18, 2, 47, 0.03);
+    border-radius: 17px;
+}
+
+.question__tab__btn .nav-tabs {
+    border-bottom: none;
+}
+
+.question__tab__btn .nav-tabs .nav-link {
+    margin-bottom: 0;
+    border: none;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 700;
+    color: #12022F;
+    letter-spacing: -0.3px;
+}
+
+.question__tab__btn .nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.question__tab__btn .nav-item {
+    width: 50%;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.question__tab__btn .nav-link {
+    width: 100%;
+    height: 34px;
+}
+
+.question__tab__btn .nav-tabs .nav-item.show .nav-link,
+.question__tab__btn .nav-tabs .nav-link.active {
+    background-color: #fff;
+    border-color: transparent;
+    box-shadow: 0px 5px 20px rgba(18, 2, 47, 0.1);
+    border-radius: 14px;
+    color: #219653;
+}
+
+.question__tab__btn .nav-link {
+    width: 92%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.question__form__blk.question__6 {
+    margin-bottom: 40px;
+}
+
+.question__form__blk.question__8 {
+    margin-bottom: 200px;
+}
+
+/*-------------------- Question area css end --------------------*/
+
+
+/*-------------------- Trip area css start --------------------*/
+
+.trip__round__title h4 {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0px;
+}
+
+.question__form__blk.question__flex.trip__details {
+    margin-bottom: 24px;
+}
+
+.trip__details__title h2 {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    margin-bottom: 0;
+}
+
+.trip__details__title {
+    margin-bottom: 22px;
+}
+
+.trip__details__wrap {
+    margin-bottom: 36px;
+}
+
+.trip__details__wrap .nav-tabs {
+    border-bottom: none;
+}
+
+.trip__details__wrap .nav-link {
+    display: flex;
+    padding: 0;
+    color: #000000;
+    align-items: center;
+    justify-content: center;
+    width: 124px;
+    height: 68px;
+    border: 1px solid #F8F7F9 !important;
+    border-radius: 5px !important;
+    background: #F8F7F9 !important;
+    margin-bottom: 0px !important;
+    margin-left: 6px;
+    margin-right: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.trip__details__wrap .nav-tabs .nav-item.show .nav-link,
+.trip__details__wrap .nav-tabs .nav-link.active {
+    color: #000;
+    border-color: #219653 !important;
+    background: rgba(33, 150, 83, 0.1) !important;
+    font-weight: 700 !important;
+}
+
+.trip__details__single {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.trip__details__single img {
+    width: 20px;
+    flex: 0 0 auto;
+}
+
+.trip__details__single span {
+    margin-left: 10px;
+    flex: 0 0 auto;
+}
+
+.question__btn__blk.trip__details__btn.trip__details__btn2 {
+    margin-top: 150px;
+}
+
+.trip__tab__img__blk {
+    position: relative;
+    top: -130px;
+    margin-bottom: -130px;
+}
+
+.question__form__blk.question__flex.trip__margin {
+    margin-bottom: 30px;
+}
+
+/*-------------------- Trip area css end --------------------*/
+
+
+/*-------------------- Step area css start --------------------*/
+
+.question__form__blk.question__flex.step1 {
+    margin-bottom: 20px;
+}
+
+.trip__details__title.step1 {
+    margin-bottom: 28px;
+}
+
+/*-------------------- Step area css end --------------------*/
+
+
+/*-------------------- Project area css start --------------------*/
+
+.project__topbar__area {
+    padding-top: 186px;
+    padding-bottom: 72px;
+}
+
+.project__topbar__area .container {
+    max-width: 890px;
+}
+
+.project__topbar__content {
+    text-align: center;
+}
+
+.project__topbar__content h1 {
+    font-size: 72px;
+    margin-bottom: 36px;
+}
+
+.project__topbar__content p {
+    margin-bottom: 0;
+}
+
+.project__img__blk {
+    width: 100%;
+    height: 230px;
+    border-radius: 18px;
+    overflow: hidden;
+    margin-bottom: 32px;
+}
+
+.project__img__blk img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .3s;
+}
+
+.project__single__blk:hover .project__img__blk img {
+    transform: scale(1.2);
+}
+
+.project__info {
+    text-align: center;
+}
+
+.project__info span {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    color: #219653;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.project__info h4 {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.4px;
+}
+
+.common__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 176px;
+    height: 56px;
+    border-radius: 28px;
+    background-color: #FFDDA9;
+    color: #12022F;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -0.36px;
+    transition: .3s;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.common__btn:hover {
+    background-color: #12022F;
+    color: #FFDDA9;
+}
+
+.project__single__blk {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project__area {
+    padding-bottom: 74px;
+}
+
+.project__btn__blk {
+    margin-top: 32px;
+}
+
+/*-------------------- Project area css end --------------------*/
+
+
+/*-------------------- Project 2 area css start --------------------*/
+
+.project2__img__blk {
+    width: 100%;
+    height: 100%;
+    border-radius: 32px;
+    overflow: hidden;
+}
+
+.project2__img__blk img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .3s;
+}
+
+.project2__right__blk span {
+    display: block;
+    margin-bottom: 25px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    opacity: .5;
+    color: #000;
+}
+
+.project2__btn__blk {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    justify-content: flex-start;
+}
+
+.project2__btn__blk a {
+    margin: 0;
+}
+
+.common__btn.green {
+    margin-right: 16px;
+    width: 263px;
+    background-color: #219653;
+    color: #fff;
+    transition: .3s;
+}
+
+.common__btn.green:hover {
+    background-color: #12022F;
+}
+
+.project__single__wrap {
+    margin-bottom: 137px;
+}
+
+.project__single__wrap:last-child {
+    margin-bottom: 0;
+}
+
+.project2__right__blk h4 {
+    font-size: 43px;
+}
+
+.quote__area {
+    padding-top: 105px;
+    padding-bottom: 105px;
+    background-color: #F8F8F8;
+}
+
+.quote__left__blk {
+    max-width: 130px;
+}
+
+.quote__right__blk p {
+    color: #000;
+    font-size: 22px;
+    margin-bottom: 0;
+}
+
+.project__single__wrap .g-5,
+.gy-5 {
+    --bs-gutter-y: 0rem;
+}
+
+.project__single__wrap:hover .project2__img__blk img {
+    transform: scale(1.2) rotate(10deg);
+}
+
+/*-------------------- Project 2 area css end --------------------*/
+
+
+/*-------------------- Project3 area css start --------------------*/
+
+.project3__topbar__area {
+    padding-top: 150px;
+}
+
+.project3__back__btn a {
+    color: #219653;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.355556px;
+    transition: .3s;
+}
+
+.project3__back__btn a i {
+    margin-right: 16px;
+    transition: .3s;
+}
+
+.project3__back__btn a:hover {
+    color: #000;
+}
+
+.project3__back__btn a:hover i {
+    margin-right: 10px;
+}
+
+.project3__back__btn {
+    margin-bottom: 33px;
+}
+
+.project3__topbar__title h2 {
+    margin-bottom: 0;
+    font-size: 38px;
+}
+
+.project3__topbar__content {
+    margin-bottom: 36px;
+}
+
+.project3__left__img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 36px;
+}
+
+.project3__left__img img {
+    border-radius: 18px;
+}
+
+.project3__left__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project3__left__btn a {
+    margin: 0;
+    margin-right: 16px;
+}
+
+.common__btn.green.right {
+    margin-right: 0;
+    width: 320px;
+}
+
+.project3__right__blk ul {
+    padding: 0;
+    list-style: none;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.project3__right__blk ul li {
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.project3__right__blk ul li img {
+    margin-right: 16px;
+    width: 22px;
+    flex: 0 0 auto;
+    margin-top: 5px;
+}
+
+.project3__other span {
+    letter-spacing: -0.4px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #594D6D;
+    text-transform: capitalize;
+}
+
+.project3__other {
+    margin-bottom: 42px;
+}
+
+.project3__area {
+    padding-bottom: 138px;
+}
+
+.project3__left__img img {
+    width: 100%;
+}
+
+.project5__content ul {
+    padding: 0;
+    list-style: none;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.project5__content ul li {
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.project5__content ul li img {
+    margin-right: 16px;
+    width: 22px;
+    flex: 0 0 auto;
+    margin-top: 5px;
+}
+.question__btn__blk.question__two .back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 210px;
+    height: 56px;
+    border-radius: 28px;
+    border: 1px solid #219653;
+    font-size: 16px;
+    font-weight: 700;
+    color: #219653!important;
+    letter-spacing: -0.36px;
+    transition: .3s;
+    background-color: white;
+}
+.question__btn__blk.question__two .back:hover {
+    color: white!important;
+    background-color: #219653;
+}
+
+
+/*-------------------- Project3 area css end --------------------*/
+
+
+/*-------------------- Default area css start --------------------*/
+/*-------------------- Default area css end --------------------*/

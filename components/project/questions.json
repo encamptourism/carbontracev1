@@ -1,0 +1,1092 @@
+{
+  "Flight": [
+    {
+      "Btntype": "Input",
+      "questionText": "How many days was the trip for ?"
+    },
+    {
+      "questionText": "How Many people did you travel with?",
+      "Btntype": "Radiobtn",
+      "answerOptions": [
+        {
+          "answerText": {
+            "key": "One",
+            "val": 0.05
+          }
+        },
+        {
+          "answerText": {
+            "key": "Two",
+            "val": 0.025
+          }
+        },
+        {
+          "answerText": {
+            "key": "Three",
+            "val": 0.05
+          }
+        },
+        {
+          "answerText": {
+            "key": "Four or more",
+            "val": 0.05
+          }
+        }
+      ]
+    },
+    {
+      "Btntype": "Radiobtn",
+      "questionText": "What kind of public transport did you take on your last trip?",
+      "answerOptions": [
+        {
+          "answerText": {
+            "key": "Hired Taxi",
+            "val": 0.13
+          }
+        },
+        {
+          "answerText": {
+            "key": "Bus",
+            "val": 0.022
+          }
+        },
+        {
+          "answerText": {
+            "key": "Shared Taxi",
+            "val": 0.04
+          }
+        },
+        {
+          "answerText": {
+            "key": "Metro",
+            "val": 0.12
+          }
+        },
+        {
+          "answerText": {
+            "key": "None Of These",
+            "val": 0
+          }
+        }
+      ]
+    },
+    {
+      "Btntype": "Radiobtn",
+      "questionText": "What kind of car did you travel in?",
+      "answerOptions": [
+        {
+          "answerText": {
+            "key": "Petrol",
+            "val": 0.13
+          }
+        },
+        {
+          "answerText": {
+            "key": "Diesel",
+            "val": 0.15
+          }
+        },
+        {
+          "answerText": {
+            "key": "Hybrid",
+            "val": 0.11
+          }
+        },
+        {
+          "answerText": {
+            "key": "CNG",
+            "val": 0.11
+          }
+        },
+        {
+          "answerText": {
+            "key": "None Of These",
+            "val": 0
+          }
+        }
+      ]
+    },
+    {
+      "Btntype": "Radiobtn",
+      "questionText": "  What kind of car or vehicle was it?",
+      "answerOptions": [
+        {
+          "answerText": {
+            "key": "4*4",
+            "val": 0.19,
+            "dependsOn": "days"
+          }
+        },
+        {
+          "answerText": {
+            "key": "Sudan",
+            "val": 0.09,
+            "dependsOn": "days"
+          }
+        },
+        {
+          "answerText": {
+            "key": "SUV",
+            "val": 0.045,
+            "dependsOn": "days"
+          }
+        },
+        {
+          "answerText": {
+            "key": "Traveler",
+            "val": 0.002,
+            "dependsOn": "days"
+          }
+        },
+        {
+          "answerText": {
+            "key": "None of these",
+            "val": 0.0,
+            "dependsOn": "days"
+          }
+        }
+      ]
+    },
+    {
+      "Btntype": "Slider",
+      "questionText": "   How many KMs did you travel on public transport",
+      "answerText": {
+        "key": "BusSlider",
+        "val": 0
+      }
+    },
+    {
+      "Btntype": "Radiobtn",
+      "questionText": "What kind of food do you prefer on your trips?",
+      "answerOptions": [
+        {
+          "answerText": {
+            "key": "Vegetarian",
+            "val": 17,
+            "dependsOn": "days"
+          }
+        },
+        {
+          "answerText": {
+            "key": "Non - Veg",
+            "val": 52,
+            "dependsOn": "days"
+          }
+        }
+      ]
+    },
+    {
+      "Btntype": "Radiobtn",
+      "questionText": "What kind of accommodation did you have on your trip?",
+      "answerOptions": [
+        {
+          "answerText": {
+            "key": "5 Star",
+            "val": 0.19,
+            "dependsOn": "days"
+          }
+        },
+        {
+          "answerText": {
+            "key": "4 Star",
+            "val": 0.09,
+            "dependsOn": "days"
+          }
+        },
+        {
+          "answerText": {
+            "key": "3 Star",
+            "val": 0.045,
+            "dependsOn": "days"
+          }
+        },
+        {
+          "answerText": {
+            "key": "2 Star",
+            "val": 0.002,
+            "dependsOn": "days"
+          }
+        },
+        {
+          "answerText": {
+            "key": "Camping",
+            "val": 0.001,
+            "dependsOn": "days"
+          }
+        }
+      ]
+    }
+  ],
+  "Bus": [
+    {
+      "Btntype": "Input",
+      "questionText": "How many days was the trip for ?"
+    },
+    {
+      "questionText": "How Many people did you travel with?",
+      "Btntype": "Radiobtn",
+      "answerOptions": [
+        {
+          "answerText": {
+            "key": "One",
+            "val": 0.05
+          }
+        },
+        {
+          "answerText": {
+            "key": "Two",
+            "val": 0.025
+          }
+        },
+        {
+          "answerText": {
+            "key": "Three",
+            "val": 0.05
+          }
+        },
+        {
+          "answerText": {
+            "key": "Four or more",
+            "val": 0.05
+          }
+        }
+      ]
+    },
+    {
+      "Btntype": "Radiobtn",
+      "questionText": "What kind of public transport did you take on your last trip?",
+      "answerOptions": [
+        {
+          "answerText": {
+            "key": "Hired Taxi",
+            "val": 0.13
+          }
+        },
+        {
+          "answerText": {
+            "key": "Bus",
+            "val": 0.022
+          }
+        },
+        {
+          "answerText": {
+            "key": "Shared Taxi",
+            "val": 0.04
+          }
+        },
+        {
+          "answerText": {
+            "key": "Metro",
+            "val": 0.12
+          }
+        },
+        {
+          "answerText": {
+            "key": "None Of These",
+            "val": 0
+          }
+        }
+      ]
+    },
+    {
+      "Btntype": "Radiobtn",
+      "questionText": "What kind of car did you travel in?",
+      "answerOptions": [
+        {
+          "answerText": {
+            "key": "Petrol",
+            "val": 0.13
+          }
+        },
+        {
+          "answerText": {
+            "key": "Diesel",
+            "val": 0.15
+          }
+        },
+        {
+          "answerText": {
+            "key": "Hybrid",
+            "val": 0.11
+          }
+        },
+        {
+          "answerText": {
+            "key": "CNG",
+            "val": 0.11
+          }
+        },
+        {
+          "answerText": {
+            "key": "None Of These",
+            "val": 0
+          }
+        }
+      ]
+    },
+    {
+      "Btntype": "Radiobtn",
+      "questionText": "  What kind of car or vehicle was it?",
+      "answerOptions": [
+        {
+          "answerText": {
+            "key": "4*4",
+            "val": 0.19,
+            "dependsOn": "days"
+          }
+        },
+        {
+          "answerText": {
+            "key": "Sudan",
+            "val": 0.09,
+            "dependsOn": "days"
+          }
+        },
+        {
+          "answerText": {
+            "key": "SUV",
+            "val": 0.045,
+            "dependsOn": "days"
+          }
+        },
+        {
+          "answerText": {
+            "key": "Traveler",
+            "val": 0.002,
+            "dependsOn": "days"
+          }
+        },
+        {
+          "answerText": {
+            "key": "None of these",
+            "val": 0.0,
+            "dependsOn": "days"
+          }
+        }
+      ]
+    },
+    {
+      "Btntype": "Slider",
+      "questionText": "   How many KMs did you travel on public transport",
+      "answerText": {
+        "key": "BusSlider",
+        "val": 0
+      }
+    },
+    {
+      "Btntype": "Radiobtn",
+      "questionText": "What kind of food do you prefer on your trips?",
+      "answerOptions": [
+        {
+          "answerText": {
+            "key": "Vegetarian",
+            "val": 17,
+            "dependsOn": "days"
+          }
+        },
+        {
+          "answerText": {
+            "key": "Non - Veg",
+            "val": 52,
+            "dependsOn": "days"
+          }
+        }
+      ]
+    },
+    {
+      "Btntype": "Radiobtn",
+      "questionText": "What kind of accommodation did you have on your trip?",
+      "answerOptions": [
+        {
+          "answerText": {
+            "key": "5 Star",
+            "val": 0.19,
+            "dependsOn": "days"
+          }
+        },
+        {
+          "answerText": {
+            "key": "4 Star",
+            "val": 0.09,
+            "dependsOn": "days"
+          }
+        },
+        {
+          "answerText": {
+            "key": "3 Star",
+            "val": 0.045,
+            "dependsOn": "days"
+          }
+        },
+        {
+          "answerText": {
+            "key": "2 Star",
+            "val": 0.002,
+            "dependsOn": "days"
+          }
+        },
+        {
+          "answerText": {
+            "key": "Camping",
+            "val": 0.001,
+            "dependsOn": "days"
+          }
+        }
+      ]
+    }
+  ],
+  "Train": [
+    {
+      "Btntype": "Input",
+      "questionText": "How many days was the trip for ?"
+    },
+    {
+      "questionText": "How Many people did you travel with?",
+      "Btntype": "Radiobtn",
+      "answerOptions": [
+        {
+          "answerText": {
+            "key": "One",
+            "val": 0.05
+          }
+        },
+        {
+          "answerText": {
+            "key": "Two",
+            "val": 0.025
+          }
+        },
+        {
+          "answerText": {
+            "key": "Three",
+            "val": 0.05
+          }
+        },
+        {
+          "answerText": {
+            "key": "Four or more",
+            "val": 0.05
+          }
+        }
+      ]
+    },
+    {
+      "Btntype": "Radiobtn",
+      "questionText": "What kind of public transport did you take on your last trip?",
+      "answerOptions": [
+        {
+          "answerText": {
+            "key": "Hired Taxi",
+            "val": 0.13
+          }
+        },
+        {
+          "answerText": {
+            "key": "Bus",
+            "val": 0.022
+          }
+        },
+        {
+          "answerText": {
+            "key": "Shared Taxi",
+            "val": 0.04
+          }
+        },
+        {
+          "answerText": {
+            "key": "Metro",
+            "val": 0.12
+          }
+        },
+        {
+          "answerText": {
+            "key": "None Of These",
+            "val": 0
+          }
+        }
+      ]
+    },
+    {
+      "Btntype": "Radiobtn",
+      "questionText": "What kind of car did you travel in?",
+      "answerOptions": [
+        {
+          "answerText": {
+            "key": "Petrol",
+            "val": 0.13
+          }
+        },
+        {
+          "answerText": {
+            "key": "Diesel",
+            "val": 0.15
+          }
+        },
+        {
+          "answerText": {
+            "key": "Hybrid",
+            "val": 0.11
+          }
+        },
+        {
+          "answerText": {
+            "key": "CNG",
+            "val": 0.11
+          }
+        },
+        {
+          "answerText": {
+            "key": "None Of These",
+            "val": 0
+          }
+        }
+      ]
+    },
+    {
+      "Btntype": "Radiobtn",
+      "questionText": "  What kind of car or vehicle was it?",
+      "answerOptions": [
+        {
+          "answerText": {
+            "key": "4*4",
+            "val": 0.19,
+            "dependsOn": "days"
+          }
+        },
+        {
+          "answerText": {
+            "key": "Sudan",
+            "val": 0.09,
+            "dependsOn": "days"
+          }
+        },
+        {
+          "answerText": {
+            "key": "SUV",
+            "val": 0.045,
+            "dependsOn": "days"
+          }
+        },
+        {
+          "answerText": {
+            "key": "Traveler",
+            "val": 0.002,
+            "dependsOn": "days"
+          }
+        },
+        {
+          "answerText": {
+            "key": "None of these",
+            "val": 0.0,
+            "dependsOn": "days"
+          }
+        }
+      ]
+    },
+    {
+      "Btntype": "Slider",
+      "questionText": "   How many KMs did you travel on public transport",
+      "answerText": {
+        "key": "BusSlider",
+        "val": 0
+      }
+    },
+    {
+      "Btntype": "Radiobtn",
+      "questionText": "What kind of food do you prefer on your trips?",
+      "answerOptions": [
+        {
+          "answerText": {
+            "key": "Vegetarian",
+            "val": 17,
+            "dependsOn": "days"
+          }
+        },
+        {
+          "answerText": {
+            "key": "Non - Veg",
+            "val": 52,
+            "dependsOn": "days"
+          }
+        }
+      ]
+    },
+    {
+      "Btntype": "Radiobtn",
+      "questionText": "What kind of accommodation did you have on your trip?",
+      "answerOptions": [
+        {
+          "answerText": {
+            "key": "5 Star",
+            "val": 0.19,
+            "dependsOn": "days"
+          }
+        },
+        {
+          "answerText": {
+            "key": "4 Star",
+            "val": 0.09,
+            "dependsOn": "days"
+          }
+        },
+        {
+          "answerText": {
+            "key": "3 Star",
+            "val": 0.045,
+            "dependsOn": "days"
+          }
+        },
+        {
+          "answerText": {
+            "key": "2 Star",
+            "val": 0.002,
+            "dependsOn": "days"
+          }
+        },
+        {
+          "answerText": {
+            "key": "Camping",
+            "val": 0.001,
+            "dependsOn": "days"
+          }
+        }
+      ]
+    }
+  ],
+  "Car": [
+    {
+      "Btntype": "Input",
+      "questionText": "How many days was the trip for ?"
+    },
+    {
+      "questionText": "How Many people did you travel with?",
+      "Btntype": "Radiobtn",
+      "answerOptions": [
+        {
+          "answerText": {
+            "key": "One",
+            "val": 0.05
+          }
+        },
+        {
+          "answerText": {
+            "key": "Two",
+            "val": 0.025
+          }
+        },
+        {
+          "answerText": {
+            "key": "Three",
+            "val": 0.05
+          }
+        },
+        {
+          "answerText": {
+            "key": "Four or more",
+            "val": 0.05
+          }
+        }
+      ]
+    },
+    {
+      "Btntype": "Radiobtn",
+      "questionText": "What kind of public transport did you take on your last trip?",
+      "answerOptions": [
+        {
+          "answerText": {
+            "key": "Hired Taxi",
+            "val": 0.13
+          }
+        },
+        {
+          "answerText": {
+            "key": "Bus",
+            "val": 0.022
+          }
+        },
+        {
+          "answerText": {
+            "key": "Shared Taxi",
+            "val": 0.04
+          }
+        },
+        {
+          "answerText": {
+            "key": "Metro",
+            "val": 0.12
+          }
+        },
+        {
+          "answerText": {
+            "key": "None Of These",
+            "val": 0
+          }
+        }
+      ]
+    },
+    {
+      "Btntype": "Radiobtn",
+      "questionText": "What kind of car did you travel in?",
+      "answerOptions": [
+        {
+          "answerText": {
+            "key": "Petrol",
+            "val": 0.13
+          }
+        },
+        {
+          "answerText": {
+            "key": "Diesel",
+            "val": 0.15
+          }
+        },
+        {
+          "answerText": {
+            "key": "Hybrid",
+            "val": 0.11
+          }
+        },
+        {
+          "answerText": {
+            "key": "CNG",
+            "val": 0.11
+          }
+        },
+        {
+          "answerText": {
+            "key": "None Of These",
+            "val": 0
+          }
+        }
+      ]
+    },
+    {
+      "Btntype": "Radiobtn",
+      "questionText": "  What kind of car or vehicle was it?",
+      "answerOptions": [
+        {
+          "answerText": {
+            "key": "4*4",
+            "val": 0.19,
+            "dependsOn": "days"
+          }
+        },
+        {
+          "answerText": {
+            "key": "Sudan",
+            "val": 0.09,
+            "dependsOn": "days"
+          }
+        },
+        {
+          "answerText": {
+            "key": "SUV",
+            "val": 0.045,
+            "dependsOn": "days"
+          }
+        },
+        {
+          "answerText": {
+            "key": "Traveler",
+            "val": 0.002,
+            "dependsOn": "days"
+          }
+        },
+        {
+          "answerText": {
+            "key": "None of these",
+            "val": 0.0,
+            "dependsOn": "days"
+          }
+        }
+      ]
+    },
+    {
+      "Btntype": "Slider",
+      "questionText": "   How many KMs did you travel on public transport",
+      "answerText": {
+        "key": "BusSlider",
+        "val": 0
+      }
+    },
+    {
+      "Btntype": "Radiobtn",
+      "questionText": "What kind of food do you prefer on your trips?",
+      "answerOptions": [
+        {
+          "answerText": {
+            "key": "Vegetarian",
+            "val": 17,
+            "dependsOn": "days"
+          }
+        },
+        {
+          "answerText": {
+            "key": "Non - Veg",
+            "val": 52,
+            "dependsOn": "days"
+          }
+        }
+      ]
+    },
+    {
+      "Btntype": "Radiobtn",
+      "questionText": "What kind of accommodation did you have on your trip?",
+      "answerOptions": [
+        {
+          "answerText": {
+            "key": "5 Star",
+            "val": 0.19,
+            "dependsOn": "days"
+          }
+        },
+        {
+          "answerText": {
+            "key": "4 Star",
+            "val": 0.09,
+            "dependsOn": "days"
+          }
+        },
+        {
+          "answerText": {
+            "key": "3 Star",
+            "val": 0.045,
+            "dependsOn": "days"
+          }
+        },
+        {
+          "answerText": {
+            "key": "2 Star",
+            "val": 0.002,
+            "dependsOn": "days"
+          }
+        },
+        {
+          "answerText": {
+            "key": "Camping",
+            "val": 0.001,
+            "dependsOn": "days"
+          }
+        }
+      ]
+    }
+  ],
+  "Bike": [
+    {
+      "Btntype": "Input",
+      "questionText": "How many days was the trip for ?"
+    },
+    {
+      "questionText": "How Many people did you travel with?",
+      "Btntype": "Radiobtn",
+      "answerOptions": [
+        {
+          "answerText": {
+            "key": "One",
+            "val": 0.05
+          }
+        },
+        {
+          "answerText": {
+            "key": "Two",
+            "val": 0.025
+          }
+        },
+        {
+          "answerText": {
+            "key": "Three",
+            "val": 0.05
+          }
+        },
+        {
+          "answerText": {
+            "key": "Four or more",
+            "val": 0.05
+          }
+        }
+      ]
+    },
+    {
+      "Btntype": "Radiobtn",
+      "questionText": "What kind of public transport did you take on your last trip?",
+      "answerOptions": [
+        {
+          "answerText": {
+            "key": "Hired Taxi",
+            "val": 0.13
+          }
+        },
+        {
+          "answerText": {
+            "key": "Bus",
+            "val": 0.022
+          }
+        },
+        {
+          "answerText": {
+            "key": "Shared Taxi",
+            "val": 0.04
+          }
+        },
+        {
+          "answerText": {
+            "key": "Metro",
+            "val": 0.12
+          }
+        },
+        {
+          "answerText": {
+            "key": "None Of These",
+            "val": 0
+          }
+        }
+      ]
+    },
+    {
+      "Btntype": "Radiobtn",
+      "questionText": "What kind of car did you travel in?",
+      "answerOptions": [
+        {
+          "answerText": {
+            "key": "Petrol",
+            "val": 0.13
+          }
+        },
+        {
+          "answerText": {
+            "key": "Diesel",
+            "val": 0.15
+          }
+        },
+        {
+          "answerText": {
+            "key": "Hybrid",
+            "val": 0.11
+          }
+        },
+        {
+          "answerText": {
+            "key": "CNG",
+            "val": 0.11
+          }
+        },
+        {
+          "answerText": {
+            "key": "None Of These",
+            "val": 0
+          }
+        }
+      ]
+    },
+    {
+      "Btntype": "Radiobtn",
+      "questionText": "  What kind of car or vehicle was it?",
+      "answerOptions": [
+        {
+          "answerText": {
+            "key": "4*4",
+            "val": 0.19,
+            "dependsOn": "days"
+          }
+        },
+        {
+          "answerText": {
+            "key": "Sudan",
+            "val": 0.09,
+            "dependsOn": "days"
+          }
+        },
+        {
+          "answerText": {
+            "key": "SUV",
+            "val": 0.045,
+            "dependsOn": "days"
+          }
+        },
+        {
+          "answerText": {
+            "key": "Traveler",
+            "val": 0.002,
+            "dependsOn": "days"
+          }
+        },
+        {
+          "answerText": {
+            "key": "None of these",
+            "val": 0.0,
+            "dependsOn": "days"
+          }
+        }
+      ]
+    },
+    {
+      "Btntype": "Slider",
+      "questionText": "   How many KMs did you travel on public transport",
+      "answerText": {
+        "key": "BusSlider",
+        "val": 0
+      }
+    },
+    {
+      "Btntype": "Radiobtn",
+      "questionText": "What kind of food do you prefer on your trips?",
+      "answerOptions": [
+        {
+          "answerText": {
+            "key": "Vegetarian",
+            "val": 17,
+            "dependsOn": "days"
+          }
+        },
+        {
+          "answerText": {
+            "key": "Non - Veg",
+            "val": 52,
+            "dependsOn": "days"
+          }
+        }
+      ]
+    },
+    {
+      "Btntype": "Radiobtn",
+      "questionText": "What kind of accommodation did you have on your trip?",
+      "answerOptions": [
+        {
+          "answerText": {
+            "key": "5 Star",
+            "val": 0.19,
+            "dependsOn": "days"
+          }
+        },
+        {
+          "answerText": {
+            "key": "4 Star",
+            "val": 0.09,
+            "dependsOn": "days"
+          }
+        },
+        {
+          "answerText": {
+            "key": "3 Star",
+            "val": 0.045,
+            "dependsOn": "days"
+          }
+        },
+        {
+          "answerText": {
+            "key": "2 Star",
+            "val": 0.002,
+            "dependsOn": "days"
+          }
+        },
+        {
+          "answerText": {
+            "key": "Camping",
+            "val": 0.001,
+            "dependsOn": "days"
+          }
+        }
+      ]
+    }
+  ]
+}
