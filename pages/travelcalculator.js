@@ -6,6 +6,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import MainlifeCalculator from "../components/travelcalculator/mainlifecalculator";
 import {travelQuestion} from "../components/travelcalculator/travelCalcQues";
+import Footer from '../components/common/Footer';
 
 
 const TravelCalculator=()=>{
@@ -34,9 +35,8 @@ return (
     upnext={upnext}
     calculationdata={calculationdata}
     setCalculationdata={setCalculationdata}
-
-
     />
+    <Footer/>
 
 	</>)
 

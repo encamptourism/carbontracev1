@@ -1,19 +1,17 @@
-import Image from "next/image"
 const Footer=()=>{
 return(
         <>   
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
+     <div className="question__footer__area">
+        <div className="container">
+            <div className="row">
+                <div className="col-lg-12">
+                    <div className="question__footer__content">
+                        <span>LIFESTYLE CALCULATOR POWERED BY ENCAMP ADVENTURES</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
         </>
 	)
 
