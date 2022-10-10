@@ -24,7 +24,7 @@ return (
                   <div className="question__range__blk">
                       <div className="slider-wrapper">
                           <div id="employees">  
-                          <span style={{position:'absolute',marginTop:'8%'}}>{min} Km</span><span style={{position:'absolute',right:0,marginTop:'8%'}}>{max} Km</span><RangeSlider name={name} value={0} min={min} max={max} steps={1} tooltipPlacement='top' tooltip='on' onChange = {(e)=>onchangeHandler(e)} value={calculationdata[name]} variant ='success' value={calculationdata[name]}/>
+                          <span style={{position:'absolute',marginTop:'8%'}}>{min} Km</span><span style={{position:'absolute',right:0,marginTop:'8%'}}>{max} Km</span><RangeSlider name={name} min={min} max={max} steps={1} tooltipPlacement='top' tooltip='on' onChange = {(e)=>onchangeHandler(e)}  variant ='success' value={calculationdata[name]}/>
                           </div>
                       </div>
                   </div>

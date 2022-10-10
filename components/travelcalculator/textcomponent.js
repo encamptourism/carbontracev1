@@ -15,7 +15,7 @@ return (
 	   {typess === 'text' ? 
 
               <div className="question__input">
-                <input type="text" name={name} placeholder="Enter number of days" onChange = {(e)=>onchangeHandler(e)} value={calculationdata[name]} onChange = {(e)=>onchangeHandler(e)} value={calculationdata[name]}/>
+                <input type="text" name={name} placeholder="Enter number of days" onChange = {(e)=>onchangeHandler(e)} value={calculationdata[name]} />
               
             </div>:""}
 
