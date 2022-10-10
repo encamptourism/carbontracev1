@@ -2,6 +2,8 @@ import {useState,useEffect} from 'react';
 import SelectComponent from "./selectcomponent";
 import TextComponent from "./textcomponent";
 import SliderComponent from "./slidercomponent";
+import SelectandTextComponent from "./selectandtextcomponent";
+import SelectOptionComponent from "./selectandoptioncomponent";
 
 const MainlifeCalculator=(props)=>{
 
@@ -28,28 +30,9 @@ setUpnext(upnext - 1);
 }
 const calculate=()=>{
 console.log(calculationdata);
-let totalcarbonfootprint = 0;
-let noofkmtravel = calculationdata.noofkmtravel; //multiplier
-let nooftraveller = calculationdata.nooftraveller;//multiplier
-
-let cftravelmode = lifestyleQuestion.filter((obj)=>obj.name === 'travelmode')[0].cf[calculationdata.travelmode];
-let cfkindoftravel = lifestyleQuestion.filter((obj)=>obj.name === 'kindoftravel')[0].cf[calculationdata.kindoftravel];
-let cfkindofvehicle = lifestyleQuestion.filter((obj)=>obj.name === 'kindofvehicle')[0].cf[calculationdata.kindofvehicle]; 
-let cfkindoftransport = lifestyleQuestion.filter((obj)=>obj.name === 'kindoftransport')[0].cf[calculationdata.kindoftransport]; 
-
-
-
-let cfkindoffood = lifestyleQuestion.filter((obj)=>obj.name === 'kindoffood')[0].cf[calculationdata.kindoffood]; 
-let cfkindofaccomodation = lifestyleQuestion.filter((obj)=>obj.name === 'kindofaccomodation')[0].cf[calculationdata.kindofaccomodation];
-
-
-
-
-
-console.log(cfkindoffood);
 
 }
-console.log(calculationdata);
+
 
 const translatenumber=(sdd)=>{
 if(sdd === '1' || sdd === 1){
@@ -90,7 +73,8 @@ return (
                                          <SelectComponent lifestylesingleQuestion={lifestyleQuestion[upnext]} setCalculationdata={setCalculationdata} calculationdata={calculationdata} isnext={isnext} setIsnext={setIsnext}/>
                                          <TextComponent lifestylesingleQuestion={lifestyleQuestion[upnext]} setCalculationdata={setCalculationdata} calculationdata={calculationdata} isnext={isnext} setIsnext={setIsnext}/>
                                          <SliderComponent lifestylesingleQuestion={lifestyleQuestion[upnext]} setCalculationdata={setCalculationdata} calculationdata={calculationdata} isnext={isnext} setIsnext={setIsnext}/>
-                                         
+                                         <SelectandTextComponent lifestylesingleQuestion={lifestyleQuestion[upnext]} setCalculationdata={setCalculationdata} calculationdata={calculationdata} isnext={isnext} setIsnext={setIsnext}/>
+                                         <SelectOptionComponent lifestylesingleQuestion={lifestyleQuestion[upnext]} setCalculationdata={setCalculationdata} calculationdata={calculationdata} isnext={isnext} setIsnext={setIsnext}/>
                                          
                                         </div>
                                        

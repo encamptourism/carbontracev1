@@ -12,7 +12,7 @@ const LifestyleCalculator=()=>{
 
 const [typecalculator,setTypecalculator] = useState('');
 const [upnext,setUpnext] = useState(0);
-const [calculationdata,setCalculationdata] = useState({howmuchelectricity:'',howmanypeopleinhouse:'',howmuchmeateatperday:'',kindoftravelmode:'',noofkmtravel:'',howmanyflightayear:'',howmanykmtrainayear:"",renewableenergy:""});
+const [calculationdata,setCalculationdata] = useState({howmuchelectricity:'',howmanypeopleinhouse:'',howmuchmeateatperday:'',kindoftravelmode:'',noofkmtravel:0,howmanyflightayear:'',howmanykmtrainayear:"",renewableenergy:"",travelby:"Kilometers"});
 
 useEffect(() => {
     AOS.init({

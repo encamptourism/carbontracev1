@@ -1,7 +1,7 @@
 export const lifestyleQuestion=[
                               {
                               name:"howmuchelectricity",
-	                            typess:"select",
+	                            typess:"selectandtext",
 	                            question:"How much electricity does your household consume (enter annual amount in kWh based on your bills)?",
 	                            option:[{label:'100 KWh',value:'100'},{label:'200 KWh',value:'200'},{label:'300 KWh',value:'300'},{label:'400 KWh',value:'400'}],
 	                            image:"assets/img/questions/question_1.jpg",

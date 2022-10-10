@@ -711,6 +711,10 @@
 /* SM Small Device :320px. */
 @media only screen and (min-width: 320px) and (max-width: 767px) {
 
+.question__btn__blk button {
+
+margin-top: 10px;
+}
     .mobile__menu {
         align-items: center;
         justify-content: end;
