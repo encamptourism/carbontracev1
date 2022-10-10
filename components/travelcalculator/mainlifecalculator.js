@@ -49,7 +49,7 @@ let cfkindofaccomodation = travelQuestion.filter((obj)=>obj.name === 'kindofacco
 console.log(cfkindoffood);
 
 }
-console.log(calculationdata);
+
 
 const translatenumber=(sdd)=>{
 if(sdd === '1' || sdd === 1){
