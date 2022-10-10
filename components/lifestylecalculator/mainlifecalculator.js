@@ -87,9 +87,9 @@ return (
                                         data-aos-delay="50" data-aos-duration="1000">
                                         <div className="row question__radio">
                                         
-                                         <SelectComponent travelsingleQuestion={lifestyleQuestion[upnext]} setCalculationdata={setCalculationdata} calculationdata={calculationdata} isnext={isnext} setIsnext={setIsnext}/>
-                                         <TextComponent travelsingleQuestion={lifestyleQuestion[upnext]} setCalculationdata={setCalculationdata} calculationdata={calculationdata} isnext={isnext} setIsnext={setIsnext}/>
-                                         <SliderComponent travelsingleQuestion={lifestyleQuestion[upnext]} setCalculationdata={setCalculationdata} calculationdata={calculationdata} isnext={isnext} setIsnext={setIsnext}/>
+                                         <SelectComponent lifestylesingleQuestion={lifestyleQuestion[upnext]} setCalculationdata={setCalculationdata} calculationdata={calculationdata} isnext={isnext} setIsnext={setIsnext}/>
+                                         <TextComponent lifestylesingleQuestion={lifestyleQuestion[upnext]} setCalculationdata={setCalculationdata} calculationdata={calculationdata} isnext={isnext} setIsnext={setIsnext}/>
+                                         <SliderComponent lifestylesingleQuestion={lifestyleQuestion[upnext]} setCalculationdata={setCalculationdata} calculationdata={calculationdata} isnext={isnext} setIsnext={setIsnext}/>
                                          
                                          
                                         </div>

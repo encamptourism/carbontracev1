@@ -1,5 +1,5 @@
 const TextComponent=(props)=>{
-const {typess,name,option} = props.travelsingleQuestion;
+const {typess,name,option} = props.lifestylesingleQuestion;
 const {calculationdata , setCalculationdata,isnext,setIsnext} = props;
 
 const onchangeHandler=(e)=>{

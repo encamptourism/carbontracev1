@@ -2,7 +2,7 @@ import 'react-bootstrap-range-slider/dist/react-bootstrap-range-slider.css';
 import RangeSlider from 'react-bootstrap-range-slider';
 
 const SliderComponent=(props)=>{
-const {typess,name, min,max} = props.travelsingleQuestion;
+const {typess,name, min,max} = props.lifestylesingleQuestion;
 const {calculationdata , setCalculationdata,isnext,setIsnext} = props;
 
 
