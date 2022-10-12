@@ -1,6 +1,6 @@
 import {useState,useEffect} from 'react';
-import SelectMultiplechild from "./SelectMultiplechild";
-import SelectMultiplechildone from "./SelectMultiplechildone";
+import SelectMultiplechild from "./selectmultiplechild";
+import SelectMultiplechildone from "./selectmultiplechildone";
 
 const SelectMultipleComponent=(props)=>{
 const {typess,name,option,layout,dependent,subdependent} = props.travelsingleQuestion;
@@ -12,7 +12,7 @@ const {travelall} = {...calculationdata};
 const getData=(sc)=>{
 let repla ={};
 if(calculationdata[name] !== [name]){
-repla = {typeofbike:'',noofkmtravelby:0,kindoftravel:'',typeofflyingroute:""}
+repla = {typeofbike:'',noofkmtravelby:0,kindoftravel:'',typeofflyingroute:"",kindofvehicle:"",}
 
 }
   setCalculationdata({...calculationdata,[name]:sc,...repla});

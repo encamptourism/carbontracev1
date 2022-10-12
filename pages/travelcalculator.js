@@ -13,7 +13,7 @@ const TravelCalculator=()=>{
 
 const [typecalculator,setTypecalculator] = useState('');
 const [upnext,setUpnext] = useState(0);
-const [calculationdata,setCalculationdata] = useState({travelmode:'bike',travelall:{},noofdays:'',nooftraveller:0,kindoftransport:'',kindoftravel:'',kindofvehicle:'',nooftraveller:0,noofkmtravel:0,kindoffood:"",kindofaccomodation:"",noofkmtravelby:0,typeofbike:''});
+const [calculationdata,setCalculationdata] = useState({travelmode:'bike',noofdays:'',nooftraveller:0,kindoftransport:'',kindoftravel:'',kindofvehicle:'',nooftraveller:0,noofkmtravel:0,kindoffood:"",kindofaccomodation:"",noofkmtravelby:0,typeofbike:''});
 
 useEffect(() => {
     AOS.init({

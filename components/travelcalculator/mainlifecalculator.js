@@ -31,26 +31,15 @@ setUpnext(upnext - 1);
 
 }
 const calculate=()=>{
-console.log(calculationdata);
-/*let totalcarbonfootprint = 0;
-let noofkmtravel = calculationdata.noofkmtravel; //multiplier
-let nooftraveller = calculationdata.nooftraveller;//multiplier
+let keydd = [];
+Object.values(calculationdata).map((d , k)=>{
+if(d !== 0 || d !== ""){
+keydd = [...keydd , Object.keys(calculationdata)[k]]
+}
 
-let cftravelmode = parentQuestion.filter((obj)=>obj.name === 'travelmode')[0].cf[calculationdata.travelmode];
-let cfkindoftravel = parentQuestion.filter((obj)=>obj.name === 'kindoftravel')[0].cf[calculationdata.kindoftravel];
-let cfkindofvehicle = parentQuestion.filter((obj)=>obj.name === 'kindofvehicle')[0].cf[calculationdata.kindofvehicle]; 
-let cfkindoftransport = parentQuestion.filter((obj)=>obj.name === 'kindoftransport')[0].cf[calculationdata.kindoftransport]; 
+})
 
-
-
-let cfkindoffood = parentQuestion.filter((obj)=>obj.name === 'kindoffood')[0].cf[calculationdata.kindoffood]; 
-let cfkindofaccomodation = parentQuestion.filter((obj)=>obj.name === 'kindofaccomodation')[0].cf[calculationdata.kindofaccomodation];
-
-
-
-
-
-console.log(cfkindoffood);*/
+console.log(keydd);
 
 }
 
