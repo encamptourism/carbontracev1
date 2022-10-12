@@ -6,16 +6,17 @@ export const lifestyleQuestion=[
 	                            option:[{label:'100 KWh',value:'100'},{label:'200 KWh',value:'200'},{label:'300 KWh',value:'300'},{label:'400 KWh',value:'400'}],
 	                            image:"assets/img/questions/question_1.jpg",
 	                            default:true,
-	                            layout:'col-sm-12 col-md-12'
+	                            layout:'col-sm-12 col-md-12',
+	                            multiplyingfact:0.12,
 	                          },
 	                          {
 	                            name:"howmanypeopleinhouse",
 	                            typess:"select",
 	                            question:"How many people are there in your household aged 16+?",
-	                            option:[{label:'One',value:'1'},{label:'Two',value:'2'},{label:'Three',value:'3'},{label:'Four and More',value:'4'}],
+	                            option:[{label:'One',value:'one'},{label:'Two',value:'two'},{label:'Three',value:'three'},{label:'Four and More',value:'four'}],
 	                            image:"assets/img/questions/question_2.jpg",
 	                            default:false,
-	                            multiplyingfact:52,
+	                            cf:{one:17,two:17,three:52,four:52},
 	                            layout:'col-sm-12 col-md-12'
 	                          },
 	                          {
@@ -25,7 +26,7 @@ export const lifestyleQuestion=[
 	                            option:[{label:'High Meat Eater (> 100g of meat)',value:'g100'},{label:'Medium Meat Eater (= 50 to 100g of meat)',value:'to50to100'},{label:'Low Meat Eater (< 50g of meat)',value:'l50'}],
 	                            image:"assets/img/questions/question_3.jpg",
 	                            default:false,
-	                            cf:{g100:0.05,to50to100:0.025,l50:0.05},
+	                            cf:{g100:17,to50to100:17,l50:52},
 	                            layout:'col-sm-12 col-md-12'
 	                          },
 	                          {
@@ -35,7 +36,7 @@ export const lifestyleQuestion=[
 	                            option:[{label:'An SUV',value:'SUV'},{label:'Petrol Car',value:'patrol_car'},{label:'Diesel Car',value:'diesel_car'},{label:'Hybrid Car',value:'hybrid_car'},{label:'Bus',value:'bus'},{label:'Train',value:'train'}],
 	                            image:"assets/img/questions/question_4.jpg",
 	                            default:false,
-	                            cf:{patrol_car:17,diesel_car:52,hybrid_car:52,bus:0.022,train:0.012},
+	                            cf:{patrol_car:0.13,diesel_car:0.15,hybrid_car:0.12,bus:0.2,train:0.012},
 	                            layout:'col-sm-12 col-md-6'
 
 	                          },

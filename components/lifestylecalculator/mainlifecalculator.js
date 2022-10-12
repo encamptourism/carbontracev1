@@ -29,8 +29,102 @@ setUpnext(upnext - 1);
 
 }
 const calculate=()=>{
-console.log(calculationdata);
+//let calculation begin
+//exracting multiplying fact and cf values
+let muliplier = "";
+let cfvalue = "";
+let calcd = Object.values(calculationdata);
+Object.keys(calculationdata).map((calc,key)=>{
+lifestyleQuestion.map((question)=>{
+if(question.name === calc){
+  if(question.hasOwnProperty('multiplyingfact')){
+    let vc = parseFloat(question.multiplyingfact) * parseFloat(calcd[key])
+    muliplier = {...muliplier,[calc]:vc}
 
+  }
+  if(question.hasOwnProperty('cf')){
+    let cc = 0;
+if(calc === 'howmanyflightayear'){
+     cc = parseFloat(question.cf[calculationdata.travelby][calcd[key]]);
+}else{
+    cc = parseFloat(question.cf[calcd[key]]);
+}
+
+    if(!isNaN(cc)){
+        cfvalue = {...cfvalue,[calc]:cc} 
+    }
+   
+
+  }
+
+
+
+}
+})
+})
+
+//adding and get result
+let total = 0;
+Object.values(muliplier).map((as)=>{
+total += +as
+})
+let trainval = 0;
+if(calculationdata.howmanykmtrainayear === 'km500'){
+ trainval = 500;   
+}
+if(calculationdata.howmanykmtrainayear === 'km1000'){
+ trainval = 1000;   
+}
+if(calculationdata.howmanykmtrainayear === 'km2000'){
+ trainval = 2000;   
+}
+if(calculationdata.howmanykmtrainayear === 'km3000'){
+ trainval = 3000;   
+}
+
+let traintotal = trainval * parseFloat(cfvalue.howmanykmtrainayear);
+
+//localtransport
+let localtransport = parseFloat(calculationdata.noofkmtravel) * cfvalue.kindoftravelmode;
+//flight 
+let flightval = 0;
+if(calculationdata.howmanyflightayear === 'less200'){
+ flightval = 200;   
+}
+if(calculationdata.howmanyflightayear === 'less100'){
+ flightval = 100;   
+}
+if(calculationdata.howmanyflightayear === 'less400'){
+ flightval = 400;   
+}
+if(calculationdata.howmanyflightayear === 'greater400'){
+ flightval = 500;   
+}
+if(calculationdata.howmanyflightayear === 'less3000'){
+ flightval = 3000;   
+}
+if(calculationdata.howmanyflightayear === 'less6000'){
+ flightval = 6000;   
+}
+if(calculationdata.howmanyflightayear === 'less12000'){
+ flightval = 12000;   
+}
+if(calculationdata.howmanyflightayear === 'greater12000'){
+ flightval = 14000;   
+}
+
+let flighttotal = parseFloat(cfvalue.howmanyflightayear) * flightval; 
+
+total = total + parseFloat(cfvalue.renewableenergy) + parseFloat(cfvalue.howmuchmeateatperday) + parseFloat(cfvalue.howmanypeopleinhouse) + traintotal + localtransport + flighttotal;
+
+let calculate = {flighttotal:flighttotal,traintotal:traintotal,reneableenergy:parseFloat(cfvalue.renewableenergy),meatperday:parseFloat(cfvalue.howmuchmeateatperday),localtransport:localtransport,noofpeople:parseFloat(cfvalue.howmanypeopleinhouse)}
+
+let addcc = {...calculationdata};
+addcc = {...addcc,calculation:{...calculate},breakup:{multiplier:{...muliplier},cfvalue:{...cfvalue}}};
+
+setCalculationdata(addcc);
+alert(total);
+console.log(addcc);
 }
 
 

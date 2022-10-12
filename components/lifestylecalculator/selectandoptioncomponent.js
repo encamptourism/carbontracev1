@@ -14,7 +14,14 @@ if(e.target.value !=="" || e.target.value  !== 0){
 
 }
 const getData=(sc)=>{
-setCalculationdata({...calculationdata,travelby:sc});
+let calculus = {...calculationdata};
+
+if(sc === "Kilometers"){
+calculus = {...calculus,howmanyflightayear:""}
+}else if(sc === "Hours"){
+ calculus = {...calculus,howmanykmtrainayear:""}   
+}
+setCalculationdata({...calculus,travelby:sc});
 
 }
 
