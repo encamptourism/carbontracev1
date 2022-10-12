@@ -3,7 +3,7 @@ import SelectMultiplechild from "./SelectMultiplechild";
 import SelectMultiplechildone from "./SelectMultiplechildone";
 
 const SelectMultipleComponent=(props)=>{
-const {typess,name,option,layout,dependent} = props.travelsingleQuestion;
+const {typess,name,option,layout,dependent,subdependent} = props.travelsingleQuestion;
 const {calculationdata , setCalculationdata,isnext,setIsnext,travelQuestion} = props;
 const [dependencyArr,setDependencyArr] = useState([]);
 const {travelall} = {...calculationdata};
@@ -26,17 +26,37 @@ useEffect(()=>{
 let ddata = (typeof dependent === 'object') ? dependent[calculationdata[name]] : [];
 
 let dmkdata = [];
+let subdependency = [];
 
 (ddata.length > 0) && ddata.map((sd)=>{
 
 let asd = travelQuestion.filter((dsf)=>dsf.name === sd);
+let asdsdd =[];
 
-dmkdata = [...dmkdata,...asd];
+if(asd.length > 0){
+let sddata = asd[0].subdependent;
+if(sddata !== ""){
+if(sddata[calculationdata[sd]] && sddata[calculationdata[sd]].length > 0 ){
+sddata[calculationdata[sd]].map((bn)=>{
+asdsdd = travelQuestion.filter((dsf)=>dsf.name === bn);
+})
 
+
+}
+
+}
+
+}
+if(asdsdd.length > 0){
+ dmkdata = [...dmkdata,...asd,...asdsdd];   
+}else{
+
+dmkdata = [...dmkdata,...asd];   
+}
 
 })
+
 setDependencyArr(dmkdata);
-console.log(calculationdata);
 },[calculationdata])
 
 return (
