@@ -8,7 +8,8 @@ export const travelQuestion=[
 	                            default:true,
 	                            layout:'col-sm-12 col-md-12',
 	                            dependent:{car:["kindoftravel","noofkmtravelby"],bus:["noofkmtravelby"],train:["noofkmtravelby"],flight:["typeofflyingroute","noofkmtravelby"],bike:["typeofbike","noofkmtravelby"]},
-	                            subdependent:""
+	                            subdependent:"",
+	                            cf:{bus:0.022,train:0.12}
 
 	                          },
 	                          {

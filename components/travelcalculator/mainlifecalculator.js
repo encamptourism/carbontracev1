@@ -9,7 +9,7 @@ const MainlifeCalculator=(props)=>{
 const {travelQuestion,typecalculator,setUpnext,upnext,calculationdata,setCalculationdata} = props;
 const [isnext,setIsnext] = useState(true);
 const [parentQuestion,setParentQuestion] = useState(travelQuestion.filter((obj)=>obj.dependent !== 'child'));
-
+const [cf,setCf] = useState([]);
 
 const onclickhandler=()=>{
 
@@ -32,17 +32,65 @@ setUpnext(upnext - 1);
 }
 const calculate=()=>{
 let keydd = [];
+let valued =[];
 Object.values(calculationdata).map((d , k)=>{
-if(d !== 0 || d !== ""){
-keydd = [...keydd , Object.keys(calculationdata)[k]]
+if(d !== 0 && d !== ""){
+if(Object.keys(calculationdata)[k] !== "noofdays" && Object.keys(calculationdata)[k] !== "nooftraveller" && Object.keys(calculationdata)[k] !== "noofkmtravelby"){
+keydd = [...keydd , Object.keys(calculationdata)[k]];
+valued = [...valued , Object.values(calculationdata)[k]]
 }
+}
+})
+//getting carbonvalue
+let ccvalue = "";
+let pkvalue = "";
+(keydd.length > 0) && keydd.map((ee,uu)=>{
+
+travelQuestion.map((dosa)=>{
+if(dosa.name === ee){
+   if(dosa.hasOwnProperty('cf')){
+let po = [ee] + '-' + valued[uu];
+  ccvalue = {...ccvalue,[po] : dosa.cf[valued[uu]]}
+  pkvalue = {...pkvalue,[ee] : dosa.cf[valued[uu]] }
+   }
+
+}
+
 
 })
 
-console.log(keydd);
+});
 
+let totalfoodcf = parseFloat(pkvalue.kindoffood) * parseFloat(calculationdata.noofdays) * parseFloat(calculationdata.nooftraveller);
+let totalaccomodationcf = parseFloat(pkvalue.kindofaccomodation)  * parseFloat(calculationdata.noofdays) * parseFloat(calculationdata.nooftraveller);
+let localtransport = Math.ceil((parseFloat(pkvalue.kindoftransport) * parseFloat(calculationdata.noofdays) * parseFloat(calculationdata.noofkmtravel))/ parseFloat(calculationdata.nooftraveller));
+let travelbycf = 0;
+if(calculationdata.travelmode === 'car'){
+travelbycf = parseFloat(pkvalue.kindofvehicle ? pkvalue.kindofvehicle : pkvalue.kindoftravel);
+}
+if(calculationdata.travelmode === 'bike'){
+travelbycf = parseFloat(pkvalue.typeofbike);
+}
+if(calculationdata.travelmode === 'bus'){
+travelbycf = parseFloat(pkvalue.travelmode);
+}
+if(calculationdata.travelmode === 'train'){
+travelbycf = parseFloat(pkvalue.travelmode);
+}
+if(calculationdata.travelmode === 'flight'){
+travelbycf = parseFloat(pkvalue.typeofflyingroute);
 }
 
+let totaltravelcf = Math.ceil(parseFloat(calculationdata.noofkmtravelby) * travelbycf /parseFloat(calculationdata.nooftraveller));
+
+let grand = Math.ceil(totaltravelcf + totalfoodcf + totalaccomodationcf + localtransport);
+
+setCf(ccvalue);
+let sdce = {totalcalculation:{totalfood:totalfoodcf,totalaccomdation:totalaccomodationcf,localtransport:localtransport,totaltravel:totaltravelcf},grand:grand,breakup:{...ccvalue}}
+setCalculationdata({...calculationdata,calculation:{...sdce}})
+alert(grand);
+}
+console.log(calculationdata);
 
 const translatenumber=(sdd)=>{
 if(sdd === '1' || sdd === 1){
