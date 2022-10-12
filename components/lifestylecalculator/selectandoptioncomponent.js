@@ -5,6 +5,7 @@ const {calculationdata , setCalculationdata,isnext,setIsnext} = props;
 const [optiontoselect , setOptiontoselect] = useState([]);
 
 
+
 const onchangeHandler=(e , name)=>{
 setCalculationdata({...calculationdata,[name]:e.target.value});
 if(e.target.value !=="" || e.target.value  !== 0){

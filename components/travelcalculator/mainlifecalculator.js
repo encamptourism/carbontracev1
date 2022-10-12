@@ -2,16 +2,20 @@ import {useState,useEffect} from 'react';
 import SelectComponent from "./selectcomponent";
 import TextComponent from "./textcomponent";
 import SliderComponent from "./slidercomponent";
+import SelectMultipleComponent from "./selectmultiple";
 
 const MainlifeCalculator=(props)=>{
 
 const {travelQuestion,typecalculator,setUpnext,upnext,calculationdata,setCalculationdata} = props;
 const [isnext,setIsnext] = useState(true);
+const [parentQuestion,setParentQuestion] = useState(travelQuestion.filter((obj)=>obj.dependent !== 'child'));
+
+
 const onclickhandler=()=>{
 
-if(upnext < travelQuestion.length -1){
+if(upnext < parentQuestion.length -1){
 setUpnext(upnext + 1);
-if(calculationdata[travelQuestion[upnext].name] !== 0 || calculationdata[travelQuestion[upnext].name] !== ""){
+if(calculationdata[parentQuestion[upnext].name] !== 0 || calculationdata[parentQuestion[upnext].name] !== ""){
 setIsnext(false);    
 }else{
  setIsnext(true);    
@@ -28,25 +32,25 @@ setUpnext(upnext - 1);
 }
 const calculate=()=>{
 console.log(calculationdata);
-let totalcarbonfootprint = 0;
+/*let totalcarbonfootprint = 0;
 let noofkmtravel = calculationdata.noofkmtravel; //multiplier
 let nooftraveller = calculationdata.nooftraveller;//multiplier
 
-let cftravelmode = travelQuestion.filter((obj)=>obj.name === 'travelmode')[0].cf[calculationdata.travelmode];
-let cfkindoftravel = travelQuestion.filter((obj)=>obj.name === 'kindoftravel')[0].cf[calculationdata.kindoftravel];
-let cfkindofvehicle = travelQuestion.filter((obj)=>obj.name === 'kindofvehicle')[0].cf[calculationdata.kindofvehicle]; 
-let cfkindoftransport = travelQuestion.filter((obj)=>obj.name === 'kindoftransport')[0].cf[calculationdata.kindoftransport]; 
+let cftravelmode = parentQuestion.filter((obj)=>obj.name === 'travelmode')[0].cf[calculationdata.travelmode];
+let cfkindoftravel = parentQuestion.filter((obj)=>obj.name === 'kindoftravel')[0].cf[calculationdata.kindoftravel];
+let cfkindofvehicle = parentQuestion.filter((obj)=>obj.name === 'kindofvehicle')[0].cf[calculationdata.kindofvehicle]; 
+let cfkindoftransport = parentQuestion.filter((obj)=>obj.name === 'kindoftransport')[0].cf[calculationdata.kindoftransport]; 
 
 
 
-let cfkindoffood = travelQuestion.filter((obj)=>obj.name === 'kindoffood')[0].cf[calculationdata.kindoffood]; 
-let cfkindofaccomodation = travelQuestion.filter((obj)=>obj.name === 'kindofaccomodation')[0].cf[calculationdata.kindofaccomodation];
+let cfkindoffood = parentQuestion.filter((obj)=>obj.name === 'kindoffood')[0].cf[calculationdata.kindoffood]; 
+let cfkindofaccomodation = parentQuestion.filter((obj)=>obj.name === 'kindofaccomodation')[0].cf[calculationdata.kindofaccomodation];
 
 
 
 
 
-console.log(cfkindoffood);
+console.log(cfkindoffood);*/
 
 }
 
@@ -76,21 +80,21 @@ return (
                             <div className="question__main__blk">
                                 <div className="question__page__number" data-aos="fade-left" data-aos-delay="50"
                                     data-aos-duration="1000">
-                                    <span>{`${upnext} / ${travelQuestion.length -1}`}</span>
+                                    <span>{`${upnext} / ${parentQuestion.length -1}`}</span>
                                 </div>
                                 <div className="question__title" data-aos="fade-up" data-aos-delay="50"
                                     data-aos-duration="1000">
-                                    <h2>{travelQuestion[upnext].question || ""}</h2>
+                                    <h2>{parentQuestion[upnext].question || ""}</h2>
                                 </div>
                               
                                     <div className="question__form__blk question__flex" data-aos="fade-up"
                                         data-aos-delay="50" data-aos-duration="1000">
                                         <div className="row question__radio">
                                         
-                                         <SelectComponent travelsingleQuestion={travelQuestion[upnext]} setCalculationdata={setCalculationdata} calculationdata={calculationdata} isnext={isnext} setIsnext={setIsnext}/>
-                                         <TextComponent travelsingleQuestion={travelQuestion[upnext]} setCalculationdata={setCalculationdata} calculationdata={calculationdata} isnext={isnext} setIsnext={setIsnext}/>
-                                         <SliderComponent travelsingleQuestion={travelQuestion[upnext]} setCalculationdata={setCalculationdata} calculationdata={calculationdata} isnext={isnext} setIsnext={setIsnext}/>
-                                         
+                                         <SelectComponent travelsingleQuestion={parentQuestion[upnext]} setCalculationdata={setCalculationdata} calculationdata={calculationdata} isnext={isnext} setIsnext={setIsnext}/>
+                                         <TextComponent travelsingleQuestion={parentQuestion[upnext]} setCalculationdata={setCalculationdata} calculationdata={calculationdata} isnext={isnext} setIsnext={setIsnext}/>
+                                         <SliderComponent travelsingleQuestion={parentQuestion[upnext]} setCalculationdata={setCalculationdata} calculationdata={calculationdata} isnext={isnext} setIsnext={setIsnext}/>
+                                         <SelectMultipleComponent travelsingleQuestion={parentQuestion[upnext]} setCalculationdata={setCalculationdata} calculationdata={calculationdata} isnext={isnext} setIsnext={setIsnext} travelQuestion={travelQuestion}/>
                                          
                                         </div>
                                        
@@ -98,7 +102,7 @@ return (
                                   
                                      <div className={upnext <=0 ? "question__btn__blk":"question__btn__blk question__two"}>
                                         {(upnext <=0) ? "" : <button className= "back" onClick={()=>onclickbackhandler()}>Back</button>}
-                                       { (upnext === travelQuestion.length -1) ? <button onClick={()=>calculate()}>Calculate</button> : <button onClick={()=>onclickhandler()} disabled={isnext}>Next</button> }
+                                       { (upnext === parentQuestion.length -1) ? <button onClick={()=>calculate()}>Calculate</button> : <button onClick={()=>onclickhandler()} disabled={isnext}>Next</button> }
                                     </div>
                                
                             </div>
@@ -106,7 +110,8 @@ return (
                         <div className="col-lg-5 col-md-5 order-first order-md-last order-lg-last">
                             <div className="question__right__blk" data-aos="fade-right" data-aos-delay="50"
                                 data-aos-duration="1000">
-                                {travelQuestion[upnext].image ? <img src={travelQuestion[upnext].image} alt="tagg"/> : ""}
+                                {(typeof travelQuestion[upnext].image ==='string') ? <img src={parentQuestion[upnext].image} alt="tagg"/> : ""}
+                                {(typeof travelQuestion[upnext].image ==='object') ? <img src={parentQuestion[upnext].image[calculationdata.travelmode]} alt="tagg"/> : ""}
                             </div>
                         </div>
                     </div>
