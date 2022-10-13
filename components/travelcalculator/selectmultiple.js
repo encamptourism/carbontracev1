@@ -61,15 +61,16 @@ setDependencyArr(dmkdata);
 
 return (
         <>
-          {typess === 'selectmultiple'? 
-        <div>
+          {typess === 'selectmultiple'?
+        <div> 
+        <div className="trip__details__tab__btn">
             <div className="trip__details">
             <ul className="nav nav-tabs pl-2">
         {
         option.map((obj , key)=>{
            return (
                <li  key ={key} className="nav-item" role="presentation">
-                 <button className={calculationdata[name] === obj.value ? 'nav-link active' : 'nav-link'} id="home-tab"  type="button" role="tab" aria-controls="home" aria-selected="true" onClick={()=>getData(obj.value)}>{obj.label}</button>
+                 <button className={calculationdata[name] === obj.value ? 'nav-link active' : 'nav-link'} id="home-tab"  type="button" role="tab" aria-controls="home" aria-selected="true" onClick={()=>getData(obj.value)}><div className="trip__details__single">{obj.label}</div></button>
                </li>
                    )
                  })
@@ -77,6 +78,7 @@ return (
         } 
             </ul>
                                     
+         </div>
          </div>
             <div>
          {dependencyArr.length > 0 && dependencyArr.map((obj,key)=>{

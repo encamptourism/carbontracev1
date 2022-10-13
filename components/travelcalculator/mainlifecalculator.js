@@ -147,7 +147,7 @@ return (
                         <div className="col-lg-5 col-md-5 order-first order-md-last order-lg-last">
                             <div className="question__right__blk" data-aos="fade-right" data-aos-delay="50"
                                 data-aos-duration="1000">
-                                {(typeof travelQuestion[upnext].image ==='string') ? <img src={parentQuestion[upnext].image} alt="tagg"/> : ""}
+                                {(typeof parentQuestion[upnext].image ==='string') ? <img src={parentQuestion[upnext].image} alt="tagg"/> : ""}
                                 {(typeof travelQuestion[upnext].image ==='object') ? <img src={parentQuestion[upnext].image[calculationdata.travelmode]} alt="tagg"/> : ""}
                             </div>
                         </div>

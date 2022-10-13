@@ -62,7 +62,9 @@ a {
 .container-xxl {
     max-width: 1110px;
 }
-
+.trip__details__single{    color: #080808;
+    font-weight: 500;
+ }
 
 /*-------------------- Scroll Bar css start --------------------*/
 

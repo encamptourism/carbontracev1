@@ -13,7 +13,7 @@ export const travelQuestion=[
 
 	                          },
 	                          {
-                                name:"typeofbike",
+                              name:"typeofbike",
 	                            typess:"select",
 	                            question:"What type of Bike Ride it was?",
 	                            option:[{label:'Normal',value:'normal'},{label:'Single',value:'single'},{label:'Pillion',value:'pillion'}],
@@ -24,7 +24,7 @@ export const travelQuestion=[
 	                            subdependent:""
 	                          },
 	                           {
-                                name:"typeofflyingroute",
+                               name:"typeofflyingroute",
 	                            typess:"select",
 	                            question:"What type of Flight it was?",
 	                            option:[{label:'Direct Flight',value:'direct'},{label:'Connecting Flight',value:'connecting'},{label:'One Way connecting',value:'onewayconnecting'}],
