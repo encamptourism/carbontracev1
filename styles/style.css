@@ -40,7 +40,8 @@ h6 {
     color: #12022F;
     font-weight: 700;
     font-size: 48px;
-    letter-spacing: -2px;
+   /* letter-spacing: -2px;*/
+    letter-spacing: 0px;
 }
 
 p {
@@ -48,6 +49,7 @@ p {
     font-weight: 400;
     color: #594D6D;
     letter-spacing: -0.4px;
+    letter-spacing: 0px;
 }
 
 a {
@@ -390,6 +392,7 @@ html {
     font-weight: 700;
     line-height: 78px;
     letter-spacing: -3px;
+    letter-spacing: 0px;
     margin-bottom: 20px;
 }
 
@@ -1055,6 +1058,7 @@ html {
 .question__title h2 {
     font-size: 24px;
     letter-spacing: -1.6px;
+    letter-spacing: 0px;
     margin-bottom: 0;
 }
 
