@@ -55,10 +55,10 @@ export const lifestyleQuestion=[
 	                            name:"howmanyflightayear",
 	                            typess:"select-option",
 	                            question:"How many flights (round trip) do you take in a year around the range mentioned below?",
-	                            option:[{Kilometers:[{label:'Less than 3000 KMs',value:'less3000'},{label:'Less than 6000 KMs',value:'less6000'},{label:'Less than 12000 KMs',value:'less12000'},{label:'Greater than 12000 KMs',value:'greater12000'}]},{Hours:[{label:'Less than 100 Hours',value:'less100'},{label:'Less than 200 Hours',value:'less200'},{label:'Less than 400 Hours',value:'less400'},{label:'Greater than 400 Hours',value:'greater400'}]}],
+	                            option:[{Kilometers:[{label:'Less than 3000 KMs',value:'less3000'},{label:'Less than 6000 KMs',value:'less6000'},{label:'Less than 12000 KMs',value:'less12000'},{label:'Greater than 12000 KMs',value:'less13000'}]},{Hours:[{label:'Less than 100 Hours',value:'less100'},{label:'Less than 200 Hours',value:'less200'},{label:'Less than 400 Hours',value:'less400'},{label:'Greater than 400 Hours',value:'less500'}]}],
 	                            image:"assets/img/questions/question_6.jpg",
 	                            default:false,
-	                            cf:{Kilometers:{less3000:0.05,less6000:0.1,less12000:1,greater12000:2},Hours:{less100:0.05,less200:0.2,less400:0.03,greater400:0.1}},
+	                            cf:{Kilometers:{less3000:0.05,less6000:0.2,less12000:0.03,less13000:0.1},Hours:{less100:0.05,less200:0.2,less400:0.03,less500:0.1}},
 	                            layout:'col-sm-12 col-md-12'
 	                          },
 	                          {

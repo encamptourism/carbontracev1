@@ -29,8 +29,6 @@ setUpnext(upnext - 1);
 
 }
 const calculate=()=>{
-//let calculation begin
-//exracting multiplying fact and cf values
 let muliplier = "";
 let cfvalue = "";
 let calcd = Object.values(calculationdata);
@@ -57,74 +55,35 @@ if(calc === 'howmanyflightayear'){
 
   }
 
-
-
 }
 })
 })
 
-//adding and get result
-let total = 0;
-Object.values(muliplier).map((as)=>{
-total += +as
-})
-let trainval = 0;
-if(calculationdata.howmanykmtrainayear === 'km500'){
- trainval = 500;   
-}
-if(calculationdata.howmanykmtrainayear === 'km1000'){
- trainval = 1000;   
-}
-if(calculationdata.howmanykmtrainayear === 'km2000'){
- trainval = 2000;   
-}
-if(calculationdata.howmanykmtrainayear === 'km3000'){
- trainval = 3000;   
+if(calculationdata.howmanyflightayear){
+let flightkm = (calculationdata.howmanyflightayear).replace("less","");
+
+if(!isNaN(flightkm)){
+muliplier = {...muliplier,howmanyflightayear:flightkm * cfvalue.howmanyflightayear}
+
 }
 
-let traintotal = trainval * parseFloat(cfvalue.howmanykmtrainayear);
-
-//localtransport
-let localtransport = parseFloat(calculationdata.noofkmtravel) * cfvalue.kindoftravelmode;
-//flight 
-let flightval = 0;
-if(calculationdata.howmanyflightayear === 'less200'){
- flightval = 200;   
-}
-if(calculationdata.howmanyflightayear === 'less100'){
- flightval = 100;   
-}
-if(calculationdata.howmanyflightayear === 'less400'){
- flightval = 400;   
-}
-if(calculationdata.howmanyflightayear === 'greater400'){
- flightval = 500;   
-}
-if(calculationdata.howmanyflightayear === 'less3000'){
- flightval = 3000;   
-}
-if(calculationdata.howmanyflightayear === 'less6000'){
- flightval = 6000;   
-}
-if(calculationdata.howmanyflightayear === 'less12000'){
- flightval = 12000;   
-}
-if(calculationdata.howmanyflightayear === 'greater12000'){
- flightval = 14000;   
 }
 
-let flighttotal = parseFloat(cfvalue.howmanyflightayear) * flightval; 
+if(calculationdata.howmanykmtrainayear){
+let trainkm = (calculationdata.howmanykmtrainayear).replace("km","");
 
-total = total + parseFloat(cfvalue.renewableenergy) + parseFloat(cfvalue.howmuchmeateatperday) + parseFloat(cfvalue.howmanypeopleinhouse) + traintotal + localtransport + flighttotal;
+if(!isNaN(trainkm)){
+muliplier = {...muliplier,howmanykmtrainayear:trainkm * cfvalue.howmanykmtrainayear}
 
-let calculate = {flighttotal:flighttotal,traintotal:traintotal,reneableenergy:parseFloat(cfvalue.renewableenergy),meatperday:parseFloat(cfvalue.howmuchmeateatperday),localtransport:localtransport,noofpeople:parseFloat(cfvalue.howmanypeopleinhouse)}
+}
 
-let addcc = {...calculationdata};
-addcc = {...addcc,calculation:{...calculate},breakup:{multiplier:{...muliplier},cfvalue:{...cfvalue}}};
-
-setCalculationdata(addcc);
+}
+muliplier={...muliplier,howmanypeopleinhouse:cfvalue.howmanypeopleinhouse,howmuchmeateatperday:cfvalue.howmuchmeateatperday,renewableenergy:cfvalue.renewableenergy}
+//get total
+let total = Object.values(muliplier).reduce((add ,a)=>add + a,0);
+console.log(muliplier,cfvalue);
 alert(total);
-console.log(addcc);
+
 }
 
 

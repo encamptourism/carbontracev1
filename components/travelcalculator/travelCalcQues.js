@@ -1,6 +1,6 @@
 export const travelQuestion=[
                               {
-                                name:"travelmode",
+                              name:"travelmode",
 	                            typess:"selectmultiple",
 	                            question:"What was the travel mode you took during the trip?",
 	                            option:[{label:'Bike',value:'bike'},{label:'Car',value:'car'},{label:'Bus',value:'bus'},{label:'Train',value:'train'},{label:'Flight',value:'flight'}],
@@ -35,7 +35,7 @@ export const travelQuestion=[
 	                            subdependent:""
 	                          },
 	                            {
-                                name:"noofkmtravelby",
+                              name:"noofkmtravelby",
 	                            typess:"slider",
 	                            min:0,
 	                            max:2500,
