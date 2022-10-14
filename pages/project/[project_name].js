@@ -1,10 +1,18 @@
+import HtmlHead from '../../components/common/HtmlHead';
+import Header from '../../components/common/Header';
+import MainFooter from '../../components/common/MainFooter';
 import {ProjectData} from '../../components/project/projectdata';
+import OtherProject from '../../components/project/otherproject';
+import Subscription from '../../components/project/subscription';
+import { useRouter } from "next/router";
 import Link from "next/link";
 
 const Project_name=({project})=>{
-
+const router = useRouter();
 return (
 	    <>
+	    <HtmlHead/>
+	    <Header/>
 	  <div>
 {
 	(project && project.length > 0 ) ? project.map((obj,key)=>{
@@ -18,7 +26,7 @@ return (
                         <div className="project3__topbar__content" data-aos="zoom-in" data-aos-delay="50"
                             data-aos-duration="1000">
                             <div className="project3__back__btn">
-                                <Link href="#"><a><i className="far fa-arrow-left"></i>Back</a></Link>
+                              <div style={{cursor:'pointer'}}  onClick={() => router.back()}><a>&larr;Back</a></div>
                             </div>
                             <div className="project3__topbar__title">
                                 <h2>{obj.project_heading || ""}</h2>
@@ -34,7 +42,7 @@ return (
                     <div className="col-lg-6">
                         <div className="project3__left__img" data-aos="zoom-in" data-aos-delay="50"
                             data-aos-duration="1000">
-                            <img src="../assets/img/project/p2.jpg" alt=""/>
+                            <img src={obj.image.other[0] || ""} alt=""/>
                             </div>
                            <div className="project3__left__btn" data-aos="fade-up" data-aos-delay="50"
                             data-aos-duration="1000">
@@ -46,25 +54,48 @@ return (
                      <div className="col-lg-6">
                         <div className="project3__right__blk" data-aos="fade-up" data-aos-delay="50"
                             data-aos-duration="1000">
+                        {
+                        	obj.project_description && obj.project_description.map((des,keys)=>{
+                              if(des.type === 'para'){
+                                  return (
+                                          <div className="pt-3" key={"s" + keys}>
+                                          {des.content || ""}
+                                          <ul>{des.list ? (des.list).map((lists,keyl)=>{
+                                             return (
+                                              <li key={"l" + keyl}>
+                                              <img src="../assets/img/project/foot.svg" alt="list"/>
+                                              {lists}
+                                              </li>
+                                                     )
+
+                                          }):""}
+                                           </ul>
+                                          </div>
+                                          )
 
 
+                              }
+
+
+                        })}
+                           
                         </div>
                      </div>
+                        
 
                 </div>
+
+          <OtherProject project_id={obj.project_id} ProjectData={ProjectData}/>
             </div>
-
-
-
         </section>
+
     </div>
        	      )
 	}):""
 
-
-
- }
-
+ }      
+         <Subscription/>
+        <MainFooter/>
         </div>
          </>
          )

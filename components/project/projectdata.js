@@ -11,16 +11,14 @@ export const ProjectData= [
                                                      },
                                                      {
                                                       type:'para',
-                                                      content:"The restoration of a forest falls under the nature-based solutions (NbS) umbrella. When combined, these can achieve a carbon reduction of up to 10-gigaton CO2e by 2050. By including forestation and other carbon offset forestry projects within its portfolio, CarbonTrace will let you bring the following benefits in India and other countries:"
-                                                     },
-                                                     {
-                                                      type:'list',
-                                                      content:[
+                                                      content:"The restoration of a forest falls under the nature-based solutions (NbS) umbrella. When combined, these can achieve a carbon reduction of up to 10-gigaton CO2e by 2050. By including forestation and other carbon offset forestry projects within its portfolio, CarbonTrace will let you bring the following benefits in India and other countries:",
+                                                      list:[
                                                                "GHG emissions reduction;",
                                                                "Making tree planting more profitable than logging;",
                                                                "Creation of new habitats for native flora and fauna;",
                                                                "Provision of new living space for Indigenous people."
-                                                              ]
+                                                           ]
+        
                                                      },
                                                      {
                                                       type:'para',
@@ -29,7 +27,7 @@ export const ProjectData= [
 
 
                                                       ],
-                                image:{default:"assets/img/project/p1.jpg",other:["assets/img/project/p1.jpg"]}
+                                image:{default:"assets/img/project/p1.jpg",other:["../assets/img/project/p1.jpg"]}
 
                              },
                              {
@@ -44,11 +42,8 @@ export const ProjectData= [
                                                      },
                                                      {
                                                       type:'para',
-                                                      content:"For this reason, CarbonTrace will support new solar panels and wind farms installations across the globe. By participating in this initiative, you’ll directly contribute to:"
-                                                     },
-                                                     {
-                                                      type:'list',
-                                                      content:[
+                                                      content:"For this reason, CarbonTrace will support new solar panels and wind farms installations across the globe. By participating in this initiative, you’ll directly contribute to:",
+                                                      list:[
                                                                "Increase energy accessibility worldwide;",
                                                                "Decrease energy-related carbon emissions;",
                                                                "Create new sustainable job opportunities for local communities."
@@ -61,7 +56,7 @@ export const ProjectData= [
 
 
                                                       ],
-                                image:{default:"assets/img/project/p3.jpg",other:["assets/img/project/p3.jpg"]}
+                                image:{default:"assets/img/project/p2.jpg",other:["../assets/img/project/p2.jpg"]}
 
                              },
                              {
@@ -80,11 +75,8 @@ export const ProjectData= [
                                                      },
                                                       {
                                                       type:'para',
-                                                      content:"That’s why CarbonTrace is embracing water conservation projects and food security solutions, including agroecology and other sustainable agriculture practices (e.g., crop rotation, permaculture, etc.). When chipping in these projects, you’ll promote the advantages outlines below:"
-                                                     },
-                                                     {
-                                                      type:'list',
-                                                      content:[
+                                                      content:"That’s why CarbonTrace is embracing water conservation projects and food security solutions, including agroecology and other sustainable agriculture practices (e.g., crop rotation, permaculture, etc.). When chipping in these projects, you’ll promote the advantages outlines below:",
+                                                      list:[
                                                                "Water savings;",
                                                                "Biodiversity enhancement;",
                                                                "Greater accessibility to safe drinking water;",
@@ -101,7 +93,7 @@ export const ProjectData= [
 
 
                                                       ],
-                                image:{default:"assets/img/project/p1.jpg",other:["assets/img/project/p1.jpg"]}
+                                image:{default:"assets/img/project/p3.jpg",other:["../assets/img/project/p3.jpg"]}
 
                              }
                           ];

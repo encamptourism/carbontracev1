@@ -18,16 +18,16 @@ return (
                     </div>
                     <div className="col-lg-2 col-md-2">
                         <div className="footer__logo">
-                            <Link href ="/"><a><img src="assets/img/home/logo.svg" alt=""/></a></Link>
+                            <Link href ="/"><a><img src="../assets/img/home/logo.svg" alt=""/></a></Link>
                         </div>
                     </div>
                     <div className="col-lg-5 col-md-4">
                         <div className="footer__socials">
                             <ul>
                                 <li>Contact Us</li>
-                                <li><Link href ="/"><a><img src="assets/img/home/twitter.svg" alt=""/></a></Link></li>
-                                <li><Link href ="/"><a><img src="assets/img/home/facebook.svg" alt=""/></a></Link></li>
-                                <li><Link href ="/"><a><img src="assets/img/home/instagram.svg" alt=""/></a></Link></li>
+                                <li><Link href ="/"><a><img src="../assets/img/home/twitter.svg" alt=""/></a></Link></li>
+                                <li><Link href ="/"><a><img src="../assets/img/home/facebook.svg" alt=""/></a></Link></li>
+                                <li><Link href ="/"><a><img src="../assets/img/home/instagram.svg" alt=""/></a></Link></li>
                             </ul>
                         </div>
                     </div>

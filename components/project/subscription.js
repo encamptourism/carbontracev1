@@ -16,7 +16,7 @@ return (
                                 <div className="subscribe__form">
                                     <div className="subscribe__input">
                                         <input type="email" placeholder="Your email"/>
-                                        <img src="assets/img/home/subscribe_icon.svg" alt=""/>
+                                        <img src="../assets/img/home/subscribe_icon.svg" alt=""/>
                                     </div>
                                     <div className="subscribe__btn">
                                         <button type="submit">Subscribe</button>

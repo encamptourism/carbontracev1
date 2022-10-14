@@ -3,7 +3,7 @@ import Header from '../../components/common/Header';
 import ProjectComponent from '../../components/project/index';
 import MainFooter from '../../components/common/MainFooter';
 import {ProjectData} from '../../components/project/projectdata';
-const Index=({ProjectDatas})=>{
+const index=({ProjectDatas})=>{
 return (
 	 <>
       <HtmlHead/>
@@ -14,7 +14,7 @@ return (
 	)
 
 }
-export default Index;
+export default index;
 
 export async function getStaticProps() {
  return { props: { ProjectDatas:ProjectData } }

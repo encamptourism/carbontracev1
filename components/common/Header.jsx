@@ -48,7 +48,7 @@ return (
             <div className="row">
                 <div className="col-lg-2 col-md-2 col-6">
                     <div className="header__logo">
-                        <Link href ="/"><a><img src="assets/img/home/logo.svg" alt=""/></a></Link>
+                        <Link href ="/"><a><img src="../assets/img/home/logo.svg" alt=""/></a></Link>
                     </div>
                 </div>
                 <div className="col-lg-8 col-md-8 col-6">
