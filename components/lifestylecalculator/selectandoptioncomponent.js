@@ -14,6 +14,7 @@ if(e.target.value !=="" || e.target.value  !== 0){
 
 }
 const getData=(sc)=>{
+setIsnext(true); 
 let calculus = {...calculationdata};
 
 if(sc === "Kilometers"){

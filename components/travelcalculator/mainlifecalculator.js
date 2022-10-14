@@ -4,6 +4,7 @@ import TextComponent from "./textcomponent";
 import SliderComponent from "./slidercomponent";
 import SelectMultipleComponent from "./selectmultiple";
 
+
 const MainlifeCalculator=(props)=>{
 
 const {travelQuestion,typecalculator,setUpnext,upnext,calculationdata,setCalculationdata} = props;
@@ -21,7 +22,7 @@ setIsnext(false);
  setIsnext(true);    
 }
 }
-
+setIsnext(true); 
 }
 const onclickbackhandler=()=>{
 if(upnext > 0){
@@ -30,6 +31,8 @@ setUpnext(upnext - 1);
 }
 
 }
+
+
 const calculate=()=>{
 let keydd = [];
 let valued =[];
@@ -61,9 +64,16 @@ let po = [ee] + '-' + valued[uu];
 
 });
 
+
 let totalfoodcf = parseFloat(pkvalue.kindoffood) * parseFloat(calculationdata.noofdays) * parseFloat(calculationdata.nooftraveller);
+totalfoodcf = !isNaN(totalfoodcf) ? totalfoodcf : 0;
+
 let totalaccomodationcf = parseFloat(pkvalue.kindofaccomodation)  * parseFloat(calculationdata.noofdays) * parseFloat(calculationdata.nooftraveller);
+totalaccomodationcf = !isNaN(totalaccomodationcf) ? totalaccomodationcf : 0;
+
 let localtransport = Math.ceil((parseFloat(pkvalue.kindoftransport) * parseFloat(calculationdata.noofdays) * parseFloat(calculationdata.noofkmtravel))/ parseFloat(calculationdata.nooftraveller));
+localtransport = !isNaN(localtransport) ? localtransport : 0;
+
 let travelbycf = 0;
 if(calculationdata.travelmode === 'car'){
 travelbycf = parseFloat(pkvalue.kindofvehicle ? pkvalue.kindofvehicle : pkvalue.kindoftravel);
@@ -82,6 +92,8 @@ travelbycf = parseFloat(pkvalue.typeofflyingroute);
 }
 
 let totaltravelcf = Math.ceil(parseFloat(calculationdata.noofkmtravelby) * travelbycf /parseFloat(calculationdata.nooftraveller));
+
+totaltravelcf = !isNaN(totaltravelcf) ? totaltravelcf : 0;
 
 let grand = Math.ceil(totaltravelcf + totalfoodcf + totalaccomodationcf + localtransport);
 

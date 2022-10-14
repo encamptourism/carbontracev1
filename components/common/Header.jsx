@@ -18,7 +18,7 @@ return (
             <div className="main-menu">
                 <ul className="d-block">
                     <li><Link href ="/"><a>Home</a></Link></li>
-                    <li><Link href ="#"><a>Projects</a></Link></li>
+                    <li><Link href ="/project"><a>Projects</a></Link></li>
                     <li><Link href ="#"><a onClick={()=>setCollepse(!collepse)} className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"
                             >Calculators<i className="fas fa-chevron-down"></i></a></Link>
@@ -48,7 +48,7 @@ return (
             <div className="row">
                 <div className="col-lg-2 col-md-2 col-6">
                     <div className="header__logo">
-                        <Link href ="#"><a><img src="assets/img/home/logo.svg" alt=""/></a></Link>
+                        <Link href ="/"><a><img src="assets/img/home/logo.svg" alt=""/></a></Link>
                     </div>
                 </div>
                 <div className="col-lg-8 col-md-8 col-6">
@@ -59,8 +59,8 @@ return (
                     </div>
                     <div className="header__menu d-none d-md-flex d-lg-flex">
                         <ul>
-                            <li><Link href ="#"><a>Home</a></Link></li>
-                            <li><Link href ="#"><a>Projects</a></Link></li>
+                            <li><Link href ="/"><a>Home</a></Link></li>
+                            <li><Link href ="/project"><a>Projects</a></Link></li>
                             <li><Link href ="#"><a>Calculators<i className="fas fa-chevron-down"></i></a></Link>
                                 <ul className="header__dropdown">
                                 <li><Link href ="/lifestylecalculator"><a>Lifestyle Calculator</a></Link></li>
