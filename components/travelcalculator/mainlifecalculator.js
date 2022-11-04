@@ -67,11 +67,11 @@ let po = [ee] + '-' + valued[uu];
 
 let totalfoodcf = parseFloat(pkvalue.kindoffood) * parseFloat(calculationdata.noofdays) * parseFloat(calculationdata.nooftraveller);
 totalfoodcf = !isNaN(totalfoodcf) ? totalfoodcf : 0;
-
-let totalaccomodationcf = parseFloat(pkvalue.kindofaccomodation)  * parseFloat(calculationdata.noofdays) * parseFloat(calculationdata.nooftraveller);
+//(cf value * no of days )/no of traveller
+let totalaccomodationcf = (parseFloat(pkvalue.kindofaccomodation)  * parseFloat(calculationdata.noofdays)) / parseFloat(calculationdata.nooftraveller);
 totalaccomodationcf = !isNaN(totalaccomodationcf) ? totalaccomodationcf : 0;
-
-let localtransport = Math.ceil((parseFloat(pkvalue.kindoftransport) * parseFloat(calculationdata.noofdays) * parseFloat(calculationdata.noofkmtravel))/ parseFloat(calculationdata.nooftraveller));
+// removing no of days from local transport
+let localtransport = Math.ceil((parseFloat(pkvalue.kindoftransport) * parseFloat(calculationdata.noofkmtravel))/ parseFloat(calculationdata.nooftraveller));
 localtransport = !isNaN(localtransport) ? localtransport : 0;
 
 let travelbycf = 0;

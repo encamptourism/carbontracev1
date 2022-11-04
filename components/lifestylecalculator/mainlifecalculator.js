@@ -31,6 +31,7 @@ setUpnext(upnext - 1);
 const calculate=()=>{
 let muliplier = "";
 let cfvalue = "";
+let publictransport=0;
 let calcd = Object.values(calculationdata);
 Object.keys(calculationdata).map((calc,key)=>{
 lifestyleQuestion.map((question)=>{
@@ -69,24 +70,37 @@ muliplier = {...muliplier,howmanyflightayear:flightkm * cfvalue.howmanyflightaye
 
 }
 
+let howmuchelectricity = (+calculationdata.howmuchelectricity) / (+calculationdata.howmanypeopleinhouse);
+
 if(calculationdata.howmanykmtrainayear){
 let trainkm = (calculationdata.howmanykmtrainayear).replace("km","");
 
 if(!isNaN(trainkm)){
-muliplier = {...muliplier,howmanykmtrainayear:trainkm * cfvalue.howmanykmtrainayear}
+muliplier = {...muliplier,howmanykmtrainayear:trainkm * cfvalue.howmanykmtrainayear,howmuchelectricity:howmuchelectricity}
 
 }
 
 }
-muliplier={...muliplier,howmanypeopleinhouse:cfvalue.howmanypeopleinhouse,howmuchmeateatperday:cfvalue.howmuchmeateatperday,renewableenergy:cfvalue.renewableenergy}
+
+
+if(calculationdata.noofkmtravel && calculationdata.noofkmtravel !=="" && calculationdata.noofkmtravel !==0){
+publictransport = +calculationdata.noofkmtravel * +cfvalue.kindoftravelmode;
+}
+
+
+muliplier={...muliplier,howmuchmeateatperday:cfvalue.howmuchmeateatperday,publictransport:publictransport}
 //get total
 let total = Object.values(muliplier).reduce((add ,a)=>add + a,0);
+
+//total cf if using renewable energy
+total = total * cfvalue.renewableenergy;
+
 console.log(muliplier,cfvalue);
 alert(total);
 
 }
 
-
+console.log(calculationdata);
 const translatenumber=(sdd)=>{
 if(sdd === '1' || sdd === 1){
 return 'one';

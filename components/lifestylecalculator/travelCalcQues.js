@@ -1,24 +1,25 @@
 export const lifestyleQuestion=[
                               {
-                              name:"howmuchelectricity",
+                                name:"howmuchelectricity",
 	                            typess:"selectandtext",
 	                            question:"How much electricity does your household consume (enter annual amount in kWh based on your bills)?",
 	                            option:[{label:'100 KWh',value:'100'},{label:'200 KWh',value:'200'},{label:'300 KWh',value:'300'},{label:'400 KWh',value:'400'}],
 	                            image:"assets/img/questions/question_1.jpg",
 	                            default:true,
 	                            layout:'col-sm-12 col-md-12',
-	                            multiplyingfact:0.12,
+	                            
 	                          },
+	                          //no of people is dividind factor howmuchelectricity/howmanypeopleinhouse
 	                          {
 	                            name:"howmanypeopleinhouse",
 	                            typess:"select",
 	                            question:"How many people are there in your household aged 16+?",
-	                            option:[{label:'One',value:'one'},{label:'Two',value:'two'},{label:'Three',value:'three'},{label:'Four and More',value:'four'}],
+	                            option:[{label:'One',value:1},{label:'Two',value:2},{label:'Three',value:3},{label:'Four and More',value:4}],
 	                            image:"assets/img/questions/question_2.jpg",
 	                            default:false,
-	                            cf:{one:17,two:17,three:52,four:52},
 	                            layout:'col-sm-12 col-md-12'
 	                          },
+	                          //howmuchmeateatperday * noofpeople
 	                          {
 	                            name:"howmuchmeateatperday",
 	                            typess:"select",
@@ -40,6 +41,7 @@ export const lifestyleQuestion=[
 	                            layout:'col-sm-12 col-md-6'
 
 	                          },
+	                          //kindoftravelmode * noofkmtravel
 	                          {
 	                            name:"noofkmtravel",
 	                            typess:"slider",
@@ -48,17 +50,17 @@ export const lifestyleQuestion=[
 	                            max:250,
 	                            image:"assets/img/questions/question_5.jpg",
 	                            default:false,
-	                            multiplyingfact:0.12,
 	                            layout:'col-sm-12 col-md-12'
 	                          },
+	                          //hours like less7,less8,less15,grater15 
 	                          {
 	                            name:"howmanyflightayear",
 	                            typess:"select-option",
 	                            question:"How many flights (round trip) do you take in a year around the range mentioned below?",
-	                            option:[{Kilometers:[{label:'Less than 3000 KMs',value:'less3000'},{label:'Less than 6000 KMs',value:'less6000'},{label:'Less than 12000 KMs',value:'less12000'},{label:'Greater than 12000 KMs',value:'less13000'}]},{Hours:[{label:'Less than 100 Hours',value:'less100'},{label:'Less than 200 Hours',value:'less200'},{label:'Less than 400 Hours',value:'less400'},{label:'Greater than 400 Hours',value:'less500'}]}],
+	                            option:[{Kilometers:[{label:'Less than 3000 KMs',value:'less3000'},{label:'Less than 6000 KMs',value:'less6000'},{label:'Less than 12000 KMs',value:'less12000'},{label:'Greater than 12000 KMs',value:'less13000'}]},{Hours:[{label:'Less than 7 Hours',value:'less7'},{label:'Less than 8 Hours',value:'less8'},{label:'Less than 15 Hours',value:'less15'},{label:'Greater than 15 Hours',value:'greater15'}]}],
 	                            image:"assets/img/questions/question_6.jpg",
 	                            default:false,
-	                            cf:{Kilometers:{less3000:0.05,less6000:0.2,less12000:0.03,less13000:0.1},Hours:{less100:0.05,less200:0.2,less400:0.03,less500:0.1}},
+	                            cf:{Kilometers:{less3000:0.05,less6000:0.2,less12000:0.03,less13000:0.1},Hours:{less7:0.05,less8:0.2,less15:0.03,greater15:0.1}},
 	                            layout:'col-sm-12 col-md-12'
 	                          },
 	                          {
@@ -71,6 +73,8 @@ export const lifestyleQuestion=[
 	                            cf:{km500:0.22,km1000:0.19,km2000:0.09,km3000:0.045},
 	                            layout:'col-sm-12 col-md-12'
 	                          },
+	                     
+	                          //totalcf = x(if yes 0.85x if no x)(15%less)
 	                           {
 	                            name:"renewableenergy",
 	                            typess:"select",
@@ -78,7 +82,7 @@ export const lifestyleQuestion=[
 	                            option:[{label:'Yes',value:'yes'},{label:'No',value:'no'}],
 	                            image:"assets/img/questions/question_8.jpg",
 	                            default:false,
-	                            cf:{yes:0.22,no:0.5},
+	                            cf:{yes:0.85,no:1},
 	                            layout:'col-sm-12 col-md-12'
 	                          },
 
