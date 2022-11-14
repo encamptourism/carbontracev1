@@ -7,9 +7,11 @@ import "aos/dist/aos.css";
 import MainlifeCalculator from "../components/lifestylecalculator/mainlifecalculator";
 import {lifestyleQuestion} from "../components/lifestylecalculator/travelCalcQues";
 import Footer from '../components/common/Footer';
+import ResultPage from "../components/common/ResultPage";
+
 
 const LifestyleCalculator=()=>{
-
+const [totals,setTotals] = useState('');
 const [typecalculator,setTypecalculator] = useState('');
 const [upnext,setUpnext] = useState(0);
 const [calculationdata,setCalculationdata] = useState({howmuchelectricity:'',howmanypeopleinhouse:'',howmuchmeateatperday:'',kindoftravelmode:'',noofkmtravel:0,howmanyflightayear:'',howmanykmtrainayear:"",renewableenergy:"",travelby:"Kilometers"});
@@ -27,14 +29,16 @@ return (
 	<>
     <HtmlHead/>
     <Header/>
-    <MainlifeCalculator 
+    {totals === "" ? <MainlifeCalculator 
     lifestyleQuestion={lifestyleQuestion} 
     typecalculator ={typecalculator}
     setUpnext={setUpnext}
     upnext={upnext}
     calculationdata={calculationdata}
     setCalculationdata={setCalculationdata}
-    />
+    setTotals={setTotals}
+    />:
+    <ResultPage totals={totals}/>}
     <Footer/>
 
 	</>)

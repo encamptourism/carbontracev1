@@ -14,10 +14,11 @@ export const lifestyleQuestion=[
 	                            name:"howmanypeopleinhouse",
 	                            typess:"select",
 	                            question:"How many people are there in your household aged 16+?",
-	                            option:[{label:'One',value:1},{label:'Two',value:2},{label:'Three',value:3},{label:'Four and More',value:4}],
+	                            option:[{label:'One',value:'1'},{label:'Two',value:'2'},{label:'Three',value:'3'},{label:'Four and More',value:'4'}],
 	                            image:"assets/img/questions/question_2.jpg",
 	                            default:false,
-	                            layout:'col-sm-12 col-md-12'
+	                            layout:'col-sm-12 col-md-12',
+
 	                          },
 	                          //howmuchmeateatperday * noofpeople
 	                          {

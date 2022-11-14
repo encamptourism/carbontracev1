@@ -1820,6 +1820,180 @@ html {
     background-color: #219653;
 }
 
+.result__area {
+    margin-top: 115px;
+    margin-bottom: 77px;
+}
+
+.result__wrap {
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.05);
+    border-radius: 32px;
+    padding: 65px 83px;
+}
+
+.result__title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.result__title h2 {
+    font-size: 36px;
+    margin-bottom: 0;
+}
+
+.result__title h2 span {
+    display: block;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.result__point__wrap {
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 38px;
+}
+
+.result__main__point {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+}
+
+.result__point__img {
+    width: 98px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.result__point__title {
+    text-align: center;
+}
+
+.result__point__title h4 {
+    color: #979797;
+    font-size: 19px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.result__point__img.mid {
+    width: 250px;
+    margin-bottom: -20px;
+}
+
+.result__point__title.mid h4 {
+    color: #12022F;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.result__single__point:nth-child(2) {
+    margin: 0px 50px;
+}
+.overview__topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.overview__title h2 {
+    margin-bottom: 0;
+    font-size: 24px;
+}
+
+.overview__single__blk {
+    background-color: rgba(252, 201, 29, 0.45);
+    border-radius: 15px;
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 37px;
+}
+
+.overview__single__blk h4 {
+    font-size: 34px;
+    font-weight: 400;
+    margin-bottom: 3px;
+}
+
+.overview__single__blk p {
+    color: #12022F;
+    font-size: 10px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.overview__single__blk span {
+    color: #979797;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.overview__single__blk.two {
+    background-color: #00A0F230;
+}
+
+.overview__single__blk.three {
+    background-color: #00E49636;
+}
+
+.overview__single__blk.four {
+    background-color: #FF24432E;
+}
+
+.overview__select .nice-select {
+    font-size: 12px;
+    height: 48px;
+    line-height: 48px;
+    padding-left: 18px;
+    padding-right: 30px;
+    border: 1px solid #DBD8FC70;
+    box-shadow: 0px 100px 80px rgba(41, 72, 152, 0.05), 0px 64.8148px 46.8519px rgba(41, 72, 152, 0.037963), 0px 38.5185px 25.4815px rgba(41, 72, 152, 0.0303704), 0px 20px 13px rgba(41, 72, 152, 0.025), 0px 8.14815px 6.51852px rgba(41, 72, 152, 0.0196296), 0px 1.85185px 3.14815px rgba(41, 72, 152, 0.012037);
+    border-radius: 10px;
+    font-weight: 400;
+    min-width: 200px;
+    color: #55555C;
+}
+
+.overview__select .nice-select::after {
+    display: none;
+}
+
+.overview__select {
+    position: relative;
+}
+
+.select__marker {
+    position: absolute;
+    top: 50%;
+    right: 22px;
+    transform: translateY(-50%);
+    transition: .3s all;
+}
+
+.overview__select .nice-select.open~.select__marker {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.select__marker img {
+    width: 12px;
+}
+
+.overview__select .nice-select .list {
+    width: 100%;
+}
+
+.overview__select .nice-select:active,
+.overview__select .nice-select.open,
+.overview__select .nice-select:focus {
+border-color: #DBD8FC70;
+}
 
 /*-------------------- Project3 area css end --------------------*/
 

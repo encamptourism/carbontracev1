@@ -7,7 +7,7 @@ import SelectOptionComponent from "./selectandoptioncomponent";
 
 const MainlifeCalculator=(props)=>{
 
-const {lifestyleQuestion,typecalculator,setUpnext,upnext,calculationdata,setCalculationdata} = props;
+const {lifestyleQuestion,typecalculator,setUpnext,upnext,calculationdata,setCalculationdata,setTotals} = props;
 const [isnext,setIsnext] = useState(true);
 const onclickhandler=()=>{
 
@@ -96,11 +96,10 @@ let total = Object.values(muliplier).reduce((add ,a)=>add + a,0);
 total = total * cfvalue.renewableenergy;
 
 console.log(muliplier,cfvalue);
-alert(total);
-
+setTotals({total:total,muliplier:muliplier,cfvalue,cfvalue});
 }
 
-console.log(calculationdata);
+
 const translatenumber=(sdd)=>{
 if(sdd === '1' || sdd === 1){
 return 'one';

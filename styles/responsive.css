@@ -246,7 +246,35 @@
     .project3__back__btn a {
         font-size: 22px;
     }
+.result__title h2 {
+        font-size: 32px;
+    }
 
+    .result__title h2 span {
+        font-size: 34px;
+    }
+
+    .overview__title h2 {
+        font-size: 20px;
+    }
+
+    .overview__single__blk h4 {
+        font-size: 26px;
+    }
+
+    .overview__single__blk {
+        padding: 25px 8px;
+    }
+
+    .overview__single__blk span {
+        font-size: 11px;
+    }
+
+    .overview__select .nice-select {
+        height: 46px;
+        line-height: 46px;
+        min-width: 170px;
+    }
 
 
 
@@ -695,6 +723,28 @@
         height: 200px;
     }
 
+ .overview__title h2 {
+        font-size: 18px;
+    }
+
+    .overview__select .nice-select {
+        height: 44px;
+        line-height: 44px;
+        min-width: 160px;
+    }
+
+    .overview__single__blk h4 {
+        font-size: 28px;
+    }
+
+    .overview__single__blk span {
+        font-size: 11px;
+    }
+
+    .overview__single__blk {
+        padding: 20px 12px;
+        margin-top: 30px;
+    }
 
 
 
@@ -1159,7 +1209,64 @@ margin-top: 10px;
         font-size: 14px;
     }
 
+ .result__wrap {
+        border-radius: 32px;
+        padding: 50px 40px;
+    }
 
+    .result__title h2 span {
+        font-size: 28px;
+    }
+
+    .result__title h2 {
+        font-size: 26px;
+    }
+
+    .result__point__img {
+        width: 65px;
+    }
+
+    .result__point__title h4 {
+        font-size: 14px;
+    }
+
+    .result__point__img.mid {
+        width: 170px;
+        margin-bottom: -20px;
+    }
+
+    .result__point__title.mid h4 {
+        font-size: 18px;
+    }
+
+    .result__single__point:nth-child(2) {
+        margin: 0px 20px;
+    }
+.overview__title {
+        text-align: center;
+        margin-bottom: 66px;
+    }
+
+    .overview__topbar {
+        display: block;
+    }
+
+    .overview__title h2 {
+        font-size: 28px;
+    }
+
+    .result__point__wrap {
+        margin-bottom: 80px;
+    }
+
+    .overview__select {
+        position: relative;
+        max-width: 207px;
+        height: 48px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+    }
 
 
 }
@@ -1237,6 +1344,14 @@ margin-top: 10px;
     .project__single__blk {
         height: auto;
         min-height: 385px;
+    }
+
+ .overview__title {
+        margin-bottom: 10px;
+    }
+
+    .overview__single__blk {
+        padding: 25px 15px;
     }
 
 

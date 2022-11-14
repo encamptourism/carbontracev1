@@ -101,6 +101,7 @@ setCf(ccvalue);
 let sdce = {totalcalculation:{totalfood:totalfoodcf,totalaccomdation:totalaccomodationcf,localtransport:localtransport,totaltravel:totaltravelcf},grand:grand,breakup:{...ccvalue}}
 setCalculationdata({...calculationdata,calculation:{...sdce}})
 alert(grand);
+setTotals({total:grand,calculationdata:{...calculationdata,calculation:{...sdce}}});
 }
 console.log(calculationdata);
 
