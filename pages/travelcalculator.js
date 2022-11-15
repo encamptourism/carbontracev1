@@ -15,7 +15,7 @@ const TravelCalculator=()=>{
 const [typecalculator,setTypecalculator] = useState('');
 const [upnext,setUpnext] = useState(0);
 const [calculationdata,setCalculationdata] = useState({travelmode:'bike',noofdays:'',nooftraveller:0,kindoftransport:'',kindoftravel:'',kindofvehicle:'',nooftraveller:0,noofkmtravel:0,kindoffood:"",kindofaccomodation:"",noofkmtravelby:0,typeofbike:''});
-const [totals,setTotals] = useState('');
+const [totals,setTotals] = useState({carbonproject:'',total:''});
 
 useEffect(() => {
     AOS.init({
@@ -30,7 +30,9 @@ return (
 	<>
     <HtmlHead/>
     <Header/>
-    {totals === "" ? <MainlifeCalculator 
+    {totals.total !== "" ? 
+    <ResultPage totals={totals}  setTotals={setTotals}/>:
+     <MainlifeCalculator 
     travelQuestion={travelQuestion} 
     typecalculator ={typecalculator}
     setUpnext={setUpnext}
@@ -38,8 +40,8 @@ return (
     calculationdata={calculationdata}
     setCalculationdata={setCalculationdata}
     setTotals={setTotals}
+    totals={totals}
     />
-    :<ResultPage totals={totals}/>
    }
     <Footer/>
 

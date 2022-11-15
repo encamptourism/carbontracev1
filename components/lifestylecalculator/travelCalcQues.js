@@ -1,6 +1,6 @@
 export const lifestyleQuestion=[
                               {
-                                name:"howmuchelectricity",
+                              name:"howmuchelectricity",
 	                            typess:"selectandtext",
 	                            question:"How much electricity does your household consume (enter annual amount in kWh based on your bills)?",
 	                            option:[{label:'100 KWh',value:'100'},{label:'200 KWh',value:'200'},{label:'300 KWh',value:'300'},{label:'400 KWh',value:'400'}],
@@ -38,7 +38,7 @@ export const lifestyleQuestion=[
 	                            option:[{label:'An SUV',value:'SUV'},{label:'Petrol Car',value:'patrol_car'},{label:'Diesel Car',value:'diesel_car'},{label:'Hybrid Car',value:'hybrid_car'},{label:'Bus',value:'bus'},{label:'Train',value:'train'}],
 	                            image:"assets/img/questions/question_4.jpg",
 	                            default:false,
-	                            cf:{patrol_car:0.13,diesel_car:0.15,hybrid_car:0.12,bus:0.2,train:0.012},
+	                            cf:{patrol_car:0.13,diesel_car:0.15,hybrid_car:0.12,bus:0.2,train:0.012,SUV:0.045},
 	                            layout:'col-sm-12 col-md-6'
 
 	                          },

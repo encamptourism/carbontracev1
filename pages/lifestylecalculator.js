@@ -11,7 +11,7 @@ import ResultPage from "../components/common/ResultPage";
 
 
 const LifestyleCalculator=()=>{
-const [totals,setTotals] = useState('');
+const [totals,setTotals] = useState({carbonproject:'',total:''});
 const [typecalculator,setTypecalculator] = useState('');
 const [upnext,setUpnext] = useState(0);
 const [calculationdata,setCalculationdata] = useState({howmuchelectricity:'',howmanypeopleinhouse:'',howmuchmeateatperday:'',kindoftravelmode:'',noofkmtravel:0,howmanyflightayear:'',howmanykmtrainayear:"",renewableenergy:"",travelby:"Kilometers"});
@@ -29,7 +29,10 @@ return (
 	<>
     <HtmlHead/>
     <Header/>
-    {totals === "" ? <MainlifeCalculator 
+    {
+    totals.total !== "" ? 
+    <ResultPage totals={totals} setTotals={setTotals}/>
+    :<MainlifeCalculator 
     lifestyleQuestion={lifestyleQuestion} 
     typecalculator ={typecalculator}
     setUpnext={setUpnext}
@@ -37,8 +40,9 @@ return (
     calculationdata={calculationdata}
     setCalculationdata={setCalculationdata}
     setTotals={setTotals}
-    />:
-    <ResultPage totals={totals}/>}
+    totals={totals}
+    />
+    }
     <Footer/>
 
 	</>)

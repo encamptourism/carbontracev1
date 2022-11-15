@@ -7,7 +7,7 @@ import SelectMultipleComponent from "./selectmultiple";
 
 const MainlifeCalculator=(props)=>{
 
-const {travelQuestion,typecalculator,setUpnext,upnext,calculationdata,setCalculationdata} = props;
+const {travelQuestion,typecalculator,setUpnext,upnext,calculationdata,setCalculationdata,setTotals,totals} = props;
 const [isnext,setIsnext] = useState(true);
 const [parentQuestion,setParentQuestion] = useState(travelQuestion.filter((obj)=>obj.dependent !== 'child'));
 const [cf,setCf] = useState([]);
@@ -96,14 +96,17 @@ let totaltravelcf = Math.ceil(parseFloat(calculationdata.noofkmtravelby) * trave
 totaltravelcf = !isNaN(totaltravelcf) ? totaltravelcf : 0;
 
 let grand = Math.ceil(totaltravelcf + totalfoodcf + totalaccomodationcf + localtransport);
-
+if(isNaN(grand)){
+    alert('You must give proper answer before calculation');
+    return;
+}
 setCf(ccvalue);
 let sdce = {totalcalculation:{totalfood:totalfoodcf,totalaccomdation:totalaccomodationcf,localtransport:localtransport,totaltravel:totaltravelcf},grand:grand,breakup:{...ccvalue}}
 setCalculationdata({...calculationdata,calculation:{...sdce}})
-alert(grand);
-setTotals({total:grand,calculationdata:{...calculationdata,calculation:{...sdce}}});
+
+setTotals({...totals,total:grand,calculationdata:{...calculationdata,calculation:{...sdce}}});
 }
-console.log(calculationdata);
+
 
 const translatenumber=(sdd)=>{
 if(sdd === '1' || sdd === 1){

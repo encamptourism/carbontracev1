@@ -7,7 +7,7 @@ import SelectOptionComponent from "./selectandoptioncomponent";
 
 const MainlifeCalculator=(props)=>{
 
-const {lifestyleQuestion,typecalculator,setUpnext,upnext,calculationdata,setCalculationdata,setTotals} = props;
+const {lifestyleQuestion,typecalculator,setUpnext,upnext,calculationdata,setCalculationdata,setTotals,totals} = props;
 const [isnext,setIsnext] = useState(true);
 const onclickhandler=()=>{
 
@@ -85,6 +85,7 @@ muliplier = {...muliplier,howmanykmtrainayear:trainkm * cfvalue.howmanykmtrainay
 
 if(calculationdata.noofkmtravel && calculationdata.noofkmtravel !=="" && calculationdata.noofkmtravel !==0){
 publictransport = +calculationdata.noofkmtravel * +cfvalue.kindoftravelmode;
+
 }
 
 
@@ -94,9 +95,12 @@ let total = Object.values(muliplier).reduce((add ,a)=>add + a,0);
 
 //total cf if using renewable energy
 total = total * cfvalue.renewableenergy;
+if(isNaN(total)){
+    alert('You must give proper answer before calculation');
+    return;
+}
 
-console.log(muliplier,cfvalue);
-setTotals({total:total,muliplier:muliplier,cfvalue,cfvalue});
+setTotals({...totals,total:total,muliplier:muliplier,cfvalue,cfvalue});
 }
 
 
