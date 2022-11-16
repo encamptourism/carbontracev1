@@ -1,17 +1,42 @@
 import {useState} from 'react';
-import { PieChart } from 'react-minimal-pie-chart';
 import Link from 'next/link';
 import {ProjectData} from '../project/projectdata';
 import OffsetProject from './OffsetProject';
+import PieCharts from './PieCharts';
 
 const ResultPage=(props)=>{
-const {totals,setTotals} = props;
-console.log(totals);
-//travel calculator
-if(totals.calculationdata){
 
+const getRandomColor=() =>{
+  var letters = '0123456789ABCDEF';
+  var color = '#';
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
 }
 
+const {totals,setTotals} = props;
+const {cfvalue,muliplier,total,calculationdata} = totals;
+let finalmultiplier = muliplier ? {
+                       howmanyflightayear : isNaN((muliplier.howmanyflightayear) * cfvalue.renewableenergy) ? 0 : ((muliplier.howmanyflightayear) * cfvalue.renewableenergy).toFixed(2),
+                       howmanykmtrainayear : isNaN((muliplier.howmanykmtrainayear) * cfvalue.renewableenergy) ? 0 : ((muliplier.howmanykmtrainayear) * cfvalue.renewableenergy).toFixed(2),
+                       howmuchmeateatperday: isNaN((muliplier.howmuchmeateatperday) * cfvalue.renewableenergy) ? 0 : ((muliplier.howmuchmeateatperday) * cfvalue.renewableenergy).toFixed(2),
+                       howmuchelectricity: isNaN((muliplier.howmuchelectricity) * cfvalue.renewableenergy) ? 0 : ((muliplier.howmuchelectricity) * cfvalue.renewableenergy).toFixed(2),
+                       publictransport: isNaN((muliplier.publictransport) * cfvalue.renewableenergy) ? 0 : ((muliplier.publictransport) * cfvalue.renewableenergy).toFixed(2),
+
+                       }: calculationdata ? {
+                       localtransport : isNaN((calculationdata.calculation.totalcalculation.localtransport)) ? 0 : (calculationdata.calculation.totalcalculation.localtransport).toFixed(2),
+                       totalaccomdation : isNaN((calculationdata.calculation.totalcalculation.totalaccomdation)) ? 0 : (calculationdata.calculation.totalcalculation.totalaccomdation).toFixed(2),
+                       totalfood: isNaN((calculationdata.calculation.totalcalculation.totalfood)) ? 0 : (calculationdata.calculation.totalcalculation.totalfood).toFixed(2),
+                       totaltravel: isNaN((calculationdata.calculation.totalcalculation.totaltravel)) ? 0 : (calculationdata.calculation.totalcalculation.totaltravel).toFixed(2),
+
+                       }:"";
+
+let finalpieobject = Object.keys(finalmultiplier).map((dd,k)=>{
+
+return {title:dd,value:Number(finalmultiplier[dd]),color:getRandomColor()}
+
+})
 
 return (
     <main className="main overflow-hidden">
@@ -25,56 +50,7 @@ return (
                             </div>
                         </div>
                     </div>
-                    <div className="result__point__wrap">
-                        <div className="row">
-                            <div className="col-lg-12">
-                                <div className="result__main__point d-none d-md-flex d-lg-flex">
-                                    <div className="result__single__point">
-                                        <div className="result__point__img">
-                                         <PieChart data={[
-                                                          { title: 'One', value: 10, color: '#E38627' },
-                                                        ]}
-
-                                        />
-                                        </div>
-                                        <div className="result__point__title">
-                                            <h4>90.00%</h4>
-                                        </div>
-                                    </div>
-                                    <div className="result__single__point">
-                                        <div className="result__point__img mid">
-                                          <PieChart
-                                                    data={[
-                                                          { title: 'One', value: 10, color: '#E38627' },
-                                                          { title: 'Two', value: 15, color: '#C13C37' },
-                                                          { title: 'Three', value: 20, color: '#6A2135' },
-                                                        ]}
-                                                    lineWidth={20}
-                                                    paddingAngle={18}
-                                                    rounded
-                                                    label={({ dataEntry }) => dataEntry.value}
-                                        />
-                                        </div>
-                                        <div className="pt-4 result__point__title mid">
-                                            <h4>40.00%</h4>
-                                        </div>
-                                    </div>
-                                    <div className="result__single__point">
-                                        <div className="result__point__img">
-                                           <PieChart data={[
-                                                          { title: 'One', value: 10, color: '#E38627' },
-                                                         
-                                                        ]}
-                                        />
-                                        </div>
-                                        <div className="result__point__title">
-                                            <h4>33.00%</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                   <PieCharts finalpieobject ={finalpieobject}/>
                 </div>
             </div>
         </section>
