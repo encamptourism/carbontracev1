@@ -1,10 +1,15 @@
-import {useState} from 'react';
+import {useState,useEffect} from 'react';
 import Link from 'next/link';
 import {ProjectData} from '../project/projectdata';
 import OffsetProject from './OffsetProject';
 import PieCharts from './PieCharts';
+import Sidebar from "./Sidebar";
 
 const ResultPage=(props)=>{
+const [carbonthings,setCarbonthings] = useState({carbonproject:[],firstName:'',lastName:'',contact:'',email:''});
+const [error,setError] = useState({carbonproject:'',firstName:'',lastName:'',contact:'',email:''});
+const [toggle,setToggle] = useState(false);
+const [bloading,setBloading] = useState(false);
 
 const getRandomColor=() =>{
   var letters = '0123456789ABCDEF';
@@ -16,6 +21,11 @@ const getRandomColor=() =>{
 }
 
 const {totals,setTotals} = props;
+
+useEffect(()=>{
+setTotals({...totals,carbonproject:carbonthings.carbonproject,pesonaldetails:{...carbonthings}})
+},[carbonthings])
+
 const {cfvalue,muliplier,total,calculationdata} = totals;
 let finalmultiplier = muliplier ? {
                        howmanyflightayear : isNaN((muliplier.howmanyflightayear) * cfvalue.renewableenergy) ? 0 : ((muliplier.howmanyflightayear) * cfvalue.renewableenergy).toFixed(2),
@@ -40,6 +50,7 @@ return {title:dd,value:Number(finalmultiplier[dd]),color:getRandomColor()}
 
 return (
     <main className="main overflow-hidden">
+    <Sidebar totals={totals} ProjectData={ProjectData} carbonthings = {carbonthings} setCarbonthings = {setCarbonthings} bloading ={bloading} setBloading ={setBloading}   setToggle={setToggle} toggle={toggle}   error={error} setError={setError}/>
         <section className="result__area">
             <div className="container">
                 <div className="result__wrap">
@@ -54,7 +65,7 @@ return (
                 </div>
             </div>
         </section>
-        <OffsetProject ProjectData={ProjectData} setTotals={setTotals} totals={totals}/>
+        <OffsetProject ProjectData={ProjectData} setTotals={setTotals} totals={totals} toggle ={toggle} setToggle={setToggle}/>
     </main>)
 
 }

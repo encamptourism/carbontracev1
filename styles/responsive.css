@@ -1354,12 +1354,84 @@ margin-top: 10px;
         padding: 25px 15px;
     }
 
+}
+@media only screen and (min-width: 320px) and (max-width: 459px) {
+.sitebar__price__main {
+    padding-right: 14px;
+    padding-left: 28px;
+}
+    .sidebar__area {
+        width: 100%;
+        padding: 40px 15px;
+    }
+
+    .sidebar__select__single select {
+        width: 160px;
+    }
+
+    .sidebar__carbon__tags p {
+        font-size: 12px;
+    }
+
+    .sidebar__carbon__btn a {
+        width: 130px;
+        font-size: 12px;
+    }
+
+    .sidebar__carbon__wrap {
+        padding: 15px;
+    }
+
+    .destinations__area {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+.sitebar__price__main h4 {
+    font-size: 20px;
+}
+.sitebar__price__main {
+    top: 44%;
+}
+.experience__label__wrap {
+    position: absolute;
+    right: 0;
+    top: 58%;
+}
+.sitebar__price__main p {
+    font-size: 11px;
+    margin-bottom: 0!important;
+}
+
+.destination__main__slider{
+    overflow-x: hidden;
+}
+
+.sidebar__select__single input {
+    width: 160px;
+}
 
 
 
 
+}
 
+@media only screen and (min-width: 576px) and (max-width: 767px) {
 
+.sitebar__price__main {
+    top: 44%;
+}
+
+.sitebar__price__main h4 {
+    font-size: 20px;
+}
+.sitebar__price__main {
+    top: 44%;
+}
+.sitebar__price__main p {
+    font-size: 11px;
+    margin-bottom: 0!important;
+}
 
 
 

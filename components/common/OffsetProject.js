@@ -1,7 +1,7 @@
 import Link from "next/link";
 const OffsetProject=(props)=>{
 
-const {ProjectData,setTotals,totals} = props;
+const {ProjectData,setTotals,totals,toggle,setToggle} = props;
 const selectProject=(id)=>{
  let carbonprojarr = totals.carbonproject;
  if(carbonprojarr.indexOf(id) > -1){
@@ -10,10 +10,10 @@ carbonprojarr.splice(carbonprojarr.indexOf(id),1);
    carbonprojarr = [...carbonprojarr,id];
  }
 setTotals({...totals,carbonproject:carbonprojarr});
-
+setToggle(true);
 
 }
-console.log(totals);
+
 return (
 	    <section className="project__area">
             <div className="container">
