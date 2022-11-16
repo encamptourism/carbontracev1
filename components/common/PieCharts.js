@@ -5,7 +5,7 @@ return (
          <div className="result__point__wrap">
                         <div className="row">
                             <div className="col-lg-12">
-                                <div className="result__main__point d-none d-md-flex d-lg-flex">
+                                <div className="result__main__point d-md-flex d-lg-flex">
                                     <div className="result__single__point">
                                         <div className="result__point__img mid">
                                           {(finalpieobject.length > 0) ?  <PieChart
