@@ -4,15 +4,24 @@ import MainFooter from '../../components/common/MainFooter';
 import {ProjectData} from '../../components/project/projectdata';
 import OtherProject from '../../components/project/otherproject';
 import Subscription from '../../components/project/subscription';
+import Contactus from '../../components/common/Contactus';
 import { useRouter } from "next/router";
 import Link from "next/link";
+import {useState} from "react";
 
 const Project_name=({project})=>{
 const router = useRouter();
+const [enquiry,setEnquiry] = useState({message:"",firstName:'',lastName:'',contact:'',email:''});
+const [error,setError] = useState({message:"",firstName:'',lastName:'',contact:'',email:''});
+const [bloading,setBloading] = useState(false);
+const [toggle,setToggle] = useState(false);
+const [issuccess,setIssuccess] = useState(false);
+
 return (
 	    <>
 	    <HtmlHead/>
-	    <Header/>
+	    <Header toggle = {toggle} setToggle = {setToggle}/>
+        <Contactus issuccess = {issuccess} setIssuccess = {setIssuccess} toggle = {toggle} setToggle = {setToggle} bloading = {bloading} setBloading = {setBloading} enquiry = {enquiry} setEnquiry = {setEnquiry} error = {error} setError = {setError}/>
 	  <div>
 {
 	(project && project.length > 0 ) ? project.map((obj,key)=>{

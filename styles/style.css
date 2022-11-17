@@ -2144,6 +2144,29 @@ border-color: #DBD8FC70;
     width: 40%;
     margin-bottom: 15px;
 }
+.sidebar__form__double {
+    flex: 100%;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.sidebar__form__double label {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 9px;
+    width: 100%;
+}
+.sidebar__form__double textarea {
+    width: 100%;
+    height: auto;
+    border: 1px solid #C0C0C0;
+    border-radius: 5px;
+    color: #B4B4B4;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px;
+    outline: none;
+}
 
 .sidebar__carbon__wrap {
     background-repeat: no-repeat;
@@ -2288,3 +2311,4 @@ border-color: #DBD8FC70;
 .error{
     border: 0.5px solid red!important;
 }
+

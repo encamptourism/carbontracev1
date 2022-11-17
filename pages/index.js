@@ -1,11 +1,18 @@
-import { useEffect } from "react";
+import { useEffect , useState } from "react";
 import HtmlHead from '../components/common/HtmlHead';
 import Header from '../components/common/Header';
+import Contactus from '../components/common/Contactus';
 import Link from 'next/link';
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 export default function Home() {
+
+const [enquiry,setEnquiry] = useState({message:"",firstName:'',lastName:'',contact:'',email:''});
+const [error,setError] = useState({message:"",firstName:'',lastName:'',contact:'',email:''});
+const [bloading,setBloading] = useState(false);
+const [toggle,setToggle] = useState(false);
+const [issuccess,setIssuccess] = useState(false);
 
 useEffect(() => {
     AOS.init({
@@ -18,8 +25,9 @@ useEffect(() => {
   return (
     <>
     <HtmlHead/>
-    <Header/>
+    <Header toggle = {toggle} setToggle = {setToggle}/>
     <main className="main overflow-hidden">
+     <Contactus issuccess = {issuccess} setIssuccess = {setIssuccess} toggle = {toggle} setToggle = {setToggle} bloading = {bloading} setBloading = {setBloading} enquiry = {enquiry} setEnquiry = {setEnquiry} error = {error} setError = {setError}/>
           <section className="hero__area">
             <div className="container">
                 <div className="row">

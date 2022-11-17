@@ -8,6 +8,7 @@ import MainlifeCalculator from "../components/travelcalculator/mainlifecalculato
 import {travelQuestion} from "../components/travelcalculator/travelCalcQues";
 import Footer from '../components/common/Footer';
 import ResultPage from "../components/common/ResultPage";
+import Contactus from '../components/common/Contactus';
 
 
 const TravelCalculator=()=>{
@@ -16,6 +17,11 @@ const [typecalculator,setTypecalculator] = useState('');
 const [upnext,setUpnext] = useState(0);
 const [calculationdata,setCalculationdata] = useState({travelmode:'bike',noofdays:'',nooftraveller:0,kindoftransport:'',kindoftravel:'',kindofvehicle:'',nooftraveller:0,noofkmtravel:0,kindoffood:"",kindofaccomodation:"",noofkmtravelby:0,typeofbike:''});
 const [totals,setTotals] = useState({carbonproject:'',total:''});
+const [enquiry,setEnquiry] = useState({message:"",firstName:'',lastName:'',contact:'',email:''});
+const [error,setError] = useState({message:"",firstName:'',lastName:'',contact:'',email:''});
+const [bloading,setBloading] = useState(false);
+const [toggle,setToggle] = useState(false);
+const [issuccess,setIssuccess] = useState(false);
 
 useEffect(() => {
     AOS.init({
@@ -29,7 +35,8 @@ useEffect(() => {
 return (
 	<>
     <HtmlHead/>
-    <Header/>
+    <Header toggle = {toggle} setToggle = {setToggle}/>
+    <Contactus issuccess = {issuccess} setIssuccess = {setIssuccess} toggle = {toggle} setToggle = {setToggle} bloading = {bloading} setBloading = {setBloading} enquiry = {enquiry} setEnquiry = {setEnquiry} error = {error} setError = {setError}/>
     {totals.total !== "" ? 
     <ResultPage totals={totals}  setTotals={setTotals}/>:
      <MainlifeCalculator 

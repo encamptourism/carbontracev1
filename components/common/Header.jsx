@@ -3,7 +3,12 @@ import Image from "next/image";
 import Link from 'next/link';
 import {useState} from 'react';
 
-const Header=()=>{
+const Header=(props)=>{
+
+const contacttoggle = props.toggle;
+const setContacttoggle = props.setToggle;
+
+
 
 const [toggle,setToggle] = useState(false);
 const [collepse,setCollepse] = useState(true);
@@ -35,7 +40,7 @@ return (
                     <li><Link href ="#"><a>Live Feed</a></Link></li>*/}
                 </ul>
                 <div className="offcanvas-btn text-center">
-                    <Link href ="#"><a>Contact us</a></Link>
+                    <Link href ="#"><a onClick={()=>setContacttoggle(!contacttoggle)}>Contact us</a></Link>
                 </div>
             </div>
         </div>
@@ -74,7 +79,7 @@ return (
                 </div>
                 <div className="col-lg-2 col-md-2 d-none d-md-block d-lg-block">
                     <div className="header__btn">
-                        <Link href ="#"><a>Contact us</a></Link>
+                        <Link href ="#"><a onClick={()=>setContacttoggle(!contacttoggle)}>Contact us</a></Link>
                     </div>
                 </div>
             </div>
