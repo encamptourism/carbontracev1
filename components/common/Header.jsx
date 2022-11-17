@@ -31,11 +31,11 @@ return (
                             </ul>
                         </div>
                     </li>
-                    <li><Link href ="#"><a>FAQ</a></Link></li>
-                    <li><Link href ="#"><a>Live Feed</a></Link></li>
+                    {/*<li><Link href ="#"><a>FAQ</a></Link></li>
+                    <li><Link href ="#"><a>Live Feed</a></Link></li>*/}
                 </ul>
                 <div className="offcanvas-btn text-center">
-                    <Link href ="#"><a>Login / Sign Up</a></Link>
+                    <Link href ="#"><a>Contact us</a></Link>
                 </div>
             </div>
         </div>
@@ -67,14 +67,14 @@ return (
                                 <li><Link href ="/travelcalculator"><a>Travel Calculator</a></Link></li>
                                 </ul>
                             </li>
-                            <li><Link href ="#"><a>FAQ</a></Link></li>
-                            <li><Link href ="#"><a>Live Feed</a></Link></li>
+                            {/*<li><Link href ="#"><a>FAQ</a></Link></li>
+                            <li><Link href ="#"><a>Live Feed</a></Link></li>*/}
                         </ul>
                     </div>
                 </div>
                 <div className="col-lg-2 col-md-2 d-none d-md-block d-lg-block">
                     <div className="header__btn">
-                        <Link href ="#"><a>Login / Sign Up</a></Link>
+                        <Link href ="#"><a>Contact us</a></Link>
                     </div>
                 </div>
             </div>
