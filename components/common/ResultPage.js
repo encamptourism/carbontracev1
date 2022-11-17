@@ -10,6 +10,7 @@ const [carbonthings,setCarbonthings] = useState({carbonproject:[],firstName:'',l
 const [error,setError] = useState({carbonproject:'',firstName:'',lastName:'',contact:'',email:''});
 const [toggle,setToggle] = useState(false);
 const [bloading,setBloading] = useState(false);
+const [issuccess,setIssuccess] = useState(false);
 
 const getRandomColor=() =>{
   var letters = '0123456789ABCDEF';
@@ -41,27 +42,29 @@ let finalmultiplier = muliplier ? {
                        totaltravel: isNaN((calculationdata.calculation.totalcalculation.totaltravel)) ? 0 : (calculationdata.calculation.totalcalculation.totaltravel).toFixed(2),
 
                        }:"";
+let whichcalculator = muliplier ? "Your Last Trip" : "Your Annual";
 
 let finalpieobject = Object.keys(finalmultiplier).map((dd,k)=>{
 
-return {title:dd,value:Number(finalmultiplier[dd]),color:getRandomColor()}
-
+//return {title:dd,value:Number(finalmultiplier[dd]),color:getRandomColor()}
+return [dd,Number(finalmultiplier[dd])/1000]
 })
+let newchart = [["Activites","rates"],...finalpieobject];
 
 return (
     <main className="main overflow-hidden">
-    <Sidebar totals={totals} ProjectData={ProjectData} carbonthings = {carbonthings} setCarbonthings = {setCarbonthings} bloading ={bloading} setBloading ={setBloading}   setToggle={setToggle} toggle={toggle}   error={error} setError={setError}/>
+    <Sidebar  setIssuccess={setIssuccess} issuccess={issuccess} totals={totals} ProjectData={ProjectData} carbonthings = {carbonthings} setCarbonthings = {setCarbonthings} bloading ={bloading} setBloading ={setBloading}   setToggle={setToggle} toggle={toggle}   error={error} setError={setError}/>
         <section className="result__area">
             <div className="container">
                 <div className="result__wrap">
                     <div className="row">
                         <div className="col-lg-12">
                             <div className="result__title">
-                                <h2><span>This is annual carbon footprint:</span> {(totals !== "") ? (+totals.total/1000).toFixed(3) : 0} Tons CO2</h2>
+                                <h2><span>{whichcalculator} carbon footprint:</span> {(totals !== "") ? (+totals.total/1000).toFixed(3) : 0} Tons CO2</h2>
                             </div>
                         </div>
                     </div>
-                   <PieCharts finalpieobject ={finalpieobject}/>
+                   <PieCharts  finalpieobject ={newchart}/>
                 </div>
             </div>
         </section>

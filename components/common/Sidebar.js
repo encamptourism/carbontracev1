@@ -2,7 +2,7 @@ import{useState} from "react";
 
 const Sidebar=(props)=>{
 
-const {toggle,setToggle,bloading,setBloading,carbonthings,setCarbonthings,error,ProjectData , totals,setError} = props;
+const {issuccess,setIssuccess,toggle,setToggle,bloading,setBloading,carbonthings,setCarbonthings,error,ProjectData , totals,setError} = props;
 
 
 const selectCarbon=(val)=>{
@@ -15,6 +15,8 @@ carbonprojarr.splice(carbonprojarr.indexOf(val),1);
 setCarbonthings({...carbonthings,carbonproject:carbonprojarr});
 setToggle(true);
 }
+
+
 const onChangeHandler=(e)=>{
 setCarbonthings({...carbonthings,[e.target.name]:e.target.value})
 
@@ -76,7 +78,12 @@ return;
 
 if(!setter){
 setBloading(true);
+
 console.log(totals);
+setIssuccess(true);
+setCarbonthings({carbonproject:[],firstName:'',lastName:'',contact:'',email:''});
+setTimeout(()=>{setToggle(false);setBloading(false);},10000);
+
 
 }
 }
@@ -138,6 +145,7 @@ return (
             </div>
          
             <div className="sidebar__main__btn sidebar2">
+             {issuccess ? <span style={issuccess ? {color:'green',transition:'0.5s',opacity: "1",fontWeight: '600',fontStyle: 'italic',transitionDelay: '3s'}:{color:'green',transition:'0.5s',opacity: "0",fontWeight: '600',fontStyle: 'italic',transitionDelay: '3s'}}>Your Query is Submitted Successfully, We will get back to you soon.</span>:""}
                 <button style={{border:'none',width:'100%'}} onClick={()=>submitDetails()} className="common__btn" disabled ={bloading ? true : false}>{bloading ? <span className="spinner-border" role="status"></span>:'Sumit'}</button>
             </div>
         </div>
