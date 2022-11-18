@@ -109,7 +109,9 @@ Rest of the Planet.</p>
                         <div className="usage__title collaborator__title__blk" data-aos="fade-up" data-aos-delay="50"
                             data-aos-duration="1000">
                             <h2>Why should I join CarbonTrace?</h2>
-                            <p>Lorem ipsum dorem sit amet Lorem ipsum dorem sit amet</p>
+                            <p>We built CarbonTrace to let anybody become a climate champion. Besides working out
+your climate impact in no time, you’ll join the growing community of changemakers who
+are taking on-the-ground climate action to save our planet.</p>
                         </div>
                     </div>
                 </div>
@@ -122,8 +124,8 @@ Rest of the Planet.</p>
                             </div>
                             <div className="usage__content__blk">
                                 <h4>Gain rewards & buy sustainable goods.</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore</p>
+                                <p>We appreciate that motivation is a key driver in the struggle against climate change. That’s why
+CarbonTrace is rewarding your eco-friendly efforts.</p>
                             </div>
                         </div>
                     </div>
@@ -133,9 +135,9 @@ Rest of the Planet.</p>
                                 <img src="assets/img/home/u2.jpg" alt=""/>
                             </div>
                             <div className="usage__content__blk">
-                                <h4>Care for Nature</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore</p>
+                                <h4>Get tax deductions on your carbon credits purchase</h4>
+                                <p>Being a for-profit business, CarbonTrace cannot directly grant you tax exemptions on your credit
+purchase. Having said that, we partner with many NGOs and charities that can.</p>
                             </div>
                         </div>
                     </div>
@@ -146,9 +148,10 @@ Rest of the Planet.</p>
                                 <img src="assets/img/home/u3.jpg" alt=""/>
                             </div>
                             <div className="usage__content__blk">
-                                <h4>Lorem Ipsum</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore</p>
+                                <h4>Secure your life insurance</h4>
+                                <p>Here’s the deal. If you don’t chip in today, you may not have a planet tomorrow. And without a
+planet, what are you going to use the money for? Investing in CarbonTrace is like life insurance.
+<br/>Become a climate champion today</p>
                             </div>
                         </div>
                     </div>
@@ -169,9 +172,8 @@ Rest of the Planet.</p>
                         <div className="vision__right__blk" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
                             <span>OUR VISION</span>
                             <h2>Enable Hassle Free Climate Action</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                ullamco</p>
+                            <p>To Enable Individuals & Organizations To Catalyse Community-Led Positive Climate
+Action With Zero Efforts</p>
                             <Link href="#"><a>Explore</a></Link>
                         </div>
                     </div>
@@ -188,9 +190,9 @@ Rest of the Planet.</p>
                             data-aos-duration="1000">
                             <span>OUR MISSION</span>
                             <h2>To Reduce Impact of Climate Change</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                ullamco</p>
+                            <p>We built CarbonTrace to let anybody become a climate champion. Besides working out
+your climate impact in no time, you’ll join the growing community of changemakers who
+are taking on-the-ground climate action to save our planet.</p>
                             <Link href="#"><a>Explore</a></Link>
                         </div>
                     </div>
