@@ -123,7 +123,7 @@ export const travelQuestion=[
 	                            option:[{label:'Vegetarian',value:'Vegetarian'},{label:'Non Vegetarian',value:'Non_Vegetarian'}],
 	                            image:"assets/img/questions/question_16.jpg",
 	                            default:false,
-	                            cf:{Vegetarian:17,Non_Vegetarian:52},
+	                            cf:{Vegetarian:4.6,Non_Vegetarian:9},
 	                            layout:'col-sm-12 col-md-6',
 	                            dependent: 'none',
 	                            subdependent:""

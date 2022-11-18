@@ -1,5 +1,5 @@
 import{useState} from "react";
-
+import adminapi from "../../api/adminapi";
 const Contactus=(props)=>{
 
 const {issuccess,setIssuccess,toggle,setToggle,bloading,setBloading,enquiry,setEnquiry,error,setError} = props;
@@ -22,7 +22,7 @@ if(emails.match(validRegex)){
 }
 
 
-const submitDetails=()=>{
+const submitDetails= async()=>{
 //setBloading(true);
 let acterror = {...error};
 if(enquiry.firstName === ""){
@@ -57,12 +57,33 @@ return;
 
 if(!setter){
 setBloading(true);
-
-console.log(enquiry);
+const path = "/addinquiry";
+let newfullname = `${enquiry.firstName} ${enquiry.lastName}` || "";
+let submissiondata = {
+                      name:newfullname,
+                      email:enquiry.email || "",
+                      phone:enquiry.contact || "",
+                      message:enquiry.message || '',
+                      tag:'carbonfootprintenquiry',
+                      info:{name:newfullname,email:enquiry.email || "",phone:enquiry.contact || "", message:enquiry.message || ''}
+                      }
+try{
+const localresponse = await adminapi.post(path,JSON.stringify(submissiondata));
+if(localresponse.data.inquiry._id !== undefined){
 setIssuccess(true);
 setEnquiry({message:"",firstName:'',lastName:'',contact:'',email:''});
-setTimeout(()=>{setToggle(false);setBloading(false);},6000);
-
+setBloading(false);
+setTimeout(()=>{setToggle(false);setIssuccess(false);},5000);
+    }else{
+setIssuccess(false);
+setBloading(false);
+    }
+}catch(error){
+    setIssuccess(false);
+     setBloading(false);
+    alert("Check console for error log");
+    console.log(error);
+   }
 
 }
 }

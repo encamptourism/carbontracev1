@@ -1,4 +1,5 @@
 import{useState} from "react";
+import adminapi from "../../api/adminapi";
 
 const Sidebar=(props)=>{
 
@@ -34,7 +35,7 @@ if(emails.match(validRegex)){
 }
 
 
-const submitDetails=()=>{
+const submitDetails=async ()=>{
 //setBloading(true);
 let acterror = {...error};
 if(carbonthings.firstName === ""){
@@ -78,16 +79,36 @@ return;
 
 if(!setter){
 setBloading(true);
-
-console.log(totals);
+const path = "/addinquiry";
+let newfullname = `${totals.pesonaldetails.firstName} ${totals.pesonaldetails.lastName}` || "";
+let submissiondata = {
+                      name:newfullname,
+                      email:totals.pesonaldetails.email || "",
+                      phone:totals.pesonaldetails.contact || "",
+                      message:(totals.carbonproject.length > 0) ? totals.carbonproject.toString():'',
+                      tag:totals.hasOwnProperty('muliplier') ? 'lifestylecalculatorenquiry' : 'travelcalculatorenquiry',
+                      info:totals
+                      }
+try{
+const localresponse = await adminapi.post(path,JSON.stringify(submissiondata));
+if(localresponse.data.inquiry._id !== undefined){
 setIssuccess(true);
 setCarbonthings({carbonproject:[],firstName:'',lastName:'',contact:'',email:''});
-setTimeout(()=>{setToggle(false);setBloading(false);},10000);
-
+setBloading(false);
+setTimeout(()=>{setToggle(false);setIssuccess(false);},8000);
+    }else{
+setIssuccess(false);
+setBloading(false);
+    }
+}catch(error){
+    setIssuccess(false);
+     setBloading(false);
+    alert("Check console for error log");
+    console.log(error);
+   }
 
 }
 }
-
 return ( 
        <>
        <div className={toggle ? "sidebar__area active" : "sidebar__area"}>
