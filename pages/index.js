@@ -35,7 +35,8 @@ useEffect(() => {
                         <div className="hero__main__blk" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
                             <h1>Time to take a step for<br/>
                                 a <span>sustainable</span> future</h1>
-                            <p>Support Community Led Climate Action To Reduce Impact of Climate Change</p>
+                            <p>Support Community-Led Climate Action To Reduce Climate Change Impact In India and in the
+Rest of the Planet.</p>
                             <div className="hero__btn__blk">
                                 <Link  href="/lifestylecalculator"><a>Lifestyle Calculator</a></Link>
                                 <Link  href="/travelcalculator"><a>Travel Calculator</a></Link>
@@ -107,7 +108,7 @@ useEffect(() => {
                     <div className="col-lg-12">
                         <div className="usage__title collaborator__title__blk" data-aos="fade-up" data-aos-delay="50"
                             data-aos-duration="1000">
-                            <h2>Why should I use?</h2>
+                            <h2>Why should I join CarbonTrace?</h2>
                             <p>Lorem ipsum dorem sit amet Lorem ipsum dorem sit amet</p>
                         </div>
                     </div>
@@ -120,7 +121,7 @@ useEffect(() => {
                                 <img src="assets/img/home/u1.jpg" alt=""/>
                             </div>
                             <div className="usage__content__blk">
-                                <h4>Earn Rewards and Cashbacks</h4>
+                                <h4>Gain rewards & buy sustainable goods.</h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                     incididunt ut labore</p>
                             </div>
