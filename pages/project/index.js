@@ -6,7 +6,7 @@ import {ProjectData} from '../../components/project/projectdata';
 import Contactus from '../../components/common/Contactus';
 import {useState} from "react";
 
-const index=({ProjectDatas})=>{
+const Index=({ProjectDatas})=>{
 const [enquiry,setEnquiry] = useState({message:"",firstName:'',lastName:'',contact:'',email:''});
 const [error,setError] = useState({message:"",firstName:'',lastName:'',contact:'',email:''});
 const [bloading,setBloading] = useState(false);
@@ -24,7 +24,7 @@ return (
 	)
 
 }
-export default index;
+export default Index;
 
 export async function getStaticProps() {
  return { props: { ProjectDatas:ProjectData } }

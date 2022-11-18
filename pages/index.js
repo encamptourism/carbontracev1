@@ -1,4 +1,4 @@
-import { useEffect , useState } from "react";
+import {useEffect , useState} from "react";
 import HtmlHead from '../components/common/HtmlHead';
 import Header from '../components/common/Header';
 import Contactus from '../components/common/Contactus';
