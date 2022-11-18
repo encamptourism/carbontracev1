@@ -28,7 +28,7 @@ setTotals({...totals,carbonproject:carbonthings.carbonproject,pesonaldetails:{..
 },[carbonthings])
 
 const {cfvalue,muliplier,total,calculationdata} = totals;
-let finalmultiplier = muliplier ? {
+let finalmultiplier = muliplier && calculationdata ? {
                        howmanyflightayear : isNaN((muliplier.howmanyflightayear) * cfvalue.renewableenergy) ? 0 : ((muliplier.howmanyflightayear) * cfvalue.renewableenergy).toFixed(2),
                        howmanykmtrainayear : isNaN((muliplier.howmanykmtrainayear) * cfvalue.renewableenergy) ? 0 : ((muliplier.howmanykmtrainayear) * cfvalue.renewableenergy).toFixed(2),
                        howmuchmeateatperday: isNaN((muliplier.howmuchmeateatperday) * cfvalue.renewableenergy) ? 0 : ((muliplier.howmuchmeateatperday) * cfvalue.renewableenergy).toFixed(2),
@@ -42,7 +42,7 @@ let finalmultiplier = muliplier ? {
                        totaltravel: isNaN((calculationdata.calculation.totalcalculation.totaltravel)) ? 0 : (calculationdata.calculation.totalcalculation.totaltravel).toFixed(2),
 
                        }:"";
-let whichcalculator = muliplier ? "Your Last Trip" : "Your Annual";
+let whichcalculator = muliplier ? "Your Annual" : "Your Last Trip";
 
 let finalpieobject = Object.keys(finalmultiplier).map((dd,k)=>{
 

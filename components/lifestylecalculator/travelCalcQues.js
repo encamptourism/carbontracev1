@@ -28,7 +28,7 @@ export const lifestyleQuestion=[
 	                            option:[{label:'High Meat Eater (> 100g of meat)',value:'g100'},{label:'Medium Meat Eater (= 50 to 100g of meat)',value:'to50to100'},{label:'Low Meat Eater (< 50g of meat)',value:'l50'}],
 	                            image:"assets/img/questions/question_3.jpg",
 	                            default:false,
-	                            cf:{g100:17,to50to100:17,l50:52},
+	                            cf:{g100:3.3,to50to100:3.3,l50:1.7},
 	                            layout:'col-sm-12 col-md-12'
 	                          },
 	                          {

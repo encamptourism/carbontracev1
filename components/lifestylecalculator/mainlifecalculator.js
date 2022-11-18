@@ -87,9 +87,10 @@ if(calculationdata.noofkmtravel && calculationdata.noofkmtravel !=="" && calcula
 publictransport = +calculationdata.noofkmtravel * +cfvalue.kindoftravelmode;
 
 }
+//noof person
+const noofperson = calculationdata.howmanypeopleinhouse ? Number(calculationdata.howmanypeopleinhouse) : 1;
 
-
-muliplier={...muliplier,howmuchmeateatperday:cfvalue.howmuchmeateatperday,publictransport:publictransport}
+muliplier={...muliplier,howmuchmeateatperday:(cfvalue.howmuchmeateatperday) * 1000 * noofperson ,publictransport:publictransport}
 //get total
 let total = Object.values(muliplier).reduce((add ,a)=>add + a,0);
 
@@ -100,7 +101,8 @@ if(isNaN(total)){
     return;
 }
 
-setTotals({...totals,total:total,muliplier:muliplier,cfvalue,cfvalue});
+setTotals({...totals,total:total,muliplier:muliplier,cfvalue,cfvalue,calculationdata:calculationdata});
+
 }
 
 
