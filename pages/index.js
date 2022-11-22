@@ -103,49 +103,37 @@ Rest of the Planet.</p>
                         <div className="collaborator__title__blk" data-aos="fade-up" data-aos-delay="50"
                             data-aos-duration="1000">
                             <h2>Our Collaborators</h2>
-                            <p>Lorem ipsum dorem sit amet Lorem ipsum dorem sit amet
-                                Lorem ipsum dorem sit amet</p>
-                        </div>
+                                 <p>We’re excited to receive support across multiple sectors, from fintech startups & prestigious financial institutions to global leaders in IT services.</p>
+                    </div>
                     </div>
                 </div>
                 <div className="collaborators__main__blk">
                     <div className="row">
-                        <div className="col-lg-2 col-md-4 col-sm-6 col-6">
+                        <div className="col-lg-3 col-md-4 col-sm-6 col-6">
                             <div className="collaborators__single__blk" data-aos="fade-right" data-aos-delay="50"
                                 data-aos-duration="1000">
-                                <img src="assets/img/home/c1.svg" alt=""/>
+                                <img src="assets/img/aic.png" alt="aic"/>
                             </div>
                         </div>
-                        <div className="col-lg-2 col-md-4 col-sm-6 col-6">
+                        <div className="col-lg-3 col-md-4 col-sm-6 col-6">
                             <div className="collaborators__single__blk" data-aos="fade-right" data-aos-delay="50"
                                 data-aos-duration="1000">
-                                <img src="assets/img/home/c2.svg" alt=""/>
+                                <img src="assets/img/cisco.png" alt="cisco"/>
                             </div>
                         </div>
-                        <div className="col-lg-2 col-md-4 col-sm-6 col-6">
+                        <div className="col-lg-3 col-md-4 col-sm-6 col-6">
                             <div className="collaborators__single__blk" data-aos="fade-right" data-aos-delay="50"
                                 data-aos-duration="1000">
-                                <img src="assets/img/home/c3.svg" alt=""/>
+                                <img src="assets/img/hdfc.png" alt="hdfc"/>
                             </div>
                         </div>
-                        <div className="col-lg-2 col-md-4 col-sm-6 col-6">
+                        <div className="col-lg-3 col-md-4 col-sm-6 col-6">
                             <div className="collaborators__single__blk" data-aos="fade-left" data-aos-delay="50"
                                 data-aos-duration="1000">
-                                <img src="assets/img/home/c4.svg" alt=""/>
+                                <img src="assets/img/SAP-Ariba.png" alt="SAP-Ariba.png"/>
                             </div>
                         </div>
-                        <div className="col-lg-2 col-md-4 col-sm-6 col-6">
-                            <div className="collaborators__single__blk" data-aos="fade-left" data-aos-delay="50"
-                                data-aos-duration="1000">
-                                <img src="assets/img/home/c5.svg" alt=""/>
-                            </div>
-                        </div>
-                        <div className="col-lg-2 col-md-4 col-sm-6 col-6">
-                            <div className="collaborators__single__blk" data-aos="fade-left" data-aos-delay="50"
-                                data-aos-duration="1000">
-                                <img src="assets/img/home/c6.svg" alt=""/>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
