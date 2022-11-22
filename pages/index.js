@@ -5,14 +5,63 @@ import Contactus from '../components/common/Contactus';
 import Link from 'next/link';
 import AOS from "aos";
 import "aos/dist/aos.css";
+import adminapi from "../api/adminapi";
 
 export default function Home() {
 
 const [enquiry,setEnquiry] = useState({message:"",firstName:'',lastName:'',contact:'',email:''});
 const [error,setError] = useState({message:"",firstName:'',lastName:'',contact:'',email:''});
 const [bloading,setBloading] = useState(false);
+const [bloadings,setBloadings] = useState(false);
 const [toggle,setToggle] = useState(false);
 const [issuccess,setIssuccess] = useState(false);
+const [issuccessx,setIssuccessx] = useState(false);
+const [suscribe,setSuscribe] = useState({susemail:"",issuscribe:"",tag:""});
+const [suscribeerr,setSuscribeerr] = useState({susemail:"",issuscribe:""});
+
+const onChangeHandler=(e)=>{
+    setSuscribe({...suscribe,[e.target.name]:e.target.value});
+}
+const suscRibeas=async (e)=>{
+e.preventDefault();
+let errorx = {...suscribeerr};
+if(suscribe.susemail === "" && !validateEmail(suscribe.susemail)){
+errorx = {...errorx,susemail:"Email Required"};
+}else{
+errorx = {...errorx,susemail:""};
+}
+
+if(errorx.susemail === "" && errorx.issuscribe === ""){
+setBloadings(true);
+try {
+const response = await adminapi.post("/subscribe",JSON.stringify({email:suscribe.susemail,tag:"carbon"}));
+if(response.data._id){
+setBloadings(false);
+setSuscribe({susemail:"",issuscribe:"",tag:""});
+setIssuccessx(true);
+}
+
+}
+catch(error){
+console.log(error);
+setBloadings(false);
+}
+
+}
+
+}
+
+const validateEmail=(emails)=>{
+let validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+if(emails.match(validRegex)){
+    return true;
+}else{
+    return false;
+}
+
+
+}
 
 useEffect(() => {
     AOS.init({
@@ -214,7 +263,7 @@ are taking on-the-ground climate action to save our planet.</p>
                             <span>DID YOU KNOW</span>
                             <h2>The average carbon footprint of every person in India was estimated at 0.56 tonne per
                                 year</h2>
-                            <Link href="#"><a>Let’s calculate mine!</a></Link>
+                            <Link href="/lifestylecalculator"><a>Let’s calculate mine!</a></Link>
                         </div>
                     </div>
                 </div>
@@ -286,8 +335,11 @@ are taking on-the-ground climate action to save our planet.</p>
                         <div className="measure__main__blk" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
                             <div className="measure__title">
                                 <h2>Methodology to Measure</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                                <p>The CarbonTrace’s carbon footprint calculator—one of
+the most advanced currently available in India—calculates the personal carbon footprint of an individual
+in a year based on her/his personal lifestyle (e.g., energy consumption, food & travel habits). Users will
+only need to answer a few straightforward questions. <Link href="/methodology"><a style={{marginLeft:"1rem",color:"green"}}>Explore</a></Link></p>
+                                
                             </div>
                             <div className="measure__img__blk">
                                 <img src="assets/img/home/measure_img.jpg" alt=""/>
@@ -360,15 +412,21 @@ are taking on-the-ground climate action to save our planet.</p>
                             </div>
                             <form action="">
                                 <div className="subscribe__form">
+                                <div>
+                                    {issuccessx ? <div style={{color:'white',fontStyle: 'italic',fontSize: '1.2rem',fontWeight: '600',marginTop:'-1.5rem'}}>Your are Subscribed..</div> : ""}
                                     <div className="subscribe__input">
-                                        <input type="email" placeholder="Your email"/>
-                                        <img src="assets/img/home/subscribe_icon.svg" alt=""/>
-                                    </div>
-                                    <div className="subscribe__btn">
-                                        <button type="submit">Subscribe</button>
+                                        <input id="susemail" name="susemail" className={(suscribeerr.susemail !== "") ? "error" : 'ghh'}  type="email" placeholder="Your email" value={suscribe.susemail || ""} onChange={(e)=>onChangeHandler(e)}/>
+                                        <img  src="assets/img/home/subscribe_icon.svg" alt="subscribe"/>
+
                                     </div>
                                 </div>
+                                    <div className="subscribe__btn">
+                                        <button onClick={(e)=>suscRibeas(e)} type="submit" disabled ={bloadings ? true : false}>{bloadings ? <span className="spinner-border" role="status"></span>:'Submit'}</button>
+                                    </div>
+                                  
+                                </div>
                             </form>
+
                         </div>
                     </div>
                 </div>

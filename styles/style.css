@@ -2326,4 +2326,11 @@ border-color: #DBD8FC70;
     z-index: 9999;
     background: #ffffffa1;
 }
+.errors{
+    color: red;
+    font-style: italic;
+    padding-left:30px;
+    text-align:center;
+
+}
 
