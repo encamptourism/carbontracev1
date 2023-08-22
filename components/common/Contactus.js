@@ -126,7 +126,7 @@ return (
             </form>
             <div className="sidebar__main__btn sidebar2">
              {issuccess ? <span style={issuccess ? {color:'green',transition:'0.5s',opacity: "1",fontWeight: '200',transitionDelay: '8s'}:{color:'green',transition:'0.5s',opacity: "0",fontWeight: '200',transitionDelay: '8s',fontSize:'0.9rem'}}>Thank you for taking the step towards a sustainable future. Your submission has been received, and we will be in touch with you shortly.<br/></span>:""}
-                <button style={{border:'none',width:'100%',marginTop: '2rem'}} onClick={()=>submitDetails()} className="common__btn" disabled ={bloading ? true : false}>{bloading ? <span className="spinner-border" role="status"></span>:'Message'}</button>
+                <button style={{border:'none',width:'100%',marginTop: '2rem'}} onClick={()=>submitDetails()} className="common__btn" disabled ={bloading ? true : false}>{bloading ? <span className="spinner-border" role="status"></span>:'Send Message'}</button>
             </div>
         </div>
     </div>

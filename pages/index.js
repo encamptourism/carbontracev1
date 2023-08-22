@@ -352,7 +352,7 @@ only need to answer a few straightforward questions. <Link href="/methodology"><
                         <div className="team__single__blk" data-aos="fade-right" data-aos-delay="50"
                             data-aos-duration="1000">
                             <div className="team__img__blk">
-                                <img src="assets/img/home/team1.jpg" alt=""/>
+                                <img src="assets/img/team/ratan.jpg" alt=""/>
                             </div>
                             <div className="team__content">
                                 <h4>Ratan Kumar
@@ -371,7 +371,7 @@ only need to answer a few straightforward questions. <Link href="/methodology"><
                     <div className="col-lg-4 col-md-4">
                         <div className="team__single__blk" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
                             <div className="team__img__blk">
-                                <img src="assets/img/home/team2.jpg" alt=""/>
+                                <img src="assets/img/team/arun.jpg" alt=""/>
                             </div>
                             <div className="team__content">
                                 <h4>Arun Pattnaik
@@ -392,7 +392,7 @@ only need to answer a few straightforward questions. <Link href="/methodology"><
                         <div className="team__single__blk" data-aos="fade-left" data-aos-delay="50"
                             data-aos-duration="1000">
                             <div className="team__img__blk">
-                                <img src="assets/img/home/team3.jpg" alt=""/>
+                                <img src="assets/img/team/rituraj.jpg" alt=""/>
                             </div>
                             <div className="team__content">
                                 <h4>Rituraj Phukan
@@ -408,6 +408,126 @@ only need to answer a few straightforward questions. <Link href="/methodology"><
                             </div>
                         </div>
                     </div>
+                    <div className="col-lg-4 col-md-4  mt-5">
+                        <div className="team__single__blk" data-aos="fade-left" data-aos-delay="50"
+                            data-aos-duration="1000">
+                            <div className="team__img__blk">
+                                <img src="assets/img/team/abhijit.jpg" alt=""/>
+                            </div>
+                            <div className="team__content">
+                                <h4>Abhijit Chatterjee
+                                 <span style={{marginLeft:'5px'}}>
+                                   <Link href="https://www.linkedin.com/in/abhijit-chatterjee-66883017/" passHref>
+                                   <a target="_new">
+                                   <img src="assets/img/social/linkedin.png" alt="linkedin.png" style={{width: '18px',height:'18px'}}/>
+                                   </a>
+                                   </Link>
+                                </span>
+                                </h4>
+                                <p>Senior Sustainability Specialist</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-lg-4 col-md-4  mt-5">
+                        <div className="team__single__blk" data-aos="fade-left" data-aos-delay="50"
+                            data-aos-duration="1000">
+                            <div className="team__img__blk">
+                                <img src="assets/img/team/saikat.jpg" alt=""/>
+                            </div>
+                            <div className="team__content">
+                                <h4>Saikat Das
+                                 <span style={{marginLeft:'5px'}}>
+                                   <Link href="https://www.linkedin.com/in/saikat92/" passHref>
+                                   <a target="_new">
+                                   <img src="assets/img/social/linkedin.png" alt="linkedin.png" style={{width: '18px',height:'18px'}}/>
+                                   </a>
+                                   </Link>
+                                </span>
+                                </h4>
+                                <p>Senior Sustainability Specialist</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-lg-4 col-md-4 mt-5">
+                        <div className="team__single__blk" data-aos="fade-left" data-aos-delay="50"
+                            data-aos-duration="1000">
+                            <div className="team__img__blk">
+                                <img src="assets/img/team/sarfaraz.jpg" alt=""/>
+                            </div>
+                            <div className="team__content">
+                                <h4>Sarfaraz H
+                                 <span style={{marginLeft:'5px'}}>
+                                   <Link href="https://www.linkedin.com/in/sarfarazhassan/%5C" passHref>
+                                   <a target="_new">
+                                   <img src="assets/img/social/linkedin.png" alt="linkedin.png" style={{width: '18px',height:'18px'}}/>
+                                   </a>
+                                   </Link>
+                                </span>
+                                </h4>
+                                <p>Technical Lead</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-lg-4 col-md-4  mt-5">
+                        <div className="team__single__blk" data-aos="fade-left" data-aos-delay="50"
+                            data-aos-duration="1000">
+                            <div className="team__img__blk">
+                                <img src="assets/img/team/jitumoni.jpg" alt=""/>
+                            </div>
+                            <div className="team__content">
+                                <h4>Jitumoni Changkakoty
+                                 <span style={{marginLeft:'5px'}}>
+                                   <Link href="https://www.linkedin.com/in/jitumoni-changkakoty-6b851a110/" passHref>
+                                   <a target="_new">
+                                   <img src="assets/img/social/linkedin.png" alt="linkedin.png" style={{width: '18px',height:'18px'}}/>
+                                   </a>
+                                   </Link>
+                                </span>
+                                </h4>
+                                <p>Product Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-lg-4 col-md-4  mt-5">
+                        <div className="team__single__blk" data-aos="fade-left" data-aos-delay="50"
+                            data-aos-duration="1000">
+                            <div className="team__img__blk">
+                                <img src="assets/img/team/deepak.jpg" alt=""/>
+                            </div>
+                            <div className="team__content">
+                                <h4>Deepak Ahlawat
+                                 <span style={{marginLeft:'5px'}}>
+                                   <Link href="https://www.linkedin.com/in/deepak-ahlawat-40a96266/" passHref>
+                                   <a target="_new">
+                                   <img src="assets/img/social/linkedin.png" alt="linkedin.png" style={{width: '18px',height:'18px'}}/>
+                                   </a>
+                                   </Link>
+                                </span>
+                                </h4>
+                                <p>QA Lead</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-lg-4 col-md-4  mt-5">
+                        <div className="team__single__blk" data-aos="fade-left" data-aos-delay="50"
+                            data-aos-duration="1000">
+                            <div className="team__img__blk">
+                                <img src="assets/img/team/navneet.jpg" alt=""/>
+                            </div>
+                            <div className="team__content">
+                                <h4>Navneet Goswami
+                                 <span style={{marginLeft:'5px'}}>
+                                   <Link href="https://www.linkedin.com/in/navneet-goswami/" passHref>
+                                   <a target="_new">
+                                   <img src="assets/img/social/linkedin.png" alt="linkedin.png" style={{width: '18px',height:'18px'}}/>
+                                   </a>
+                                   </Link>
+                                </span>
+                                </h4>
+                                <p>Senior Develops Consultant</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -419,8 +539,7 @@ only need to answer a few straightforward questions. <Link href="/methodology"><
                         <div className="subscribe__main__blk" data-aos="fade-up" data-aos-delay="50"
                             data-aos-duration="1000">
                             <div className="subscribe__topbar">
-                                <h2>Subscribe to Newsletter to <br/>
-                                    learn more about our upcoming projects</h2>
+                                <h2>Subscribe to our Newsletter<br/><span className="text-md">to amplify your commitment to sustainability and <br/>actively participate in fostering positive change through our initiatives</span></h2>
                             </div>
                             <form action="">
                                 <div className="subscribe__form">

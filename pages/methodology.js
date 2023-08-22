@@ -40,7 +40,8 @@ return (
                               <div style={{cursor:'pointer'}}  onClick={() => router.back()}><a>&larr;Back</a></div>
                             </div>
                             <div className="project3__topbar__title">
-                                <h2>MEASUREMENT & OFFSET</h2>
+                                <h1>METHODOLOGY</h1>
+                                <h2>Measurement and Offsetting of Carbon Footprint with CarbonTrace: Pioneering Sustainable Accountability</h2>
                             </div>
                         </div>
                     </div>
