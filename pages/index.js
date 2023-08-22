@@ -102,7 +102,7 @@ Rest of the Planet.</p>
                     <div className="col-lg-12 col-md-12">
                         <div className="collaborator__title__blk" data-aos="fade-up" data-aos-delay="50"
                             data-aos-duration="1000">
-                            <h2>Our Collaborators</h2>
+                            <h2>Our Supporters</h2>
                                  <p>We’re excited to receive support across multiple sectors, from fintech startups & prestigious financial institutions to global leaders in IT services.</p>
                     </div>
                     </div>
@@ -326,7 +326,7 @@ are taking on-the-ground climate action to save our planet.</p>
                                 <p>The CarbonTrace’s carbon footprint calculator—one of
 the most advanced currently available in India—calculates the personal carbon footprint of an individual
 in a year based on her/his personal lifestyle (e.g., energy consumption, food & travel habits). Users will
-only need to answer a few straightforward questions. <Link href="/methodology"><a style={{marginLeft:"1rem",color:"green"}}>Explore</a></Link></p>
+only need to answer a few straightforward questions. <Link href="/methodology"><a id="explore">Read more</a></Link></p>
                                 
                             </div>
                             <div className="measure__img__blk">
@@ -355,8 +355,16 @@ only need to answer a few straightforward questions. <Link href="/methodology"><
                                 <img src="assets/img/home/team1.jpg" alt=""/>
                             </div>
                             <div className="team__content">
-                                <h4>Daniel Riley</h4>
-                                <p>Owner & Founder</p>
+                                <h4>Ratan Kumar
+                                  <span style={{marginLeft:'5px'}}>
+                                   <Link href="https://www.linkedin.com/in/ratan-kumar-58098bb6/" passHref>
+                                   <a target="_new">
+                                   <img src="assets/img/social/linkedin.png" alt="linkedin.png" style={{width: '18px',height:'18px'}}/>
+                                   </a>
+                                   </Link>
+                                   </span>
+                                </h4>
+                                <p>Founder & CEO</p>
                             </div>
                         </div>
                     </div>
@@ -366,8 +374,17 @@ only need to answer a few straightforward questions. <Link href="/methodology"><
                                 <img src="assets/img/home/team2.jpg" alt=""/>
                             </div>
                             <div className="team__content">
-                                <h4>Harriet Brock</h4>
-                                <p>Lead Product Design</p>
+                                <h4>Arun Pattnaik
+                                <span style={{marginLeft:'5px'}}>
+                                   <Link href="https://www.linkedin.com/in/arunpattnaik/" passHref>
+                                   <a target="_new">
+                                   <img src="assets/img/social/linkedin.png" alt="linkedin.png" style={{width: '18px',height:'18px'}}/>
+                                   </a>
+                                   </Link>
+                                   </span>
+                                </h4>
+                                
+                                <p>Co-Founder & Product Lead</p>
                             </div>
                         </div>
                     </div>
@@ -378,8 +395,16 @@ only need to answer a few straightforward questions. <Link href="/methodology"><
                                 <img src="assets/img/home/team3.jpg" alt=""/>
                             </div>
                             <div className="team__content">
-                                <h4>Brett Bowen</h4>
-                                <p>Project Manager</p>
+                                <h4>Rituraj Phukan
+                                 <span style={{marginLeft:'5px'}}>
+                                   <Link href="https://www.linkedin.com/in/rrajphukan/" passHref>
+                                   <a target="_new">
+                                   <img src="assets/img/social/linkedin.png" alt="linkedin.png" style={{width: '18px',height:'18px'}}/>
+                                   </a>
+                                   </Link>
+                                </span>
+                                </h4>
+                                <p>Sustainability Director</p>
                             </div>
                         </div>
                     </div>
@@ -394,7 +419,6 @@ only need to answer a few straightforward questions. <Link href="/methodology"><
                         <div className="subscribe__main__blk" data-aos="fade-up" data-aos-delay="50"
                             data-aos-duration="1000">
                             <div className="subscribe__topbar">
-                                <span>Our Subscribe</span>
                                 <h2>Subscribe to Newsletter to <br/>
                                     learn more about our upcoming projects</h2>
                             </div>

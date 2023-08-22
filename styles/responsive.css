@@ -421,6 +421,11 @@
         height: 48px;
         font-size: 14px;
     }
+     #explore {
+        width: 180px;
+        height: 48px;
+        font-size: 14px;
+    }
 
     .vision__right__blk.mission__left__blk {
         padding-right: 30px;

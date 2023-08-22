@@ -753,6 +753,10 @@ html {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .measure__title {
@@ -2332,5 +2336,26 @@ border-color: #DBD8FC70;
     padding-left:30px;
     text-align:center;
 
+}
+#explore{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 255px;
+    height: 56px;
+    border-radius: 28px;
+    background-color: #C9FDDF;
+    font-size: 16px;
+    font-weight: 700;
+    color: #12022F;
+    transition: .3s;
+    letter-spacing: -0.36px;
+    margin-top: 20px;
+}
+
+
+#explore a:hover {
+    background-color: #219653;
+    color: #fff;
 }
 

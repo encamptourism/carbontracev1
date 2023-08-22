@@ -93,7 +93,7 @@ return (
        <div className={toggle ? "sidebar__area active" : "sidebar__area"}>
         <div className="sidebar__main__blk">
             <div className="sidebar__title">
-                <h4>Submit Details</h4>
+                <h4>Leave a Message</h4>
                 <h6 style={{fontSize:'1rem',cursor:'pointer',position: 'absolute',right:'10px',top:'20px'}} onClick={()=>{setToggle(false)}}>close</h6>
             </div>
         <div className="sidebar__total__price mb-3">
@@ -125,8 +125,8 @@ return (
                 </div>
             </form>
             <div className="sidebar__main__btn sidebar2">
-             {issuccess ? <span style={issuccess ? {color:'green',transition:'0.5s',opacity: "1",fontWeight: '600',fontStyle: 'italic',transitionDelay: '3s'}:{color:'green',transition:'0.5s',opacity: "0",fontWeight: '600',fontStyle: 'italic',transitionDelay: '3s'}}>Your Query is Submitted Successfully, We will get back to you soon.</span>:""}
-                <button style={{border:'none',width:'100%'}} onClick={()=>submitDetails()} className="common__btn" disabled ={bloading ? true : false}>{bloading ? <span className="spinner-border" role="status"></span>:'Sumit'}</button>
+             {issuccess ? <span style={issuccess ? {color:'green',transition:'0.5s',opacity: "1",fontWeight: '200',transitionDelay: '8s'}:{color:'green',transition:'0.5s',opacity: "0",fontWeight: '200',transitionDelay: '8s',fontSize:'0.9rem'}}>Thank you for taking the step towards a sustainable future. Your submission has been received, and we will be in touch with you shortly.<br/></span>:""}
+                <button style={{border:'none',width:'100%',marginTop: '2rem'}} onClick={()=>submitDetails()} className="common__btn" disabled ={bloading ? true : false}>{bloading ? <span className="spinner-border" role="status"></span>:'Message'}</button>
             </div>
         </div>
     </div>
