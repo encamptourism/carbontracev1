@@ -96,6 +96,150 @@ Rest of the Planet.</p>
             </div>
         </section>
 
+       
+
+        <section className="usage__area">
+            <div className="container">
+                <div className="row">
+                    <div className="col-lg-12">
+                        <div className="usage__title collaborator__title__blk" data-aos="fade-up" data-aos-delay="50"
+                            data-aos-duration="1000">
+                            <h2>Why should I join CarbonTrace?</h2>
+                            <p>We built CarbonTrace to let anybody become a climate champion. Besides working out
+your climate impact in no time, you’ll join the growing community of changemakers who
+are taking on-the-ground climate action to save our planet.</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col-lg-4 col-md-4">
+                        <div className="usage__single__blk" data-aos="fade-right" data-aos-delay="50"
+                            data-aos-duration="1000">
+                            <div className="usage__img__blk">
+                                <img src="assets/img/home/u1.png" alt=""/>
+                            </div>
+                            <div className="usage__content__blk">
+                                <h4>Gain rewards & buy sustainable goods.</h4>
+                                <p>We appreciate that motivation is a key driver in the struggle against climate change. That’s why
+CarbonTrace is rewarding your eco-friendly efforts.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-lg-4 col-md-4">
+                        <div className="usage__single__blk" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
+                            <div className="usage__img__blk">
+                                <img src="assets/img/home/u2.png" alt=""/>
+                            </div>
+                            <div className="usage__content__blk">
+                                <h4>Get tax deductions on your carbon credits purchase</h4>
+                                <p>Being a for-profit business, CarbonTrace cannot directly grant you tax exemptions on your credit
+purchase. Having said that, we partner with many NGOs and charities that can.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-lg-4 col-md-4">
+                        <div className="usage__single__blk" data-aos="fade-left" data-aos-delay="50"
+                            data-aos-duration="1000">
+                            <div className="usage__img__blk">
+                                <img src="assets/img/home/u3.jpg" alt=""/>
+                            </div>
+                            <div className="usage__content__blk">
+                                <h4>Secure your life insurance</h4>
+                                <p>Here’s the deal. If you don’t chip in today, you may not have a planet tomorrow. And without a
+planet, what are you going to use the money for? Investing in CarbonTrace is like life insurance.
+<br/>Become a climate champion today</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section className="vision__area">
+            <div className="container">
+                <div className="row">
+                    <div className="col-lg-6 col-md-5">
+                        <div className="vision__left__blk" data-aos="fade-right" data-aos-delay="50"
+                            data-aos-duration="1000">
+                            <img src="assets/img/home/vision_img.jpg" alt=""/>
+                        </div>
+                    </div>
+                    <div className="col-lg-6 col-md-7">
+                        <div className="vision__right__blk" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
+                            <span>OUR VISION</span>
+                            <h2>Empower Proactive Climate Action</h2>
+                            <p>Equip Individuals & Organizations to Drive Community-Led Climate Initiatives Actively and Effectively.</p>
+                            <Link href="#"><a>Explore</a></Link>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section className="measure__area">
+            <div className="container">
+                <div className="row">
+                    <div className="col-lg-12">
+                        <div className="measure__main__blk" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
+                            <div className="measure__title">
+                                <h2>Methodology to Measure</h2>
+                                <p>The CarbonTrace’s carbon footprint calculator—one of
+the most advanced currently available in India—calculates the personal carbon footprint of an individual
+in a year based on her/his personal lifestyle (e.g., energy consumption, food & travel habits). Users will
+only need to answer a few straightforward questions. <Link href="/methodology"><a id="explore">Read more</a></Link></p>
+                                
+                            </div>
+                            <div className="measure__img__blk">
+                                <img src="assets/img/home/measure_img.jpg" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section className="vision__area mission__area">
+            <div className="container">
+                <div className="row">
+                    <div className="col-lg-6 col-md-7">
+                        <div className="vision__right__blk mission__left__blk" data-aos="fade-up" data-aos-delay="50"
+                            data-aos-duration="1000">
+                            <span>OUR MISSION</span>
+                            <h2>To Reduce Impact of Climate Change</h2>
+                            <p>We built CarbonTrace to let anybody become a climate champion. Besides working out
+your climate impact in no time, you’ll join the growing community of changemakers who
+are taking on-the-ground climate action to save our planet.</p>
+                            <Link href="#"><a>Explore</a></Link>
+                        </div>
+                    </div>
+                    <div className="col-lg-6 col-md-5 order-first order-md-last order-lg-last">
+                        <div className="vision__left__blk" data-aos="fade-left" data-aos-delay="50"
+                            data-aos-duration="1000">
+                            <img src="assets/img/home/mission_img.jpg" alt=""/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+ 
+        <section className="know__area">
+            <div className="container">
+                <div className="row">
+                    <div className="col-lg-12 col-md-12">
+                        <div className="know__main__blk" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
+                            <span>DID YOU KNOW</span>
+                            <h2>The average carbon footprint of every person in India was estimated at 0.56 tonne per
+                                year</h2>
+                            <Link href="/lifestylecalculator"><a>Let’s calculate mine!</a></Link>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+        
+
         <section className="collaborators__area">
             <div className="container">
                 <div className="row">
@@ -190,125 +334,6 @@ Rest of the Planet.</p>
             </div>
         </section>
 
-        <section className="usage__area">
-            <div className="container">
-                <div className="row">
-                    <div className="col-lg-12">
-                        <div className="usage__title collaborator__title__blk" data-aos="fade-up" data-aos-delay="50"
-                            data-aos-duration="1000">
-                            <h2>Why should I join CarbonTrace?</h2>
-                            <p>We built CarbonTrace to let anybody become a climate champion. Besides working out
-your climate impact in no time, you’ll join the growing community of changemakers who
-are taking on-the-ground climate action to save our planet.</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col-lg-4 col-md-4">
-                        <div className="usage__single__blk" data-aos="fade-right" data-aos-delay="50"
-                            data-aos-duration="1000">
-                            <div className="usage__img__blk">
-                                <img src="assets/img/home/u1.png" alt=""/>
-                            </div>
-                            <div className="usage__content__blk">
-                                <h4>Gain rewards & buy sustainable goods.</h4>
-                                <p>We appreciate that motivation is a key driver in the struggle against climate change. That’s why
-CarbonTrace is rewarding your eco-friendly efforts.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-4 col-md-4">
-                        <div className="usage__single__blk" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
-                            <div className="usage__img__blk">
-                                <img src="assets/img/home/u2.png" alt=""/>
-                            </div>
-                            <div className="usage__content__blk">
-                                <h4>Get tax deductions on your carbon credits purchase</h4>
-                                <p>Being a for-profit business, CarbonTrace cannot directly grant you tax exemptions on your credit
-purchase. Having said that, we partner with many NGOs and charities that can.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-4 col-md-4">
-                        <div className="usage__single__blk" data-aos="fade-left" data-aos-delay="50"
-                            data-aos-duration="1000">
-                            <div className="usage__img__blk">
-                                <img src="assets/img/home/u3.jpg" alt=""/>
-                            </div>
-                            <div className="usage__content__blk">
-                                <h4>Secure your life insurance</h4>
-                                <p>Here’s the deal. If you don’t chip in today, you may not have a planet tomorrow. And without a
-planet, what are you going to use the money for? Investing in CarbonTrace is like life insurance.
-<br/>Become a climate champion today</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section className="vision__area">
-            <div className="container">
-                <div className="row">
-                    <div className="col-lg-6 col-md-5">
-                        <div className="vision__left__blk" data-aos="fade-right" data-aos-delay="50"
-                            data-aos-duration="1000">
-                            <img src="assets/img/home/vision_img.jpg" alt=""/>
-                        </div>
-                    </div>
-                    <div className="col-lg-6 col-md-7">
-                        <div className="vision__right__blk" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
-                            <span>OUR VISION</span>
-                            <h2>Enable Hassle Free Climate Action</h2>
-                            <p>To Enable Individuals & Organizations To Catalyse Community-Led Positive Climate
-Action With Zero Efforts</p>
-                            <Link href="#"><a>Explore</a></Link>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <section className="vision__area mission__area">
-            <div className="container">
-                <div className="row">
-                    <div className="col-lg-6 col-md-7">
-                        <div className="vision__right__blk mission__left__blk" data-aos="fade-up" data-aos-delay="50"
-                            data-aos-duration="1000">
-                            <span>OUR MISSION</span>
-                            <h2>To Reduce Impact of Climate Change</h2>
-                            <p>We built CarbonTrace to let anybody become a climate champion. Besides working out
-your climate impact in no time, you’ll join the growing community of changemakers who
-are taking on-the-ground climate action to save our planet.</p>
-                            <Link href="#"><a>Explore</a></Link>
-                        </div>
-                    </div>
-                    <div className="col-lg-6 col-md-5 order-first order-md-last order-lg-last">
-                        <div className="vision__left__blk" data-aos="fade-left" data-aos-delay="50"
-                            data-aos-duration="1000">
-                            <img src="assets/img/home/mission_img.jpg" alt=""/>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
- 
-        <section className="know__area">
-            <div className="container">
-                <div className="row">
-                    <div className="col-lg-12 col-md-12">
-                        <div className="know__main__blk" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
-                            <span>DID YOU KNOW</span>
-                            <h2>The average carbon footprint of every person in India was estimated at 0.56 tonne per
-                                year</h2>
-                            <Link href="/lifestylecalculator"><a>Let’s calculate mine!</a></Link>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <section className="media__area">
             <div className="container">
                 <div className="media__topbar__wrap" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
@@ -365,28 +390,6 @@ are taking on-the-ground climate action to save our planet.</p>
                                 <p>Linkedin</p>
                                 <a href="https://www.linkedin.com/posts/world-tourism-forum-lucerne_innovateforindia-wtflucerne-tourismindustry-activity-6874622889501462528-LPA6" target="new">Read Article</a>   
                         
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section className="measure__area">
-            <div className="container">
-                <div className="row">
-                    <div className="col-lg-12">
-                        <div className="measure__main__blk" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
-                            <div className="measure__title">
-                                <h2>Methodology to Measure</h2>
-                                <p>The CarbonTrace’s carbon footprint calculator—one of
-the most advanced currently available in India—calculates the personal carbon footprint of an individual
-in a year based on her/his personal lifestyle (e.g., energy consumption, food & travel habits). Users will
-only need to answer a few straightforward questions. <Link href="/methodology"><a id="explore">Read more</a></Link></p>
-                                
-                            </div>
-                            <div className="measure__img__blk">
-                                <img src="assets/img/home/measure_img.jpg" alt=""/>
                             </div>
                         </div>
                     </div>
