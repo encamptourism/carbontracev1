@@ -109,28 +109,79 @@ Rest of the Planet.</p>
                 </div>
                 <div className="collaborators__main__blk">
                     <div className="row">
-                        <div className="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div className="col-lg-3 col-md-4 col-sm-6 col-6 pb-2">
                             <div className="collaborators__single__blk" data-aos="fade-right" data-aos-delay="50"
                                 data-aos-duration="1000">
                                 <img src="assets/img/aic.png" alt="aic"/>
                             </div>
                         </div>
-                        <div className="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div className="col-lg-3 col-md-4 col-sm-6 col-6 pb-2">
                             <div className="collaborators__single__blk" data-aos="fade-right" data-aos-delay="50"
                                 data-aos-duration="1000">
                                 <img src="assets/img/cisco.png" alt="cisco"/>
                             </div>
                         </div>
-                        <div className="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div className="col-lg-3 col-md-4 col-sm-6 col-6 pb-2">
                             <div className="collaborators__single__blk" data-aos="fade-right" data-aos-delay="50"
                                 data-aos-duration="1000">
                                 <img src="assets/img/hdfc.png" alt="hdfc"/>
                             </div>
                         </div>
-                        <div className="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div className="col-lg-3 col-md-4 col-sm-6 col-6 pb-2">
                             <div className="collaborators__single__blk" data-aos="fade-left" data-aos-delay="50"
                                 data-aos-duration="1000">
-                                <img src="assets/img/SAP-Ariba.png" alt="SAP-Ariba.png"/>
+                                <img src="assets/img/sap-ariba.png" alt="SAP-Ariba.png"/>
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-4 col-sm-6 col-6 pb-2">
+                            <div className="collaborators__single__blk" data-aos="fade-left" data-aos-delay="50"
+                                data-aos-duration="1000">
+                                <img src="assets/img/iie.png" alt="iie.png"/>
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-4 col-sm-6 col-6 pb-2">
+                            <div className="collaborators__single__blk" data-aos="fade-left" data-aos-delay="50"
+                                data-aos-duration="1000">
+                                <img src="assets/img/nvcl.png" alt="nvcl.png"/>
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-4 col-sm-6 col-6 pb-2">
+                            <div className="collaborators__single__blk" data-aos="fade-left" data-aos-delay="50"
+                                data-aos-duration="1000">
+                                <img src="assets/img/assam_startup.png" alt="assam_startup.png"/>
+                            </div>
+                        </div>
+                        
+                        <div className="col-lg-3 col-md-4 col-sm-6 col-6 pb-2">
+                            <div className="collaborators__single__blk" data-aos="fade-left" data-aos-delay="50"
+                                data-aos-duration="1000">
+                                <img src="assets/img/tata_logo.png" alt="tata_logo.png"/>
+                            </div>
+                        </div>
+                        
+                        <div className="col-lg-3 col-md-4 col-sm-6 col-6 pb-2">
+                            <div className="collaborators__single__blk" data-aos="fade-left" data-aos-delay="50"
+                                data-aos-duration="1000">
+                                <img src="assets/img/needp.png" alt="needp.png"/>
+                            </div>
+                        </div>
+                        
+                        <div className="col-lg-3 col-md-4 col-sm-6 col-6 pb-2">
+                            <div className="collaborators__single__blk" data-aos="fade-left" data-aos-delay="50"
+                                data-aos-duration="1000">
+                                <img src="assets/img/aidc.png" alt="aidc.png"/>
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-4 col-sm-6 col-6 pb-2">
+                            <div className="collaborators__single__blk" data-aos="fade-left" data-aos-delay="50"
+                                data-aos-duration="1000">
+                                <img src="assets/img/wtf.png" alt="wtf.png"/>
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-4 col-sm-6 col-6 pb-2">
+                            <div className="collaborators__single__blk" data-aos="fade-left" data-aos-delay="50"
+                                data-aos-duration="1000">
+                                <img src="assets/img/gcp.png" alt="gcp.png"/>
                             </div>
                         </div>
                         
@@ -157,7 +208,7 @@ are taking on-the-ground climate action to save our planet.</p>
                         <div className="usage__single__blk" data-aos="fade-right" data-aos-delay="50"
                             data-aos-duration="1000">
                             <div className="usage__img__blk">
-                                <img src="assets/img/home/u1.jpg" alt=""/>
+                                <img src="assets/img/home/u1.png" alt=""/>
                             </div>
                             <div className="usage__content__blk">
                                 <h4>Gain rewards & buy sustainable goods.</h4>
@@ -169,7 +220,7 @@ CarbonTrace is rewarding your eco-friendly efforts.</p>
                     <div className="col-lg-4 col-md-4">
                         <div className="usage__single__blk" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
                             <div className="usage__img__blk">
-                                <img src="assets/img/home/u2.jpg" alt=""/>
+                                <img src="assets/img/home/u2.png" alt=""/>
                             </div>
                             <div className="usage__content__blk">
                                 <h4>Get tax deductions on your carbon credits purchase</h4>
@@ -270,33 +321,37 @@ are taking on-the-ground climate action to save our planet.</p>
                     </div>
                     <div className="row">
                         <div className="col-lg-2 col-md-4 col-6">
+                        
                             <div className="media__single__blk">
-                                <Link href="#"><a><img src="assets/img/home/m1.svg" alt=""/></a></Link>
+                              <a href="https://yourstory.com/socialstory/2021/10/sustainability-agenda-encamp-adventures/amp" target="new"><img src="assets/img/home/media/m2.svg" alt="Yourstory"></img></a>   
                             </div>
                         </div>
                         <div className="col-lg-2 col-md-4 col-6">
                             <div className="media__single__blk">
-                                <Link href="#"><a><img src="assets/img/home/m2.svg" alt=""/></a></Link>
+                            <a href="https://gulfnews.com/business/startups-from-indias-north-east-pitch-at-latest-elevate-session-1.1646926641837" target="new"><img src="assets/img/home/media/gn.png" alt="Gulf News"></img></a>   
+                            </div>
+                        </div>
+                        
+                        <div className="col-lg-2 col-md-4 col-6">
+                            <div className="media__single__blk">
+                            <a href="https://www.tourismdeclares.com/who-has-declared" target="new"><img src="assets/img/home/media/tce.png" alt="Tourism Declares Emergency"></img></a>   
+                            </div>
+                        </div>
+                        
+                        <div className="col-lg-2 col-md-4 col-6">
+                            <div className="media__single__blk">
+                            <a href="https://www.eastmojo.com/northeast-news/2021/11/24/ne-travel-startup-promotes-eco-friendly-tourism-at-cop26-in-glasgow/" target="new"><img src="assets/img/home/media/m3.svg" alt="East Mojo"></img></a>   
                             </div>
                         </div>
                         <div className="col-lg-2 col-md-4 col-6">
                             <div className="media__single__blk">
-                                <Link href="#"><a><img src="assets/img/home/m3.svg" alt=""/></a></Link>
+                            <a href="https://theprint.in/ani-press-releases/aic-smutbi-plays-catalyst-to-encamp-adventures-1st-big-investment-launches-a-travel-carbon-footprint-calculator-and-expands-deeper-into-northeast-india/1108037/" target="new"><img src="assets/img/home/media/tp.png" alt="The Print"></img></a>   
                             </div>
                         </div>
+                        
                         <div className="col-lg-2 col-md-4 col-6">
                             <div className="media__single__blk">
-                                <Link href="#"><a><img src="assets/img/home/m4.svg" alt=""/></a></Link>
-                            </div>
-                        </div>
-                        <div className="col-lg-2 col-md-4 col-6">
-                            <div className="media__single__blk">
-                                <Link href="#"><a><img src="assets/img/home/m5.svg" alt=""/></a></Link>
-                            </div>
-                        </div>
-                        <div className="col-lg-2 col-md-4 col-6">
-                            <div className="media__single__blk">
-                                <Link href="#"><a><img src="assets/img/home/m6.svg" alt=""/></a></Link>
+                            <a href="https://restofworld.org/2022/starlink-elon-musk-global-access/" target="new"><img src="assets/img/home/media/rof.png" alt="Rest of World"></img></a>   
                             </div>
                         </div>
                     </div>
@@ -308,7 +363,8 @@ are taking on-the-ground climate action to save our planet.</p>
                                 <h4>“Travel Startup from Assam starts <br/>
                                     developing a Travel Footprint Calculator”</h4>
                                 <p>Linkedin</p>
-                                <Link href="#"><a>Read Article</a></Link>
+                                <a href="https://www.linkedin.com/posts/world-tourism-forum-lucerne_innovateforindia-wtflucerne-tourismindustry-activity-6874622889501462528-LPA6" target="new">Read Article</a>   
+                        
                             </div>
                         </div>
                     </div>
