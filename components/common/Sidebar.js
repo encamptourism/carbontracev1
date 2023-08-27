@@ -145,8 +145,8 @@ return (
             <span style={{color:'red',marginBottom: '10px',width:'100%',paddingLeft: '10px'}}>{error && error.carbonproject ? "Select Atleast a project before submit !!!" : ""}</span>
             <div className="sidebar__carbon__wrap carbon__wrap2" style={{backgroundImage: `url('/assets/img/carbon_bg.jpg')`}}>
                 <div className="sidebar2__carbon__title">
-                    <h4>Carbon Thing</h4>
-                    <p>Choose the project you’d like to contribute to.</p>
+                    <h4>Offset Your Carbon Footprint</h4>
+                    <p>Pick a Project to Contribute Towards</p>
                 </div>
                 {(ProjectData && ProjectData.length > 0) ? ProjectData.map((data , key)=>{
 
@@ -166,8 +166,8 @@ return (
             </div>
          
             <div className="sidebar__main__btn sidebar2">
-             {issuccess ? <span style={issuccess ? {color:'green',transition:'0.5s',opacity: "1",fontWeight: '600',fontStyle: 'italic',transitionDelay: '3s'}:{color:'green',transition:'0.5s',opacity: "0",fontWeight: '600',fontStyle: 'italic',transitionDelay: '3s'}}>Your Query is Submitted Successfully, We will get back to you soon.</span>:""}
-                <button style={{border:'none',width:'100%'}} onClick={()=>submitDetails()} className="common__btn" disabled ={bloading ? true : false}>{bloading ? <span className="spinner-border" role="status"></span>:'Sumit'}</button>
+             {issuccess ? <span style={issuccess ? {color:'green',transition:'0.5s',opacity: "1",fontWeight: '600',fontStyle: 'italic',transitionDelay: '3s'}:{color:'green',transition:'0.5s',opacity: "0",fontWeight: '600',fontStyle: 'italic',transitionDelay: '3s'}}>Your Contribution Selection Has Been Successfully Submitted. Our sustainability experts will be in touch soon.</span>:""}
+                <button style={{border:'none',width:'100%'}} onClick={()=>submitDetails()} className="common__btn" disabled ={bloading ? true : false}>{bloading ? <span className="spinner-border" role="status"></span>:'Submit'}</button>
             </div>
         </div>
     </div>

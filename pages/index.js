@@ -96,48 +96,7 @@ Rest of the Planet.</p>
             </div>
         </section>
 
-        <section className="collaborators__area">
-            <div className="container">
-                <div className="row">
-                    <div className="col-lg-12 col-md-12">
-                        <div className="collaborator__title__blk" data-aos="fade-up" data-aos-delay="50"
-                            data-aos-duration="1000">
-                            <h2>Our Supporters</h2>
-                                 <p>We’re excited to receive support across multiple sectors, from fintech startups & prestigious financial institutions to global leaders in IT services.</p>
-                    </div>
-                    </div>
-                </div>
-                <div className="collaborators__main__blk">
-                    <div className="row">
-                        <div className="col-lg-3 col-md-4 col-sm-6 col-6">
-                            <div className="collaborators__single__blk" data-aos="fade-right" data-aos-delay="50"
-                                data-aos-duration="1000">
-                                <img src="assets/img/aic.png" alt="aic"/>
-                            </div>
-                        </div>
-                        <div className="col-lg-3 col-md-4 col-sm-6 col-6">
-                            <div className="collaborators__single__blk" data-aos="fade-right" data-aos-delay="50"
-                                data-aos-duration="1000">
-                                <img src="assets/img/cisco.png" alt="cisco"/>
-                            </div>
-                        </div>
-                        <div className="col-lg-3 col-md-4 col-sm-6 col-6">
-                            <div className="collaborators__single__blk" data-aos="fade-right" data-aos-delay="50"
-                                data-aos-duration="1000">
-                                <img src="assets/img/hdfc.png" alt="hdfc"/>
-                            </div>
-                        </div>
-                        <div className="col-lg-3 col-md-4 col-sm-6 col-6">
-                            <div className="collaborators__single__blk" data-aos="fade-left" data-aos-delay="50"
-                                data-aos-duration="1000">
-                                <img src="assets/img/SAP-Ariba.png" alt="SAP-Ariba.png"/>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-        </section>
+       
 
         <section className="usage__area">
             <div className="container">
@@ -157,7 +116,7 @@ are taking on-the-ground climate action to save our planet.</p>
                         <div className="usage__single__blk" data-aos="fade-right" data-aos-delay="50"
                             data-aos-duration="1000">
                             <div className="usage__img__blk">
-                                <img src="assets/img/home/u1.jpg" alt=""/>
+                                <img src="assets/img/home/u1.png" alt=""/>
                             </div>
                             <div className="usage__content__blk">
                                 <h4>Gain rewards & buy sustainable goods.</h4>
@@ -169,7 +128,7 @@ CarbonTrace is rewarding your eco-friendly efforts.</p>
                     <div className="col-lg-4 col-md-4">
                         <div className="usage__single__blk" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
                             <div className="usage__img__blk">
-                                <img src="assets/img/home/u2.jpg" alt=""/>
+                                <img src="assets/img/home/u2.png" alt=""/>
                             </div>
                             <div className="usage__content__blk">
                                 <h4>Get tax deductions on your carbon credits purchase</h4>
@@ -208,9 +167,8 @@ planet, what are you going to use the money for? Investing in CarbonTrace is lik
                     <div className="col-lg-6 col-md-7">
                         <div className="vision__right__blk" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
                             <span>OUR VISION</span>
-                            <h2>Enable Hassle Free Climate Action</h2>
-                            <p>To Enable Individuals & Organizations To Catalyse Community-Led Positive Climate
-Action With Zero Efforts</p>
+                            <h2>Empower Proactive Climate Action</h2>
+                            <p>Equip Individuals & Organizations to Drive Community-Led Climate Initiatives Actively and Effectively.</p>
                             <Link href="#"><a>Explore</a></Link>
                         </div>
                     </div>
@@ -218,7 +176,27 @@ Action With Zero Efforts</p>
             </div>
         </section>
 
-
+        <section className="measure__area">
+            <div className="container">
+                <div className="row">
+                    <div className="col-lg-12">
+                        <div className="measure__main__blk" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
+                            <div className="measure__title">
+                                <h2>Methodology to Measure</h2>
+                                <p>The CarbonTrace’s carbon footprint calculator—one of
+the most advanced currently available in India—calculates the personal carbon footprint of an individual
+in a year based on her/his personal lifestyle (e.g., energy consumption, food & travel habits). Users will
+only need to answer a few straightforward questions. <Link href="/methodology"><a id="explore">Read more</a></Link></p>
+                                
+                            </div>
+                            <div className="measure__img__blk">
+                                <img src="assets/img/home/measure_img.jpg" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section className="vision__area mission__area">
             <div className="container">
                 <div className="row">
@@ -258,6 +236,104 @@ are taking on-the-ground climate action to save our planet.</p>
             </div>
         </section>
 
+        
+
+        
+
+        <section className="collaborators__area">
+            <div className="container">
+                <div className="row">
+                    <div className="col-lg-12 col-md-12">
+                        <div className="collaborator__title__blk" data-aos="fade-up" data-aos-delay="50"
+                            data-aos-duration="1000">
+                            <h2>Our Supporters</h2>
+                                 <p>We’re excited to receive support across multiple sectors, from fintech startups & prestigious financial institutions to global leaders in IT services.</p>
+                    </div>
+                    </div>
+                </div>
+                <div className="collaborators__main__blk">
+                    <div className="row">
+                        <div className="col-lg-3 col-md-4 col-sm-6 col-6 pb-2">
+                            <div className="collaborators__single__blk" data-aos="fade-right" data-aos-delay="50"
+                                data-aos-duration="1000">
+                                <img src="assets/img/aic.png" alt="aic"/>
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-4 col-sm-6 col-6 pb-2">
+                            <div className="collaborators__single__blk" data-aos="fade-right" data-aos-delay="50"
+                                data-aos-duration="1000">
+                                <img src="assets/img/cisco.png" alt="cisco"/>
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-4 col-sm-6 col-6 pb-2">
+                            <div className="collaborators__single__blk" data-aos="fade-right" data-aos-delay="50"
+                                data-aos-duration="1000">
+                                <img src="assets/img/hdfc.png" alt="hdfc"/>
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-4 col-sm-6 col-6 pb-2">
+                            <div className="collaborators__single__blk" data-aos="fade-left" data-aos-delay="50"
+                                data-aos-duration="1000">
+                                <img src="assets/img/sap-ariba.png" alt="SAP-Ariba.png"/>
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-4 col-sm-6 col-6 pb-2">
+                            <div className="collaborators__single__blk" data-aos="fade-left" data-aos-delay="50"
+                                data-aos-duration="1000">
+                                <img src="assets/img/iie.png" alt="iie.png"/>
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-4 col-sm-6 col-6 pb-2">
+                            <div className="collaborators__single__blk" data-aos="fade-left" data-aos-delay="50"
+                                data-aos-duration="1000">
+                                <img src="assets/img/nvcl.png" alt="nvcl.png"/>
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-4 col-sm-6 col-6 pb-2">
+                            <div className="collaborators__single__blk" data-aos="fade-left" data-aos-delay="50"
+                                data-aos-duration="1000">
+                                <img src="assets/img/assam_startup.png" alt="assam_startup.png"/>
+                            </div>
+                        </div>
+                        
+                        <div className="col-lg-3 col-md-4 col-sm-6 col-6 pb-2">
+                            <div className="collaborators__single__blk" data-aos="fade-left" data-aos-delay="50"
+                                data-aos-duration="1000">
+                                <img src="assets/img/tata_logo.png" alt="tata_logo.png"/>
+                            </div>
+                        </div>
+                        
+                        <div className="col-lg-3 col-md-4 col-sm-6 col-6 pb-2">
+                            <div className="collaborators__single__blk" data-aos="fade-left" data-aos-delay="50"
+                                data-aos-duration="1000">
+                                <img src="assets/img/needp.png" alt="needp.png"/>
+                            </div>
+                        </div>
+                        
+                        <div className="col-lg-3 col-md-4 col-sm-6 col-6 pb-2">
+                            <div className="collaborators__single__blk" data-aos="fade-left" data-aos-delay="50"
+                                data-aos-duration="1000">
+                                <img src="assets/img/aidc.png" alt="aidc.png"/>
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-4 col-sm-6 col-6 pb-2">
+                            <div className="collaborators__single__blk" data-aos="fade-left" data-aos-delay="50"
+                                data-aos-duration="1000">
+                                <img src="assets/img/wtf.png" alt="wtf.png"/>
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-4 col-sm-6 col-6 pb-2">
+                            <div className="collaborators__single__blk" data-aos="fade-left" data-aos-delay="50"
+                                data-aos-duration="1000">
+                                <img src="assets/img/gcp.png" alt="gcp.png"/>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section className="media__area">
             <div className="container">
                 <div className="media__topbar__wrap" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
@@ -270,33 +346,37 @@ are taking on-the-ground climate action to save our planet.</p>
                     </div>
                     <div className="row">
                         <div className="col-lg-2 col-md-4 col-6">
+                        
                             <div className="media__single__blk">
-                                <Link href="#"><a><img src="assets/img/home/m1.svg" alt=""/></a></Link>
+                              <a href="https://yourstory.com/socialstory/2021/10/sustainability-agenda-encamp-adventures/amp" target="new"><img src="assets/img/home/media/m2.svg" alt="Yourstory"></img></a>   
                             </div>
                         </div>
                         <div className="col-lg-2 col-md-4 col-6">
                             <div className="media__single__blk">
-                                <Link href="#"><a><img src="assets/img/home/m2.svg" alt=""/></a></Link>
+                            <a href="https://gulfnews.com/business/startups-from-indias-north-east-pitch-at-latest-elevate-session-1.1646926641837" target="new"><img src="assets/img/home/media/gn.png" alt="Gulf News"></img></a>   
+                            </div>
+                        </div>
+                        
+                        <div className="col-lg-2 col-md-4 col-6">
+                            <div className="media__single__blk">
+                            <a href="https://www.tourismdeclares.com/who-has-declared" target="new"><img src="assets/img/home/media/tce.png" alt="Tourism Declares Emergency"></img></a>   
+                            </div>
+                        </div>
+                        
+                        <div className="col-lg-2 col-md-4 col-6">
+                            <div className="media__single__blk">
+                            <a href="https://www.eastmojo.com/northeast-news/2021/11/24/ne-travel-startup-promotes-eco-friendly-tourism-at-cop26-in-glasgow/" target="new"><img src="assets/img/home/media/m3.svg" alt="East Mojo"></img></a>   
                             </div>
                         </div>
                         <div className="col-lg-2 col-md-4 col-6">
                             <div className="media__single__blk">
-                                <Link href="#"><a><img src="assets/img/home/m3.svg" alt=""/></a></Link>
+                            <a href="https://theprint.in/ani-press-releases/aic-smutbi-plays-catalyst-to-encamp-adventures-1st-big-investment-launches-a-travel-carbon-footprint-calculator-and-expands-deeper-into-northeast-india/1108037/" target="new"><img src="assets/img/home/media/tp.png" alt="The Print"></img></a>   
                             </div>
                         </div>
+                        
                         <div className="col-lg-2 col-md-4 col-6">
                             <div className="media__single__blk">
-                                <Link href="#"><a><img src="assets/img/home/m4.svg" alt=""/></a></Link>
-                            </div>
-                        </div>
-                        <div className="col-lg-2 col-md-4 col-6">
-                            <div className="media__single__blk">
-                                <Link href="#"><a><img src="assets/img/home/m5.svg" alt=""/></a></Link>
-                            </div>
-                        </div>
-                        <div className="col-lg-2 col-md-4 col-6">
-                            <div className="media__single__blk">
-                                <Link href="#"><a><img src="assets/img/home/m6.svg" alt=""/></a></Link>
+                            <a href="https://restofworld.org/2022/starlink-elon-musk-global-access/" target="new"><img src="assets/img/home/media/rof.png" alt="Rest of World"></img></a>   
                             </div>
                         </div>
                     </div>
@@ -308,29 +388,8 @@ are taking on-the-ground climate action to save our planet.</p>
                                 <h4>“Travel Startup from Assam starts <br/>
                                     developing a Travel Footprint Calculator”</h4>
                                 <p>Linkedin</p>
-                                <Link href="#"><a>Read Article</a></Link>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section className="measure__area">
-            <div className="container">
-                <div className="row">
-                    <div className="col-lg-12">
-                        <div className="measure__main__blk" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
-                            <div className="measure__title">
-                                <h2>Methodology to Measure</h2>
-                                <p>The CarbonTrace’s carbon footprint calculator—one of
-the most advanced currently available in India—calculates the personal carbon footprint of an individual
-in a year based on her/his personal lifestyle (e.g., energy consumption, food & travel habits). Users will
-only need to answer a few straightforward questions. <Link href="/methodology"><a id="explore">Read more</a></Link></p>
-                                
-                            </div>
-                            <div className="measure__img__blk">
-                                <img src="assets/img/home/measure_img.jpg" alt=""/>
+                                <a href="https://www.linkedin.com/posts/world-tourism-forum-lucerne_innovateforindia-wtflucerne-tourismindustry-activity-6874622889501462528-LPA6" target="new">Read Article</a>   
+                        
                             </div>
                         </div>
                     </div>
@@ -352,7 +411,7 @@ only need to answer a few straightforward questions. <Link href="/methodology"><
                         <div className="team__single__blk" data-aos="fade-right" data-aos-delay="50"
                             data-aos-duration="1000">
                             <div className="team__img__blk">
-                                <img src="assets/img/home/team1.jpg" alt=""/>
+                                <img src="assets/img/team/ratan.jpg" alt=""/>
                             </div>
                             <div className="team__content">
                                 <h4>Ratan Kumar
@@ -371,7 +430,7 @@ only need to answer a few straightforward questions. <Link href="/methodology"><
                     <div className="col-lg-4 col-md-4">
                         <div className="team__single__blk" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
                             <div className="team__img__blk">
-                                <img src="assets/img/home/team2.jpg" alt=""/>
+                                <img src="assets/img/team/arun.jpg" alt=""/>
                             </div>
                             <div className="team__content">
                                 <h4>Arun Pattnaik
@@ -392,7 +451,7 @@ only need to answer a few straightforward questions. <Link href="/methodology"><
                         <div className="team__single__blk" data-aos="fade-left" data-aos-delay="50"
                             data-aos-duration="1000">
                             <div className="team__img__blk">
-                                <img src="assets/img/home/team3.jpg" alt=""/>
+                                <img src="assets/img/team/rituraj.jpg" alt=""/>
                             </div>
                             <div className="team__content">
                                 <h4>Rituraj Phukan
@@ -408,6 +467,126 @@ only need to answer a few straightforward questions. <Link href="/methodology"><
                             </div>
                         </div>
                     </div>
+                    <div className="col-lg-4 col-md-4  mt-5">
+                        <div className="team__single__blk" data-aos="fade-left" data-aos-delay="50"
+                            data-aos-duration="1000">
+                            <div className="team__img__blk">
+                                <img src="assets/img/team/abhijit.jpg" alt=""/>
+                            </div>
+                            <div className="team__content">
+                                <h4>Abhijit Chatterjee
+                                 <span style={{marginLeft:'5px'}}>
+                                   <Link href="https://www.linkedin.com/in/abhijit-chatterjee-66883017/" passHref>
+                                   <a target="_new">
+                                   <img src="assets/img/social/linkedin.png" alt="linkedin.png" style={{width: '18px',height:'18px'}}/>
+                                   </a>
+                                   </Link>
+                                </span>
+                                </h4>
+                                <p>Senior Sustainability Specialist</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-lg-4 col-md-4  mt-5">
+                        <div className="team__single__blk" data-aos="fade-left" data-aos-delay="50"
+                            data-aos-duration="1000">
+                            <div className="team__img__blk">
+                                <img src="assets/img/team/saikat.jpg" alt=""/>
+                            </div>
+                            <div className="team__content">
+                                <h4>Saikat Das
+                                 <span style={{marginLeft:'5px'}}>
+                                   <Link href="https://www.linkedin.com/in/saikat92/" passHref>
+                                   <a target="_new">
+                                   <img src="assets/img/social/linkedin.png" alt="linkedin.png" style={{width: '18px',height:'18px'}}/>
+                                   </a>
+                                   </Link>
+                                </span>
+                                </h4>
+                                <p>Senior Sustainability Specialist</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-lg-4 col-md-4 mt-5">
+                        <div className="team__single__blk" data-aos="fade-left" data-aos-delay="50"
+                            data-aos-duration="1000">
+                            <div className="team__img__blk">
+                                <img src="assets/img/team/sarfaraz.jpg" alt=""/>
+                            </div>
+                            <div className="team__content">
+                                <h4>Sarfaraz H
+                                 <span style={{marginLeft:'5px'}}>
+                                   <Link href="https://www.linkedin.com/in/sarfarazhassan/%5C" passHref>
+                                   <a target="_new">
+                                   <img src="assets/img/social/linkedin.png" alt="linkedin.png" style={{width: '18px',height:'18px'}}/>
+                                   </a>
+                                   </Link>
+                                </span>
+                                </h4>
+                                <p>Technical Lead</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-lg-4 col-md-4  mt-5">
+                        <div className="team__single__blk" data-aos="fade-left" data-aos-delay="50"
+                            data-aos-duration="1000">
+                            <div className="team__img__blk">
+                                <img src="assets/img/team/jitumoni.jpg" alt=""/>
+                            </div>
+                            <div className="team__content">
+                                <h4>Jitumoni Changkakoty
+                                 <span style={{marginLeft:'5px'}}>
+                                   <Link href="https://www.linkedin.com/in/jitumoni-changkakoty-6b851a110/" passHref>
+                                   <a target="_new">
+                                   <img src="assets/img/social/linkedin.png" alt="linkedin.png" style={{width: '18px',height:'18px'}}/>
+                                   </a>
+                                   </Link>
+                                </span>
+                                </h4>
+                                <p>Product Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-lg-4 col-md-4  mt-5">
+                        <div className="team__single__blk" data-aos="fade-left" data-aos-delay="50"
+                            data-aos-duration="1000">
+                            <div className="team__img__blk">
+                                <img src="assets/img/team/deepak.jpg" alt=""/>
+                            </div>
+                            <div className="team__content">
+                                <h4>Deepak Ahlawat
+                                 <span style={{marginLeft:'5px'}}>
+                                   <Link href="https://www.linkedin.com/in/deepak-ahlawat-40a96266/" passHref>
+                                   <a target="_new">
+                                   <img src="assets/img/social/linkedin.png" alt="linkedin.png" style={{width: '18px',height:'18px'}}/>
+                                   </a>
+                                   </Link>
+                                </span>
+                                </h4>
+                                <p>QA Lead</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-lg-4 col-md-4  mt-5">
+                        <div className="team__single__blk" data-aos="fade-left" data-aos-delay="50"
+                            data-aos-duration="1000">
+                            <div className="team__img__blk">
+                                <img src="assets/img/team/navneet.jpg" alt=""/>
+                            </div>
+                            <div className="team__content">
+                                <h4>Navneet Goswami
+                                 <span style={{marginLeft:'5px'}}>
+                                   <Link href="https://www.linkedin.com/in/navneet-goswami/" passHref>
+                                   <a target="_new">
+                                   <img src="assets/img/social/linkedin.png" alt="linkedin.png" style={{width: '18px',height:'18px'}}/>
+                                   </a>
+                                   </Link>
+                                </span>
+                                </h4>
+                                <p>Senior Develops Consultant</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -419,8 +598,7 @@ only need to answer a few straightforward questions. <Link href="/methodology"><
                         <div className="subscribe__main__blk" data-aos="fade-up" data-aos-delay="50"
                             data-aos-duration="1000">
                             <div className="subscribe__topbar">
-                                <h2>Subscribe to Newsletter to <br/>
-                                    learn more about our upcoming projects</h2>
+                                <h2>Subscribe to our Newsletter<br/><span className="text-md">to amplify your commitment to sustainability and <br/>actively participate in fostering positive change through our initiatives</span></h2>
                             </div>
                             <form action="">
                                 <div className="subscribe__form">
