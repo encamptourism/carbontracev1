@@ -3,6 +3,7 @@ import Link from 'next/link';
 import {ProjectData} from '../project/projectdata';
 import OffsetProject from './OffsetProject';
 import PieCharts from './PieCharts';
+import DetailsView from './DetailsView';
 import Sidebar from "./Sidebar";
 
 const ResultPage=(props)=>{
@@ -43,32 +44,18 @@ let finalmultiplier = muliplier && calculationdata ? {
 
                        }:"";
 let whichcalculator = muliplier ? "Your Annual" : "Your Last Trip";
-
 let finalpieobject = Object.keys(finalmultiplier).map((dd,k)=>{
-
-//return {title:dd,value:Number(finalmultiplier[dd]),color:getRandomColor()}
 return [dd,Number(finalmultiplier[dd])/1000]
 })
+
 let newchart = [["Activites","rates"],...finalpieobject];
+let detailview = [...finalpieobject];
 
 return (
     <main className="main overflow-hidden">
-    <Sidebar  setIssuccess={setIssuccess} issuccess={issuccess} totals={totals} ProjectData={ProjectData} carbonthings = {carbonthings} setCarbonthings = {setCarbonthings} bloading ={bloading} setBloading ={setBloading}   setToggle={setToggle} toggle={toggle}   error={error} setError={setError}/>
-        <section className="result__area">
-            <div className="container">
-                <div className="result__wrap">
-                    <div className="row">
-                        <div className="col-lg-12">
-                            <div className="result__title">
-                                <h2><span>{whichcalculator} carbon footprint:</span> {(totals !== "") ? (+totals.total/1000).toFixed(3) : 0} Tons CO2</h2>
-                            </div>
-                        </div>
-                    </div>
-                   <PieCharts  finalpieobject ={newchart}/>
-                </div>
-            </div>
-        </section>
-        <OffsetProject ProjectData={ProjectData} setTotals={setTotals} totals={totals} toggle ={toggle} setToggle={setToggle}/>
+     <Sidebar  setIssuccess={setIssuccess} issuccess={issuccess} totals={totals} ProjectData={ProjectData} carbonthings = {carbonthings} setCarbonthings = {setCarbonthings} bloading ={bloading} setBloading ={setBloading}   setToggle={setToggle} toggle={toggle}   error={error} setError={setError}/>
+      <DetailsView whichcalculator={whichcalculator} detailview={detailview} totals={totals}/>
+    <OffsetProject ProjectData={ProjectData} setTotals={setTotals} totals={totals} toggle ={toggle} setToggle={setToggle}/>
     </main>)
 
 }
