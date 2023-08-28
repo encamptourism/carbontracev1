@@ -181,6 +181,9 @@ planet, what are you going to use the money for? Investing in CarbonTrace is lik
                 <div className="row">
                     <div className="col-lg-12">
                         <div className="measure__main__blk" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
+                        <div className="measure__img__blk mb-5">
+                                <img src="assets/img/home/measure_img.jpg" alt=""/>
+                            </div>
                             <div className="measure__title">
                                 <h2>Methodology to Measure</h2>
                                 <p>The CarbonTrace’s carbon footprint calculator—one of
@@ -189,9 +192,7 @@ in a year based on her/his personal lifestyle (e.g., energy consumption, food & 
 only need to answer a few straightforward questions. <Link href="/methodology"><a id="explore">Read more</a></Link></p>
                                 
                             </div>
-                            <div className="measure__img__blk">
-                                <img src="assets/img/home/measure_img.jpg" alt=""/>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -328,6 +329,30 @@ are taking on-the-ground climate action to save our planet.</p>
                                 <img src="assets/img/gcp.png" alt="gcp.png"/>
                             </div>
                         </div>
+                        <div className="col-lg-3 col-md-4 col-sm-6 col-6 pb-2">
+                            <div className="collaborators__single__blk" data-aos="fade-left" data-aos-delay="50"
+                                data-aos-duration="1000">
+                                <img src="assets/img/investindia.png" alt="investindia.png"/>
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-4 col-sm-6 col-6 pb-2">
+                            <div className="collaborators__single__blk" data-aos="fade-left" data-aos-delay="50"
+                                data-aos-duration="1000">
+                                <img src="assets/img/startup_india.png" alt="startup_india.png"/>
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-4 col-sm-6 col-6 pb-2">
+                            <div className="collaborators__single__blk" data-aos="fade-left" data-aos-delay="50"
+                                data-aos-duration="1000">
+                                <img src="assets/img/missionlife.jpg" alt="missionlife.jpg"/>
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-4 col-sm-6 col-6 pb-2">
+                            <div className="collaborators__single__blk" data-aos="fade-left" data-aos-delay="50"
+                                data-aos-duration="1000">
+                                <img src="assets/img/aws.png" alt="aws.png"/>
+                            </div>
+                        </div>
                         
                     </div>
                 </div>
@@ -345,38 +370,89 @@ are taking on-the-ground climate action to save our planet.</p>
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col-lg-2 col-md-4 col-6">
+                        <div className="col-lg-3 col-md-4 col-6 pb-5">
                         
                             <div className="media__single__blk">
                               <a href="https://yourstory.com/socialstory/2021/10/sustainability-agenda-encamp-adventures/amp" target="new"><img src="assets/img/home/media/m2.svg" alt="Yourstory"></img></a>   
                             </div>
                         </div>
-                        <div className="col-lg-2 col-md-4 col-6">
+                        <div className="col-lg-3 col-md-4 col-6 pb-5">
                             <div className="media__single__blk">
                             <a href="https://gulfnews.com/business/startups-from-indias-north-east-pitch-at-latest-elevate-session-1.1646926641837" target="new"><img src="assets/img/home/media/gn.png" alt="Gulf News"></img></a>   
                             </div>
                         </div>
                         
-                        <div className="col-lg-2 col-md-4 col-6">
+                        <div className="col-lg-3 col-md-4 col-6 pb-5">
                             <div className="media__single__blk">
                             <a href="https://www.tourismdeclares.com/who-has-declared" target="new"><img src="assets/img/home/media/tce.png" alt="Tourism Declares Emergency"></img></a>   
                             </div>
                         </div>
                         
-                        <div className="col-lg-2 col-md-4 col-6">
+                        <div className="col-lg-3 col-md-4 col-6 pb-5">
                             <div className="media__single__blk">
                             <a href="https://www.eastmojo.com/northeast-news/2021/11/24/ne-travel-startup-promotes-eco-friendly-tourism-at-cop26-in-glasgow/" target="new"><img src="assets/img/home/media/m3.svg" alt="East Mojo"></img></a>   
                             </div>
                         </div>
-                        <div className="col-lg-2 col-md-4 col-6">
+                        <div className="col-lg-3 col-md-4 col-6 pb-5">
                             <div className="media__single__blk">
                             <a href="https://theprint.in/ani-press-releases/aic-smutbi-plays-catalyst-to-encamp-adventures-1st-big-investment-launches-a-travel-carbon-footprint-calculator-and-expands-deeper-into-northeast-india/1108037/" target="new"><img src="assets/img/home/media/tp.png" alt="The Print"></img></a>   
                             </div>
                         </div>
                         
-                        <div className="col-lg-2 col-md-4 col-6">
+                        <div className="col-lg-3 col-md-4 col-6 pb-5">
                             <div className="media__single__blk">
                             <a href="https://restofworld.org/2022/starlink-elon-musk-global-access/" target="new"><img src="assets/img/home/media/rof.png" alt="Rest of World"></img></a>   
+                            </div>
+                        </div>
+                        {/* media logos new */}
+                        <div className="col-lg-3 col-md-4 col-6 pb-5">
+                            <div className="media__single__blk">
+                            <a href="https://niti.gov.in/node/3583" target="new"><img src="assets/img/home/media/missionlife.jpg" alt="Rest of World"></img></a>   
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-4 col-6 pb-5">
+                            <div className="media__single__blk">
+                            <a href="https://drive.google.com/file/d/1S4OC7ycnkVWk4VYo17TWKni4IxRCdm5F/view" target="new"><img src="assets/img/home/media/undp.jpg" alt="Rest of World"></img></a>   
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-4 col-6 pb-5">
+                            <div className="media__single__blk">
+                            <a href="https://www.instagram.com/p/CXSgV23sprA/" target="new"><img src="assets/img/home/media/outlook.png" alt="Rest of World"></img></a>   
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-4 col-6 pb-5">
+                            <div className="media__single__blk">
+                            <a href="https://www.evoindia.com/features/tata-nexon-meghalaya" target="new"><img src="assets/img/home/media/evo.jpg" alt="Rest of World"></img></a>   
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-4 col-6 pb-5">
+                            <div className="media__single__blk">
+                            <a href="https://www.indiaexpo2020.com/news/startups-from-indias-north-east-pitch-at-latest-elevate-session" target="new"><img src="assets/img/home/media/expo2020.png" alt="Rest of World"></img></a>   
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-4 col-6 pb-5">
+                            <div className="media__single__blk">
+                            <a href="https://news.samsung.com/in/samsung-invites-applications-for-solve-for-tomorrow-innovation-competition-youth-of-guwahati-suggest-innovative-ideas-to-solve-real-world-problems" target="new"><img src="assets/img/home/media/samsung.png" alt="Rest of World"></img></a>   
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-4 col-6 pb-5">
+                            <div className="media__single__blk">
+                            <a href="https://www.zee5.com/articles/aic-smutbi-plays-catalyst-to-encamp-adventures-1st-big-investment-launches-a-travel-carbon-footprint-calculator-and-expands-deeper-into-northeast-india" target="new"><img src="assets/img/home/media/zee5.png" alt="Rest of World"></img></a>   
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-4 col-6 pb-5">
+                            <div className="media__single__blk">
+                            <a href="#" target="new"><img src="assets/img/home/media/dailyhunt.png" alt="Rest of World"></img></a>   
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-4 col-6 pb-5">
+                            <div className="media__single__blk">
+                            <a href="https://ciie.co/portfolio.html" target="new"><img src="assets/img/home/media/ciie.png" alt="Rest of World"></img></a>   
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-4 col-6 pb-5">
+                            <div className="media__single__blk">
+                            <a href="#" target="new"><img src="assets/img/home/media/jionews.png" alt="Jio News"></img></a>   
                             </div>
                         </div>
                     </div>

@@ -692,11 +692,15 @@ html {
 }
 
 .media__single__blk {
-    text-align: center;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;  /* Center horizontally */
+    align-items: center;      /* Center vertically */
+    height: 100%;   
 }
 
 .media__single__blk a img {
-    height: 25px;
+    height: 40px;
 }
 
 .media__bottom__wrap {
@@ -737,7 +741,7 @@ html {
 .measure__area {
     background-color: #F8F8F8;
     padding-top: 80px;
-    padding-bottom: 57px;
+    padding-bottom: 10px;
 }
 
 .measure__main__blk {
@@ -760,7 +764,7 @@ html {
 }
 
 .measure__title {
-    margin-bottom: 65px;
+    margin-bottom: 40px;
 }
 
 .measure__img__blk img {
