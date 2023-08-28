@@ -490,7 +490,7 @@ are taking on-the-ground climate action to save our planet.</p>
                                 <img src="assets/img/team/ratan.jpg" alt=""/>
                             </div>
                             <div className="team__content">
-                                <h4>Ratan Kumar
+                                <h4 style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>Ratan Kumar
                                   <span style={{marginLeft:'5px'}}>
                                    <Link href="https://www.linkedin.com/in/ratan-kumar-58098bb6/" passHref>
                                    <a target="_new">
@@ -509,7 +509,7 @@ are taking on-the-ground climate action to save our planet.</p>
                                 <img src="assets/img/team/arun.jpg" alt=""/>
                             </div>
                             <div className="team__content">
-                                <h4>Arun Pattnaik
+                                <h4 style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>Arun Pattnaik
                                 <span style={{marginLeft:'5px'}}>
                                    <Link href="https://www.linkedin.com/in/arunpattnaik/" passHref>
                                    <a target="_new">
@@ -530,7 +530,7 @@ are taking on-the-ground climate action to save our planet.</p>
                                 <img src="assets/img/team/rituraj.jpg" alt=""/>
                             </div>
                             <div className="team__content">
-                                <h4>Rituraj Phukan
+                                <h4 style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>Rituraj Phukan
                                  <span style={{marginLeft:'5px'}}>
                                    <Link href="https://www.linkedin.com/in/rrajphukan/" passHref>
                                    <a target="_new">
@@ -550,7 +550,7 @@ are taking on-the-ground climate action to save our planet.</p>
                                 <img src="assets/img/team/abhijit.jpg" alt=""/>
                             </div>
                             <div className="team__content">
-                                <h4>Abhijit Chatterjee
+                                <h4 style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>Abhijit Chatterjee
                                  <span style={{marginLeft:'5px'}}>
                                    <Link href="https://www.linkedin.com/in/abhijit-chatterjee-66883017/" passHref>
                                    <a target="_new">
@@ -570,7 +570,7 @@ are taking on-the-ground climate action to save our planet.</p>
                                 <img src="assets/img/team/saikat.jpg" alt=""/>
                             </div>
                             <div className="team__content">
-                                <h4>Saikat Das
+                                <h4 style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>Saikat Das
                                  <span style={{marginLeft:'5px'}}>
                                    <Link href="https://www.linkedin.com/in/saikat92/" passHref>
                                    <a target="_new">
@@ -590,7 +590,7 @@ are taking on-the-ground climate action to save our planet.</p>
                                 <img src="assets/img/team/sarfaraz.jpg" alt=""/>
                             </div>
                             <div className="team__content">
-                                <h4>Sarfaraz H
+                                <h4 style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>Sarfaraz H
                                  <span style={{marginLeft:'5px'}}>
                                    <Link href="https://www.linkedin.com/in/sarfarazhassan/%5C" passHref>
                                    <a target="_new">
@@ -610,7 +610,7 @@ are taking on-the-ground climate action to save our planet.</p>
                                 <img src="assets/img/team/jitumoni.jpg" alt=""/>
                             </div>
                             <div className="team__content">
-                                <h4>Jitumoni Changkakoty
+                                <h4 style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>Jitumoni Changkakoty
                                  <span style={{marginLeft:'5px'}}>
                                    <Link href="https://www.linkedin.com/in/jitumoni-changkakoty-6b851a110/" passHref>
                                    <a target="_new">
@@ -630,7 +630,7 @@ are taking on-the-ground climate action to save our planet.</p>
                                 <img src="assets/img/team/deepak.jpg" alt=""/>
                             </div>
                             <div className="team__content">
-                                <h4>Deepak Ahlawat
+                                <h4 style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>Deepak Ahlawat
                                  <span style={{marginLeft:'5px'}}>
                                    <Link href="https://www.linkedin.com/in/deepak-ahlawat-40a96266/" passHref>
                                    <a target="_new">
@@ -650,7 +650,7 @@ are taking on-the-ground climate action to save our planet.</p>
                                 <img src="assets/img/team/navneet.jpg" alt=""/>
                             </div>
                             <div className="team__content">
-                                <h4>Navneet Goswami
+                                <h4 style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>Navneet Goswami
                                  <span style={{marginLeft:'5px'}}>
                                    <Link href="https://www.linkedin.com/in/navneet-goswami/" passHref>
                                    <a target="_new">
