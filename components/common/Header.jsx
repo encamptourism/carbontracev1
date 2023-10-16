@@ -36,8 +36,7 @@ return (
                             </ul>
                         </div>
                     </li>
-                    {/*<li><Link href ="#"><a>FAQ</a></Link></li>
-                    <li><Link href ="#"><a>Live Feed</a></Link></li>*/}
+                    <li><Link href ="#"><a onClick={()=>setContacttoggle(!contacttoggle)}>Carbon Market Consulting</a></Link></li>
                 </ul>
                 <div className="offcanvas-btn text-center">
                     <Link href ="#"><a onClick={()=>setContacttoggle(!contacttoggle)}>Contact us</a></Link>
@@ -74,7 +73,9 @@ return (
                             </li>
                             {/*<li><Link href ="#"><a>FAQ</a></Link></li>
                             <li><Link href ="#"><a>Live Feed</a></Link></li>*/}
+                            <li><Link href ="#"><a onClick={()=>setContacttoggle(!contacttoggle)}>Carbon Market Consulting</a></Link></li>
                         </ul>
+
                     </div>
                 </div>
                 <div className="col-lg-2 col-md-2 d-none d-md-block d-lg-block">
