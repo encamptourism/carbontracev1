@@ -85,7 +85,8 @@ useEffect(() => {
                             <h1>Time to take a step for<br/>
                                 a <span>sustainable</span> future</h1>
                             <p>Support Community-Led Climate Action To Reduce Climate Change Impact In India and in the
-Rest of the Planet.</p>
+                               Rest of the Planet.
+                            </p>
                             <div className="hero__btn__blk">
                                 <Link  href="/lifestylecalculator"><a>Lifestyle Calculator</a></Link>
                                 <Link  href="/travelcalculator"><a>Travel Calculator</a></Link>
