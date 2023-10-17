@@ -484,7 +484,6 @@ are taking on-the-ground climate action to save our planet.</p>
 the most advanced currently available in India—calculates the personal carbon footprint of an individual
 in a year based on her/his personal lifestyle (e.g., energy consumption, food & travel habits). Users will
 only need to answer a few straightforward questions. 
-{/*<Link href="/methodology"><a id="explore">Read more</a></Link>*/}
 <button id="explore" onClick={()=>(setToggle(true))} >Write to us to know more</button>
 </p>
                                 
