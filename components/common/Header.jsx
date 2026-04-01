@@ -1,94 +1,230 @@
-import Router from 'next/router'
-import Image from "next/image";
-import Link from 'next/link';
-import {useState} from 'react';
+"use client";
 
-const Header=(props)=>{
+import Link from "next/link";
+import { useState } from "react";
 
-const contacttoggle = props.toggle;
-const setContacttoggle = props.setToggle;
+const Header = (props) => {
+  const contacttoggle = props.toggle;
+  const setContacttoggle = props.setToggle;
+  const theme = props.theme || "dark";
 
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [submenuOpen, setSubmenuOpen] = useState(false);
 
+  return (
+    <>
+      {/* 🔥 MOBILE SIDEBAR */}
+      <div className={`mobile-menu ${menuOpen ? "active" : ""}`}>
+        <div className="menu-close" onClick={() => setMenuOpen(false)}>✕</div>
 
-const [toggle,setToggle] = useState(false);
-const [collepse,setCollepse] = useState(true);
+        <ul>
+          <li><Link href="/">Home</Link></li>
+          <li><Link href="/project">Projects</Link></li>
 
-return (
-<>
-    <div className={toggle ? "offcanvas-area active" : "offcanvas-area"}>
-        <div className="menu-close" onClick={()=>setToggle(false)}>
-            <i className="far fa-times"></i>
-        </div>
-        <div className="offcanvas-menu">
-            <div className="main-menu">
-                <ul className="d-block">
-                    <li><Link href ="/"><a>Home</a></Link></li>
-                    <li><Link href ="/project"><a>Projects</a></Link></li>
-                    <li><Link href ="#"><a onClick={()=>setCollepse(!collepse)} className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"
-                            >Calculators<i className="fas fa-chevron-down"></i></a></Link>
-                        <div id="collapseTwo" className={collepse ? "accordion-collapse collapse" : "accordion-collapse"} aria-labelledby="headingTwo"
-                            data-bs-parent="#accordionExample">
-                            <ul className="mobile__drop">
-                                <li><Link href ="/lifestylecalculator"><a>Lifestyle Calculator</a></Link></li>
-                                <li><Link href ="/travelcalculator"><a>Travel Calculator</a></Link></li>
-
-                            </ul>
-                        </div>
-                    </li>
-                    <li><Link href ="#"><a onClick={()=>setContacttoggle(!contacttoggle)}>Carbon Market Consulting</a></Link></li>
-                </ul>
-                <div className="offcanvas-btn text-center">
-                    <Link href ="#"><a onClick={()=>setContacttoggle(!contacttoggle)}>Contact us</a></Link>
-                </div>
+          <li>
+            <div className="submenu-toggle" onClick={() => setSubmenuOpen(!submenuOpen)}>
+              Calculators ▾
             </div>
-        </div>
-    </div>
 
-    <div className="offcanvas-overlay"></div>
+            {submenuOpen && (
+              <ul className="submenu">
+                <li><Link href="/lifestylecalculator">Lifestyle Calculator</Link></li>
+                <li><Link href="/travelcalculator">Travel Calculator</Link></li>
+              </ul>
+            )}
+          </li>
 
-    <div className="header__area">
-        <div className="container">
-            <div className="row">
-                <div className="col-lg-2 col-md-2 col-6">
-                    <div className="header__logo">
-                        <Link href ="/"><a><img src="../assets/img/home/logo.svg" alt=""/></a></Link>
-                    </div>
-                </div>
-                <div className="col-lg-8 col-md-8 col-6">
-                    <div className="mobile__menu d-flex d-md-none d-lg-none">
-                        <div className="menu-open" onClick={()=>setToggle(!toggle)}>
-                            <span><i className="fas fa-bars"></i></span>
-                        </div>
-                    </div>
-                    <div className="header__menu d-none d-md-flex d-lg-flex">
-                        <ul>
-                            <li><Link href ="/"><a>Home</a></Link></li>
-                            <li><Link href ="/project"><a>Projects</a></Link></li>
-                            <li><Link href ="#"><a>Calculators<i className="fas fa-chevron-down"></i></a></Link>
-                                <ul className="header__dropdown">
-                                <li><Link href ="/lifestylecalculator"><a>Lifestyle Calculator</a></Link></li>
-                                <li><Link href ="/travelcalculator"><a>Travel Calculator</a></Link></li>
-                                </ul>
-                            </li>
-                            {/*<li><Link href ="#"><a>FAQ</a></Link></li>
-                            <li><Link href ="#"><a>Live Feed</a></Link></li>*/}
-                            <li><Link href ="#"><a onClick={()=>setContacttoggle(!contacttoggle)}>Carbon Market Consulting</a></Link></li>
-                        </ul>
+          <li>
+            <span onClick={() => setContacttoggle(!contacttoggle)}>
+              Carbon Market Consulting
+            </span>
+          </li>
 
-                    </div>
-                </div>
-                <div className="col-lg-2 col-md-2 d-none d-md-block d-lg-block">
-                    <div className="header__btn">
-                        <Link href ="#"><a onClick={()=>setContacttoggle(!contacttoggle)}>Contact us</a></Link>
-                    </div>
-                </div>
+          <li className="mobile-btn">
+            <span onClick={() => setContacttoggle(!contacttoggle)}>
+              Contact us
+            </span>
+          </li>
+        </ul>
+      </div>
+
+      {/* 🔥 OVERLAY */}
+      {menuOpen && <div className="overlay" onClick={() => setMenuOpen(false)} />}
+
+      {/* 🔥 HEADER */}
+      <div className={`header ${theme === "light" ? "light" : "dark"}`}>
+        <div className="container header-inner">
+
+          {/* LOGO */}
+          <div className="logo">
+            <Link href="/">
+              <img src="/assets/img/home/logo.svg" alt="logo" />
+            </Link>
+          </div>
+
+          {/* DESKTOP MENU */}
+          <nav className="desktop-menu">
+            <Link href="/">Home</Link>
+            <Link href="/project">Projects</Link>
+
+            <div className="dropdown">
+              <span>Calculators ▾</span>
+              <div className="dropdown-menu">
+                <Link href="/lifestylecalculator">Lifestyle Calculator</Link>
+                <Link href="/travelcalculator">Travel Calculator</Link>
+              </div>
             </div>
+
+            <span onClick={() => setContacttoggle(!contacttoggle)}>
+              Carbon Market Consulting
+            </span>
+          </nav>
+
+          {/* RIGHT */}
+          <div className="right">
+            <span className="contact-btn" onClick={() => setContacttoggle(!contacttoggle)}>
+              Contact us
+            </span>
+
+            {/* MOBILE ICON */}
+            <div className="hamburger" onClick={() => setMenuOpen(true)}>
+              ☰
+            </div>
+          </div>
+
         </div>
-    </div>
+      </div>
 
-</>
-	   );
+      {/* 🔥 STYLE */}
+      <style jsx>{`
+        .header {
+          position: fixed;
+          width: 100%;
+          top: 0;
+          z-index: 999;
+          padding: 15px 0;
+          transition: 0.3s;
+        }
 
-}
+        .header.light {
+          background: rgba(0,0,0,0.2);
+          backdrop-filter: blur(8px);
+          color: white;
+        }
+
+        .header.dark {
+          background: #fff;
+          color: #000;
+        }
+
+        .header-inner {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        .desktop-menu {
+          display: flex;
+          gap: 25px;
+        }
+
+        .dropdown {
+          position: relative;
+        }
+
+        .dropdown-menu {
+          position: absolute;
+          top: 30px;
+          background: #fff;
+          padding: 10px;
+          display: none;
+        }
+
+        .dropdown:hover .dropdown-menu {
+          display: block;
+        }
+
+        .right {
+          display: flex;
+          align-items: center;
+          gap: 15px;
+        }
+
+        .contact-btn {
+          background: #00c896;
+          padding: 8px 18px;
+          border-radius: 6px;
+          color: #000;
+          cursor: pointer;
+        }
+
+        .hamburger {
+          display: none;
+          font-size: 22px;
+          cursor: pointer;
+        }
+
+        /* 🔥 MOBILE MENU */
+        .mobile-menu {
+          position: fixed;
+          top: 0;
+          left: -100%;
+          width: 260px;
+          height: 100%;
+          background: #0b0f0e;
+          z-index: 1000;
+          padding: 20px;
+          transition: 0.3s;
+        }
+
+        .mobile-menu.active {
+          left: 0;
+        }
+
+        .mobile-menu ul {
+          list-style: none;
+          padding: 0;
+        }
+
+        .mobile-menu li {
+          margin: 15px 0;
+          color: #fff;
+        }
+
+        .submenu {
+          padding-left: 15px;
+        }
+
+        .menu-close {
+          text-align: right;
+          cursor: pointer;
+          margin-bottom: 20px;
+        }
+
+        .overlay {
+          position: fixed;
+          inset: 0;
+          background: rgba(0,0,0,0.5);
+          z-index: 999;
+        }
+
+        /* 🔥 RESPONSIVE */
+        @media (max-width: 768px) {
+          .desktop-menu {
+            display: none;
+          }
+
+          .hamburger {
+            display: block;
+          }
+
+          .contact-btn {
+            display: none;
+          }
+        }
+      `}</style>
+    </>
+  );
+};
+
 export default Header;

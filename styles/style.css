@@ -2027,6 +2027,7 @@ border-color: #DBD8FC70;
 .sidebar__area.active {
     right: 0;
     visibility: visible;
+    z-index: 9999;
 }
 .sidebar__area {
     width: 460px;
