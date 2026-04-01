@@ -18,47 +18,39 @@ export default function HeroSlider() {
           autoplay={{ delay: 5000, disableOnInteraction: false }}
           loop
         >
-
           {/* 🔥 SLIDE 1 */}
           <SwiperSlide>
             <div
               className="slide"
-              style={{ backgroundImage: "url('/assets/img/satellite/satellite_farming_3.jpg')" }}
+              style={{
+                backgroundImage:
+                  "url('/assets/img/satellite/satellite_farming_3.jpg')",
+              }}
             >
               <div className="overlay"></div>
               <div className="grid"></div>
-<div className="content container">
-  <motion.h1
-    initial={{ opacity: 0, y: 40 }}
-    animate={{ opacity: 1, y: 0 }}
-    style={{
-      color: "#ffffff",
-      textShadow: "0 10px 30px rgba(0,0,0,0.7)"
-    }}
-  >
-    Satellite{" "}
-    <span
-      style={{
-        color: "#00c896",
-        textShadow: "0 0 20px rgba(0,200,150,0.6)"
-      }}
-    >
-      Intelligence
-    </span>
-  </motion.h1>
+   <div className="content container">
+                <h1>
+                  Satellite{" "}
+                  <span
+                    style={{
+                      color: "#00c896",
+                      textShadow: "0 0 20px rgba(0,200,150,0.6)",
+                    }}
+                  >
+                    Intelligence
+                  </span>
+                </h1>
 
-  <motion.p
-    initial={{ opacity: 0 }}
-    animate={{ opacity: 1 }}
-    transition={{ delay: 0.3 }}
-    style={{
-      color: "rgba(255,255,255,0.9)",
-      textShadow: "0 4px 20px rgba(0,0,0,0.6)"
-    }}
-  >
-    Real-time NDVI and geospatial analytics to measure environmental impact.
-  </motion.p>
-</div>
+                <p style={{
+                    color: "rgba(255,255,255,0.9)",
+                    textShadow: "0 4px 20px rgba(0,0,0,0.6)",
+                  }}
+                >
+                  Real-time NDVI and geospatial analytics to measure
+                  environmental impact.
+                </p>
+              </div>
             </div>
           </SwiperSlide>
 
@@ -66,7 +58,10 @@ export default function HeroSlider() {
           <SwiperSlide>
             <div
               className="slide"
-              style={{ backgroundImage: "url('/assets/img/satellite/satellite_farming_2.jpg')" }}
+              style={{
+                backgroundImage:
+                  "url('/assets/img/satellite/satellite_farming_2.jpg')",
+              }}
             >
               <div className="overlay"></div>
               <div className="glow"></div>
@@ -86,7 +81,9 @@ export default function HeroSlider() {
           <SwiperSlide>
             <div
               className="slide"
-              style={{ backgroundImage: "url('/assets/img/satellite/ndvi.gif')" }}
+              style={{
+                backgroundImage: "url('/assets/img/satellite/ndvi.gif')",
+              }}
             >
               <div className="overlay"></div>
 
@@ -95,9 +92,7 @@ export default function HeroSlider() {
                   Real <span>Income</span> for Communities
                 </h1>
 
-                <p>
-                  Turning climate data into real-world income for farmers.
-                </p>
+                <p>Turning climate data into real-world income for farmers.</p>
 
                 <div className="hero-btns">
                   <Link href="/contact">
@@ -126,7 +121,6 @@ export default function HeroSlider() {
               </div>
             </div>
           </SwiperSlide>
-
         </Swiper>
       </section>
 
@@ -164,10 +158,8 @@ export default function HeroSlider() {
           inset: 0;
           opacity: 0.2;
           background-size: 60px 60px;
-          background-image: linear-gradient(
-              rgba(255, 255, 255, 0.04) 1px,
-              transparent 1px
-            ),
+          background-image:
+            linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
             linear-gradient(
               90deg,
               rgba(255, 255, 255, 0.04) 1px,
@@ -180,7 +172,11 @@ export default function HeroSlider() {
           position: absolute;
           width: 350px;
           height: 350px;
-          background: radial-gradient(circle, rgba(0, 200, 150, 0.25), transparent);
+          background: radial-gradient(
+            circle,
+            rgba(0, 200, 150, 0.25),
+            transparent
+          );
           top: 30%;
           left: 60%;
           filter: blur(80px);
@@ -199,17 +195,17 @@ export default function HeroSlider() {
         .content h1 {
           font-size: 3.5rem;
           font-weight: 700;
-           color: #ffffff;
-          text-shadow: 0 10px 30px rgba(0,0,0,0.6); /* ✅ depth */
+          color: #ffffff;
+          text-shadow: 0 10px 30px rgba(0, 0, 0, 0.6); /* ✅ depth */
         }
 
         .content span {
-         color: #00c896;
+          color: #00c896;
         }
 
         .content p {
           margin-top: 15px;
-          color: rgba(255,255,255,0.85);
+          color: rgba(255, 255, 255, 0.85);
         }
 
         .hero-btns {
