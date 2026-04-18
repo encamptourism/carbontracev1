@@ -9,6 +9,7 @@ import adminapi from "../api/adminapi";
 import HeroSlider from "../components/HeroSlider";
 import FounderNoteSection from "../components/FounderNoteSection";
 import DigitalPassportSection from "../components/DigitalPassportSection";
+import PricingSectionPro from "../components/PricingSectionPro";
 
 export default function Home() {
   const [enquiry, setEnquiry] = useState({
@@ -110,8 +111,9 @@ export default function Home() {
         {/* 🔥 NEW INVESTOR SECTIONS */}
         <FounderNoteSection />
         <DigitalPassportSection toggle={toggle} setToggle={setToggle} />
+        <PricingSectionPro toggle={toggle} setToggle={setToggle} />
 
-        <section className="usage__area">
+{/*         <section className="usage__area">
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
@@ -198,7 +200,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         <section className="vision__area">
           <div className="container">
