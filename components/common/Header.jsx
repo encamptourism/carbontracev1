@@ -1,120 +1,178 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Header = (props) => {
   const contacttoggle = props.toggle;
   const setContacttoggle = props.setToggle;
-  const theme = props.theme || "dark";
 
   const [menuOpen, setMenuOpen] = useState(false);
   const [submenuOpen, setSubmenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <>
-      {/* 🔥 MOBILE SIDEBAR */}
+      {/* MOBILE SIDEBAR */}
       <div className={`mobile-menu ${menuOpen ? "active" : ""}`}>
         <div className="menu-close" onClick={() => setMenuOpen(false)}>✕</div>
 
         <ul>
-          <li><Link href="/">Home</Link></li>
-          <li><Link href="/project">Projects</Link></li>
+          <li>
+            <Link href="/">
+              <a onClick={() => setMenuOpen(false)}>Home</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/project">
+              <a onClick={() => setMenuOpen(false)}>Projects</a>
+            </Link>
+          </li>
 
           <li>
             <div className="submenu-toggle" onClick={() => setSubmenuOpen(!submenuOpen)}>
-              Calculators ▾
+              Calculators <span className="arrow">{submenuOpen ? "▲" : "▾"}</span>
             </div>
 
             {submenuOpen && (
               <ul className="submenu">
-                <li><Link href="/lifestylecalculator">Lifestyle Calculator</Link></li>
-                <li><Link href="/travelcalculator">Travel Calculator</Link></li>
+                <li>
+                  <Link href="/lifestylecalculator">
+                    <a onClick={() => setMenuOpen(false)}>Lifestyle Calculator</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/travelcalculator">
+                    <a onClick={() => setMenuOpen(false)}>Travel Calculator</a>
+                  </Link>
+                </li>
               </ul>
             )}
           </li>
 
           <li>
-            <span onClick={() => setContacttoggle(!contacttoggle)}>
+            <span
+              className="cursor-pointer hover:text-[#ff4d9d]"
+              onClick={() => {
+                setContacttoggle(!contacttoggle);
+                setMenuOpen(false);
+              }}
+            >
               Carbon Market Consulting
             </span>
           </li>
 
           <li className="mobile-btn">
-            <span onClick={() => setContacttoggle(!contacttoggle)}>
-              Contact us
+            <span
+              onClick={() => {
+                setContacttoggle(!contacttoggle);
+                setMenuOpen(false);
+              }}
+            >
+              Contact Us
             </span>
           </li>
         </ul>
       </div>
 
-      {/* 🔥 OVERLAY */}
+      {/* OVERLAY */}
       {menuOpen && <div className="overlay" onClick={() => setMenuOpen(false)} />}
 
-      {/* 🔥 HEADER */}
-      <div className={`header ${theme === "light" ? "light" : "dark"}`}>
+      {/* FIXED GLASS HEADER MIXED WITH HERO */}
+      <header className={`header-container ${scrolled ? "scrolled" : ""}`}>
         <div className="container header-inner">
 
           {/* LOGO */}
           <div className="logo">
             <Link href="/">
-              <img src="/assets/img/home/logo.svg" alt="logo" />
+              <a className="flex items-center gap-2">
+                <img src="/assets/img/home/logo.svg" alt="CarbonTrace Logo" className="h-9 w-auto brightness-125" />
+              </a>
             </Link>
           </div>
 
           {/* DESKTOP MENU */}
           <nav className="desktop-menu">
-            <Link href="/">Home</Link>
-            <Link href="/project">Projects</Link>
+            <Link href="/">
+              <a className="nav-link">Home</a>
+            </Link>
+            <Link href="/project">
+              <a className="nav-link">Projects</a>
+            </Link>
 
-            <div className="dropdown">
-              <span>Calculators ▾</span>
+            <div className="dropdown" data-hover>
+              <span className="nav-link dropdown-trigger">
+                Calculators <span className="text-xs ml-1 opacity-70">▾</span>
+              </span>
               <div className="dropdown-menu">
-                <Link href="/lifestylecalculator">Lifestyle Calculator</Link>
-                <Link href="/travelcalculator">Travel Calculator</Link>
+                <Link href="/lifestylecalculator">
+                  <a className="dropdown-item">Lifestyle Calculator</a>
+                </Link>
+                <Link href="/travelcalculator">
+                  <a className="dropdown-item">Travel Calculator</a>
+                </Link>
               </div>
             </div>
 
-            <span onClick={() => setContacttoggle(!contacttoggle)}>
+            <span
+              data-hover
+              className="nav-link cursor-pointer"
+              onClick={() => setContacttoggle(!contacttoggle)}
+            >
               Carbon Market Consulting
             </span>
           </nav>
 
-          {/* RIGHT */}
+          {/* RIGHT ACTION BUTTON */}
           <div className="right">
-            <span className="contact-btn" onClick={() => setContacttoggle(!contacttoggle)}>
-              Contact us
-            </span>
+            <button
+              data-hover
+              className="contact-btn"
+              onClick={() => setContacttoggle(!contacttoggle)}
+            >
+              <span>Contact Us</span>
+            </button>
 
-            {/* MOBILE ICON */}
+            {/* MOBILE HAMBURGER */}
             <div className="hamburger" onClick={() => setMenuOpen(true)}>
               ☰
             </div>
           </div>
 
         </div>
-      </div>
+      </header>
 
-      {/* 🔥 STYLE */}
+      {/* EMBEDDED SCOPED STYLES FOR PERFECT HERO BLENDING */}
       <style jsx>{`
-        .header {
+        .header-container {
           position: fixed;
-          width: 100%;
           top: 0;
+          left: 0;
+          width: 100%;
           z-index: 999;
-          padding: 15px 0;
-          transition: 0.3s;
+          padding: 18px 0;
+          background: linear-gradient(180deg, rgba(7, 6, 13, 0.75) 0%, rgba(7, 6, 13, 0.2) 70%, transparent 100%);
+          backdrop-filter: blur(10px);
+          -webkit-backdrop-filter: blur(10px);
+          border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+          transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
         }
 
-        .header.light {
-          background: rgba(0,0,0,0.2);
-          backdrop-filter: blur(8px);
-          color: white;
-        }
-
-        .header.dark {
-          background: #fff;
-          color: #000;
+        .header-container.scrolled {
+          padding: 12px 0;
+          background: rgba(7, 6, 13, 0.88);
+          backdrop-filter: blur(20px);
+          -webkit-backdrop-filter: blur(20px);
+          border-bottom: 1px solid rgba(255, 77, 157, 0.15);
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
         }
 
         .header-inner {
@@ -125,56 +183,124 @@ const Header = (props) => {
 
         .desktop-menu {
           display: flex;
-          gap: 25px;
+          align-items: center;
+          gap: 32px;
+        }
+
+        .nav-link {
+          color: #f4f1ff;
+          font-weight: 500;
+          font-size: 0.95rem;
+          letter-spacing: -0.01em;
+          transition: all 0.2s ease;
+          position: relative;
+          display: inline-flex;
+          align-items: center;
+        }
+
+        .nav-link:hover {
+          color: #ff4d9d;
+          text-shadow: 0 0 12px rgba(255, 77, 157, 0.5);
         }
 
         .dropdown {
           position: relative;
+          display: inline-block;
+        }
+
+        .dropdown-trigger {
+          cursor: pointer;
+          padding: 6px 0;
         }
 
         .dropdown-menu {
           position: absolute;
-          top: 30px;
-          background: #fff;
-          padding: 10px;
-          display: none;
+          top: 100%;
+          left: -12px;
+          min-width: 210px;
+          background: rgba(18, 16, 31, 0.95);
+          backdrop-filter: blur(24px);
+          -webkit-backdrop-filter: blur(24px);
+          border: 1px solid rgba(255, 255, 255, 0.12);
+          border-radius: 16px;
+          padding: 8px;
+          display: opacity;
+          opacity: 0;
+          visibility: hidden;
+          transform: translateY(10px);
+          transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7), 0 0 20px rgba(124, 92, 255, 0.15);
         }
 
         .dropdown:hover .dropdown-menu {
+          opacity: 1;
+          visibility: visible;
+          transform: translateY(4px);
+        }
+
+        .dropdown-item {
           display: block;
+          padding: 10px 16px;
+          color: #f4f1ff;
+          font-size: 0.88rem;
+          font-weight: 500;
+          border-radius: 10px;
+          transition: all 0.15s ease;
+        }
+
+        .dropdown-item:hover {
+          background: rgba(255, 77, 157, 0.12);
+          color: #ff4d9d;
+          transform: translateX(4px);
         }
 
         .right {
           display: flex;
           align-items: center;
-          gap: 15px;
+          gap: 16px;
         }
 
         .contact-btn {
-          background: #00c896;
-          padding: 8px 18px;
-          border-radius: 6px;
-          color: #000;
+          position: relative;
+          background: linear-gradient(135deg, #ff4d9d 0%, #7c5cff 100%);
+          color: #ffffff;
+          padding: 10px 24px;
+          border-radius: 9999px;
+          font-weight: 600;
+          font-size: 0.9rem;
+          border: none;
           cursor: pointer;
+          overflow: hidden;
+          transition: all 0.25s ease;
+          box-shadow: 0 0 20px rgba(255, 77, 157, 0.4);
+        }
+
+        .contact-btn:hover {
+          transform: translateY(-2px) scale(1.03);
+          box-shadow: 0 0 32px rgba(255, 77, 157, 0.7), 0 0 15px rgba(124, 92, 255, 0.5);
         }
 
         .hamburger {
           display: none;
-          font-size: 22px;
+          font-size: 24px;
+          color: #f4f1ff;
           cursor: pointer;
         }
 
-        /* 🔥 MOBILE MENU */
+        /* MOBILE MENU DRAWER */
         .mobile-menu {
           position: fixed;
           top: 0;
           left: -100%;
-          width: 260px;
+          width: 280px;
           height: 100%;
-          background: #0b0f0e;
+          background: rgba(12, 10, 23, 0.97);
+          backdrop-filter: blur(30px);
+          -webkit-backdrop-filter: blur(30px);
+          border-right: 1px solid rgba(255, 255, 255, 0.1);
           z-index: 1000;
-          padding: 20px;
-          transition: 0.3s;
+          padding: 24px;
+          transition: left 0.35s cubic-bezier(0.16, 1, 0.3, 1);
         }
 
         .mobile-menu.active {
@@ -184,31 +310,59 @@ const Header = (props) => {
         .mobile-menu ul {
           list-style: none;
           padding: 0;
+          margin-top: 20px;
         }
 
         .mobile-menu li {
-          margin: 15px 0;
-          color: #fff;
+          margin: 18px 0;
+          color: #f4f1ff;
+          font-size: 1rem;
+          font-weight: 500;
+        }
+
+        .submenu-toggle {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          cursor: pointer;
         }
 
         .submenu {
-          padding-left: 15px;
+          padding-left: 14px;
+          margin-top: 10px;
+          border-left: 2px solid rgba(255, 77, 157, 0.3);
         }
 
         .menu-close {
           text-align: right;
           cursor: pointer;
-          margin-bottom: 20px;
+          font-size: 20px;
+          color: #ff4d9d;
+        }
+
+        .mobile-btn {
+          margin-top: 30px !important;
+        }
+
+        .mobile-btn span {
+          display: block;
+          text-align: center;
+          background: linear-gradient(135deg, #ff4d9d, #7c5cff);
+          color: #fff;
+          padding: 12px;
+          border-radius: 9999px;
+          font-weight: 600;
+          cursor: pointer;
         }
 
         .overlay {
           position: fixed;
           inset: 0;
-          background: rgba(0,0,0,0.5);
+          background: rgba(0, 0, 0, 0.7);
+          backdrop-filter: blur(4px);
           z-index: 999;
         }
 
-        /* 🔥 RESPONSIVE */
         @media (max-width: 768px) {
           .desktop-menu {
             display: none;
@@ -227,4 +381,4 @@ const Header = (props) => {
   );
 };
 
-export default Header;
+export default Header;

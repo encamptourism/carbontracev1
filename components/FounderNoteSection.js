@@ -1,144 +1,64 @@
+import React from "react";
+import Reveal from "./Reveal";
+
 export default function FounderNoteSection() {
   return (
-    <>
-      <section className="founder-note">
-        <div className="container">
-          <div className="row align-items-center">
+    <section className="py-28 px-4 relative overflow-hidden text-[#f4f1ff]">
+      {/* Background Ambient Glow */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] bg-[#7c5cff]/12 rounded-full blur-[160px] pointer-events-none" />
 
-            {/* LEFT CONTENT */}
-            <div className="col-lg-7">
-              <div className="note-content">
+      <div className="container mx-auto max-w-4xl relative z-10 text-center">
+        
+        <Reveal i={0}>
+          <div>
+            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#7c5cff]/10 text-[#7c5cff] border border-[#7c5cff]/30 text-xs sm:text-sm font-mono font-extrabold uppercase tracking-[0.2em] mb-6">
+              <span className="w-2 h-2 rounded-full bg-[#7c5cff] animate-ping" />
+              SCENE 04 — FOUNDER’S VISION: TURNING INTELLIGENCE INTO VALUE
+            </span>
 
-                <h6 className="tag">Director’s Note</h6>
 
-                <h2>
-                  Turning <span>Climate Intelligence</span> into Real-World Impact
-                </h2>
+            <h2 
+              className="text-4xl sm:text-6xl font-extrabold text-[#f4f1ff] leading-[1.1] mb-8 tracking-tight max-w-3xl mx-auto"
+              style={{ fontFamily: "var(--font-syne)", letterSpacing: "-0.03em" }}
+            >
+              Turning <span className="grad">Climate Intelligence</span> into Real-World Impact
+            </h2>
 
-                <p>
-                  Hello, I’m Ratan, founder of Encamp and CarbonTrace.
-                </p>
-
-                <p>
-                  Across regions like Northeast India, we already have powerful
-                  geospatial intelligence — satellite imagery, crop insights,
-                  and forest monitoring.
-                </p>
-
-                <p>
-                  But this data rarely translates into income for the communities
-                  driving climate action on the ground.
-                </p>
-
-                <p className="highlight">
-                  CarbonTrace bridges this gap — converting environmental intelligence
-                  into measurable carbon assets and real economic value.
-                </p>
-
-              </div>
+            <div className="space-y-5 text-[#9a95b5] text-lg sm:text-xl leading-relaxed font-light mb-12 max-w-3xl mx-auto">
+              <p>Hello, I’m Ratan, founder of Encamp and CarbonTrace.</p>
+              <p>Across regions like Northeast India, we already have powerful geospatial intelligence — satellite imagery, crop insights, and forest monitoring.</p>
+              <p>But this data rarely translates into income for the communities driving climate action on the ground.</p>
             </div>
 
-            {/* RIGHT IMAGE */}
-            <div className="col-lg-5">
-              <div className="note-visual">
+            {/* Styled Open-Canvas Quote Block */}
+            <div className="relative p-8 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-md max-w-3xl mx-auto mb-10 shadow-2xl">
+              <span className="text-4xl font-serif text-[#ff4d9d] block mb-2">“</span>
+              <p className="text-[#f4f1ff] font-semibold text-xl sm:text-2xl leading-relaxed italic" style={{ fontFamily: "var(--font-syne)" }}>
+                CarbonTrace bridges this gap — converting environmental intelligence into measurable carbon assets and real economic value.
+              </p>
+            </div>
+
+            {/* Founder Signature Line */}
+            <div className="inline-flex items-center gap-4 pt-2">
+              <div className="w-12 h-12 rounded-full bg-gradient-to-tr from-[#ff4d9d] to-[#7c5cff] p-0.5 shadow-[0_0_20px_rgba(255,77,157,0.4)]">
                 <img
                   src="/assets/img/team/ratan.jpg"
-                  alt="Founder Vision"
+                  alt="Ratan Kumar"
+                  className="w-full h-full object-cover rounded-full"
                 />
-                <div className="overlay"></div>
+              </div>
+              <div className="text-left">
+                <h4 className="text-lg font-bold text-[#f4f1ff] leading-none mb-1" style={{ fontFamily: "var(--font-syne)" }}>
+                  Ratan Kumar
+                </h4>
+                <p className="text-xs font-mono text-[#00e0c6]">Founder & CEO, CarbonTrace</p>
               </div>
             </div>
 
           </div>
-        </div>
-      </section>
+        </Reveal>
 
-      {/* ✅ STYLE JSX */}
-      <style jsx>{`
-        .founder-note {
-          padding: 100px 0;
-          background: #0b0f0e;
-          color: #fff;
-        }
-
-        .note-content {
-          max-width: 600px;
-        }
-
-        .tag {
-          color: #00c896;
-          text-transform: uppercase;
-          letter-spacing: 1px;
-          margin-bottom: 10px;
-          font-size: 0.85rem;
-        }
-
-        .note-content h2 {
-          font-size: 2.5rem;
-          font-weight: 700;
-          margin-bottom: 20px;
-          line-height: 1.3;
-          color: #ffffff;
-        }
-
-        .note-content h2 span {
-          color: #00c896;
-        }
-
-        .note-content p {
-          color: rgba(255,255,255,0.75);
-          margin-bottom: 15px;
-          line-height: 1.7;
-          font-size: 1rem;
-        }
-
-        .highlight {
-          color: #ffffff;
-          font-weight: 500;
-          border-left: 3px solid #00c896;
-          padding-left: 15px;
-          margin-top: 20px;
-        }
-
-        .note-visual {
-          position: relative;
-          border-radius: 12px;
-          overflow: hidden;
-        }
-
-        .note-visual img {
-          width: 100%;
-          height: 420px;
-          object-fit: cover;
-          filter: brightness(0.8) contrast(1.05);
-        }
-
-        .note-visual .overlay {
-          position: absolute;
-          inset: 0;
-          background: linear-gradient(
-            180deg,
-            rgba(0,0,0,0.2),
-            rgba(0,0,0,0.6)
-          );
-        }
-
-        /* MOBILE */
-        @media (max-width: 768px) {
-          .founder-note {
-            padding: 60px 0;
-          }
-
-          .note-content h2 {
-            font-size: 1.8rem;
-          }
-
-          .note-visual img {
-            height: 260px;
-            margin-top: 30px;
-          }
-        }
-      `}</style>
-    </>
+      </div>
+    </section>
   );
 }

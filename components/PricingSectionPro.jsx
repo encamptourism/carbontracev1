@@ -1,218 +1,99 @@
+import React from "react";
+import MagneticButton from "./MagneticButton";
+
 export default function PricingSectionPro({ toggle, setToggle }) {
   return (
-    <section className="pricing-pro">
-      <div className="bg"></div>
+    <section className="py-28 px-4 relative overflow-hidden text-[#f4f1ff]">
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[550px] bg-[#00e0c6]/10 blur-[200px] rounded-full pointer-events-none" />
 
-      <div className="container">
+      <div className="container mx-auto max-w-6xl relative z-10">
+        
         {/* HEADER */}
-        <div className="header text-center">
-          <h2>Carbon Infrastructure Pricing</h2>
-          <p>Free onboarding. Usage-based pricing. Built for scale.</p>
-        </div>
+        <div className="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up" data-aos-duration="1000">
+          <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#00e0c6]/10 text-[#00e0c6] border border-[#00e0c6]/30 text-xs sm:text-sm font-mono font-extrabold uppercase tracking-[0.2em] mb-6">
+            <span className="w-2 h-2 rounded-full bg-[#00e0c6] animate-pulse" />
+            SCENE 06 — CARBON INFRASTRUCTURE PRICING ENGINE
+          </span>
 
-        {/* CORE MODEL */}
-        <div className="model-box">
-          <h3>$5 per 1000 kg CO₂ Processed</h3>
-
-          <p>
-            Every transaction is converted into a traceable carbon asset.
-            Carbontrace calculates emissions, enables offset, issues rewards,
-            and creates a shared revenue layer between platform and partner.
+          <h2 
+            className="text-4xl sm:text-6xl font-extrabold text-[#f4f1ff] tracking-tight mb-6"
+            style={{ fontFamily: "var(--font-syne)", letterSpacing: "-0.03em" }}
+          >
+            Carbon Infrastructure Pricing
+          </h2>
+          <p className="text-[#9a95b5] text-lg sm:text-xl font-light">
+            Free onboarding. Usage-based pricing. Built for scale.
           </p>
-
-          {/* FLOW */}
-          <div className="flow">
-            <div>User Purchase</div>
-            <span>→</span>
-            <div>Carbon Calculated</div>
-            <span>→</span>
-            <div>Offset + Verified</div>
-            <span>→</span>
-            <div>Rewards + Revenue</div>
-          </div>
-
-          {/* WHAT USER GETS */}
-          <div className="outcomes">
-            <div className="card">
-              <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=800&auto=format&fit=crop" />
-              <h4>Carbon Passport</h4>
-              <p>Track total CO₂ reduced, projects supported, and full history</p>
-            </div>
-
-            <div className="card">
-              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop" />
-              <h4>Verified Certificate</h4>
-              <p>Blockchain-backed proof linked to real carbon projects</p>
-            </div>
-
-            <div className="card">
-              <img src="https://images.unsplash.com/photo-1621761191319-c6fb62004040" />
-              <h4>CTCoins Rewards</h4>
-              <p>Earn tokenized incentives for every carbon-positive action</p>
-            </div>
-          </div>
-
-          {/* ECONOMICS */}
-          <div className="economics">
-            <div>
-              <h4>User</h4>
-              <p>Rewards + verified impact</p>
-            </div>
-            <div>
-              <h4>Partner</h4>
-              <p>Earns margin on every carbon transaction</p>
-            </div>
-            <div>
-              <h4>Carbontrace</h4>
-              <p>Charges per CO₂ processed</p>
-            </div>
-          </div>
-
-          {/* REAL EXAMPLE */}
-          <div className="example">
-            <p>
-              Example: A ₹100 sale generates carbon cost → user redeems CTCoins →
-              partner earns margin → Carbontrace processes & verifies offset.
-            </p>
-          </div>
         </div>
 
-        {/* CTA */}
-        <div className="cta text-center">
-          <p>No setup cost. We help you turn carbon into a revenue stream.</p>
-          <button style={{cursor:"pointer",zIndex:6,position:"relative"}} onClick={() => setToggle(true)}>Start Integration</button>
+        {/* CORE PRICE HIGHLIGHT */}
+        <div className="text-center mb-20" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+          <span 
+            className="text-5xl sm:text-7xl md:text-8xl font-black text-[#00e0c6] tracking-tight block mb-6 drop-shadow-[0_0_40px_rgba(0,224,198,0.5)]"
+            style={{ fontFamily: "var(--font-syne)" }}
+          >
+            $5 <span className="text-3xl sm:text-5xl font-bold text-[#f4f1ff]">per 1,000 kg CO₂ Processed</span>
+          </span>
+          <p className="text-[#9a95b5] text-lg sm:text-xl max-w-3xl mx-auto leading-relaxed font-light">
+            Every transaction is converted into a traceable carbon asset. CarbonTrace calculates emissions, enables offset, issues rewards, and creates a shared revenue layer between platform and partner.
+          </p>
         </div>
+
+        {/* FLOW STEP PILLS */}
+        <div className="flex flex-wrap items-center justify-center gap-4 mb-24 text-sm sm:text-base font-bold text-[#f4f1ff]">
+          {["User Purchase", "Carbon Calculated", "Offset + Verified", "Rewards + Revenue"].map((step, idx) => (
+            <React.Fragment key={idx}>
+              <div className="px-7 py-4 rounded-full bg-[#12101f]/80 border border-[#00e0c6]/40 font-mono shadow-xl text-center backdrop-blur-md">
+                {step}
+              </div>
+              {idx < 3 && <span className="text-[#00e0c6] font-black text-2xl animate-pulse">→</span>}
+            </React.Fragment>
+          ))}
+        </div>
+
+        {/* 3 OUTCOMES FEATURE BLOCKS */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-20">
+          {[
+            {
+              title: "Carbon Passport",
+              desc: "Track total CO₂ reduced, projects supported, and full history.",
+              img: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=800&auto=format&fit=crop"
+            },
+            {
+              title: "Verified Certificate",
+              desc: "Blockchain-backed proof linked to real carbon projects.",
+              img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop"
+            },
+            {
+              title: "CTCoins Rewards",
+              desc: "Earn tokenized incentives for every carbon-positive action.",
+              img: "https://images.unsplash.com/photo-1621761191319-c6fb62004040?q=80&w=800&auto=format&fit=crop"
+            }
+          ].map((item, idx) => (
+            <div key={idx} className="group">
+              <div className="h-56 rounded-3xl overflow-hidden mb-6 relative shadow-2xl">
+                <img 
+                  src={item.img} 
+                  alt={item.title}
+                  className="w-full h-full object-cover filter brightness-90 group-hover:scale-105 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#07060d] via-transparent to-transparent opacity-80" />
+              </div>
+              <h4 className="text-2xl font-bold text-[#00e0c6] mb-3" style={{ fontFamily: "var(--font-syne)" }}>{item.title}</h4>
+              <p className="text-[#9a95b5] text-base leading-relaxed font-light">{item.desc}</p>
+            </div>
+          ))}
+        </div>
+
+        {/* CTA BUTTON */}
+        <div className="text-center pt-8">
+          <p className="text-[#9a95b5] text-lg mb-8 font-light">No setup cost. We help you turn carbon into a revenue stream.</p>
+          <MagneticButton onClick={() => setToggle && setToggle(true)}>
+            Start Integration →
+          </MagneticButton>
+        </div>
+
       </div>
-
-      <style jsx>{`
-        .pricing-pro {
-          position: relative;
-          padding: 120px 0;
-          background: #0b0f0e;
-          color: #fff;
-        }
-
-        .bg {
-          position: absolute;
-          inset: 0;
-          background: url("https://images.unsplash.com/photo-1639322537228-f710d846310a");
-          opacity: 0.05;
-          background-size: cover;
-        }
-
-        .header h2 {
-          font-size: 2.8rem;
-          font-weight: 700;
-          background: linear-gradient(90deg, #00c896, #5ef2c2);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-        }
-
-        .header p {
-          color: rgba(255, 255, 255, 0.7);
-        }
-
-        .model-box {
-          margin-top: 60px;
-          background: rgba(255, 255, 255, 0.06);
-          padding: 50px;
-          border-radius: 16px;
-          text-align: center;
-          border: 1px solid rgba(255, 255, 255, 0.1);
-          box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
-        }
-
-        .model-box h3 {
-          font-size: 2.2rem;
-          color: #00c896;
-        }
-
-        .model-box p {
-          color: rgba(255, 255, 255, 0.7);
-        }
-
-        .flow {
-          margin: 40px 0;
-          display: flex;
-          justify-content: center;
-          gap: 10px;
-          flex-wrap: wrap;
-        }
-
-        .flow div {
-          padding: 10px 20px;
-          border: 1px solid rgba(255, 255, 255, 0.2);
-          border-radius: 8px;
-        }
-
-        .outcomes {
-          display: flex;
-          gap: 20px;
-          margin-top: 40px;
-          justify-content: space-between;
-        }
-
-        .outcomes .card {
-          flex: 1;
-          background: rgba(255,255,255,0.05);
-          border-radius: 12px;
-          overflow: hidden;
-          border: 1px solid rgba(255,255,255,0.1);
-        }
-
-        .outcomes img {
-          width: 100%;
-          height: 140px;
-          object-fit: cover;
-        }
-
-        .outcomes h4 {
-          color: #00c896;
-          margin-top: 15px;
-        }
-
-        .outcomes p {
-          padding: 0 15px 20px;
-          font-size: 0.9rem;
-        }
-
-        .economics {
-          display: flex;
-          justify-content: space-between;
-          margin-top: 40px;
-        }
-
-        .economics h4 {
-          color: #00c896;
-        }
-
-        .example {
-          margin-top: 30px;
-          font-size: 0.9rem;
-          color: rgba(255,255,255,0.6);
-        }
-
-        .cta button {
-          background: linear-gradient(90deg, #00c896, #5ef2c2);
-          color: #000;
-          padding: 14px 28px;
-          border-radius: 8px;
-          margin-top: 20px;
-          font-weight: 600;
-          border: none;
-        }
-
-        @media (max-width: 768px) {
-          .outcomes {
-            flex-direction: column;
-          }
-
-          .economics {
-            flex-direction: column;
-            gap: 20px;
-          }
-        }
-      `}</style>
     </section>
   );
 }

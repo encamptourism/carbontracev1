@@ -1,196 +1,133 @@
-export default function DigitalPassportSection({toggle, setToggle}) {
+import React from "react";
+import MagneticButton from "./MagneticButton";
+import Reveal from "./Reveal";
+
+export default function DigitalPassportSection({ toggle, setToggle }) {
+  const steps = [
+    {
+      num: "01",
+      tag: "THE MANDATE",
+      title: "EU Regulation & CBAM Compliance",
+      desc: "Upcoming European Union directives require exporters to disclose verifiable, product-level carbon footprints and supply chain origin data to retain market access.",
+      check: "Automated compliance for EU regulations",
+      color: "#ff4d9d"
+    },
+    {
+      num: "02",
+      tag: "TELEMETRY",
+      title: "Geospatial & Satellite Tracking",
+      desc: "High-resolution satellite NDVI imagery monitors land use, forest cover, and real-world carbon emissions across raw material supply chains.",
+      check: "Product-level carbon footprint tracking",
+      color: "#00e0c6"
+    },
+    {
+      num: "03",
+      tag: "VERIFICATION",
+      title: "Digital Passport Certification",
+      desc: "Environmental data is issued as an immutable Digital Product Passport (DPP) certificate, empowering buyers & customs to instantly verify claims.",
+      check: "Blockchain-backed ESG data verification",
+      color: "#7c5cff"
+    }
+  ];
+
   return (
-    <>
-      <section className="dpp-section">
-        <div className="container">
-          <div className="row align-items-center">
-            {/* LEFT CONTENT */}
-            <div className="col-lg-6">
-              <div className="dpp-content">
-                <h6 className="tag">Digital Product Passport</h6>
+    <section className="py-28 px-4 relative overflow-hidden text-[#f4f1ff]">
+      {/* Background Soft Glow */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-[#00e0c6]/8 rounded-full blur-[180px] pointer-events-none" />
 
-                <h2>
-                  Unlock <span>EU Market Access</span> with Compliance & Carbon
-                  Intelligence
-                </h2>
+      <div className="container mx-auto max-w-6xl relative z-10">
+        
+        {/* HEADER */}
+        <Reveal i={0}>
+          <div className="text-center max-w-3xl mx-auto mb-20">
+            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#00e0c6]/10 text-[#00e0c6] border border-[#00e0c6]/30 text-xs sm:text-sm font-extrabold uppercase tracking-[0.2em] mb-6">
+              <span className="w-2 h-2 rounded-full bg-[#00e0c6] animate-pulse" />
+              DIGITAL PRODUCT PASSPORT
+            </span>
 
-                <p>
-                  CarbonTrace enables exporters to meet upcoming European Union
-                  sustainability regulations through Digital Product Passports
-                  (DPP).
-                </p>
+            <h2 
+              className="text-4xl sm:text-6xl font-extrabold text-[#f4f1ff] leading-[1.1] mb-6 tracking-tight"
+              style={{ fontFamily: "var(--font-syne)", letterSpacing: "-0.03em" }}
+            >
+              Unlock <span className="grad">EU Market Access</span> with Carbon Intelligence
+            </h2>
 
-                <ul className="features">
-                  <li>Product-level carbon footprint tracking</li>
-                  <li>End-to-end supply chain traceability</li>
-                  <li>Blockchain-backed ESG data verification</li>
-                  <li>Automated compliance for EU regulations</li>
-                </ul>
-
-                <div className="cta">
-                  <button
-                    className="primary-btn"
-                    onClick={() => setToggle((prev) => !prev)}
-                  >
-                    Get Started
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            {/* RIGHT VISUAL */}
-            <div className="col-lg-6">
-              <div className="dpp-visual">
-                <img
-                  src="/assets/img/satellite/ndvi.gif"
-                  alt="Digital Product Passport"
-                />
-
-                <div className="overlay"></div>
-
-                {/* FLOATING CARD */}
-                <div className="floating-card">
-                  <h5>DPP Verified</h5>
-                  <p>Carbon Footprint: 2.3kg CO₂</p>
-                </div>
-              </div>
-            </div>
+            <p className="text-[#9a95b5] text-lg sm:text-xl leading-relaxed font-light">
+              CarbonTrace enables exporters to meet upcoming European Union sustainability regulations through Digital Product Passports (DPP).
+            </p>
           </div>
+        </Reveal>
+
+        {/* SLEEK 3-STEP HORIZONTAL TIMELINE */}
+        <div className="relative mb-20">
+          
+          {/* Horizontal Connector Line (Hidden on mobile) */}
+          <div className="hidden md:block absolute top-[28px] left-[10%] right-[10%] h-[2px] bg-gradient-to-r from-[#ff4d9d] via-[#00e0c6] to-[#7c5cff] opacity-30 z-0" />
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 sm:gap-12 relative z-10">
+            {steps.map((step, idx) => (
+              <Reveal key={idx} i={idx}>
+                <div data-hover className="group relative">
+                  
+                  {/* Timeline Step Pill Indicator */}
+                  <div className="flex items-center gap-3 mb-6">
+                    <div 
+                      className="w-14 h-14 rounded-2xl flex items-center justify-center font-black text-xl shadow-lg border transition-transform duration-300 group-hover:scale-110"
+                      style={{ 
+                        backgroundColor: `${step.color}15`, 
+                        borderColor: `${step.color}40`,
+                        color: step.color,
+                        boxShadow: `0 0 20px ${step.color}30`
+                      }}
+                    >
+                      {step.num}
+                    </div>
+                    <span 
+                      className="text-xs font-mono font-bold uppercase tracking-widest"
+                      style={{ color: step.color }}
+                    >
+                      {step.tag}
+                    </span>
+                  </div>
+
+                  {/* Step Title */}
+                  <h3 
+                    className="text-2xl font-bold text-[#f4f1ff] mb-4 leading-snug group-hover:text-[#00e0c6] transition-colors"
+                    style={{ fontFamily: "var(--font-syne)" }}
+                  >
+                    {step.title}
+                  </h3>
+
+                  {/* Step Description */}
+                  <p className="text-[#9a95b5] text-base leading-relaxed font-light mb-6">
+                    {step.desc}
+                  </p>
+
+                  {/* Checklist Bullet */}
+                  <div className="flex items-center gap-3 text-xs font-semibold text-[#f4f1ff] pt-4 border-t border-white/10">
+                    <span className="w-5 h-5 rounded-full bg-[#00e0c6]/20 text-[#00e0c6] flex items-center justify-center font-bold text-[10px] shrink-0 border border-[#00e0c6]/40">
+                      ✓
+                    </span>
+                    <span className="text-[#9a95b5] group-hover:text-[#f4f1ff] transition-colors">{step.check}</span>
+                  </div>
+
+                </div>
+              </Reveal>
+            ))}
+          </div>
+
         </div>
-      </section>
 
-      {/* STYLE JSX */}
-      <style jsx>{`
-        .dpp-section {
-          padding: 100px 0;
-          background: #0b0f0e;
-          color: #fff;
-        }
+        {/* BOTTOM CTA BUTTON */}
+        <Reveal i={1}>
+          <div className="text-center pt-4">
+            <MagneticButton onClick={() => setToggle && setToggle((prev) => !prev)}>
+              Get Started with EU Passport →
+            </MagneticButton>
+          </div>
+        </Reveal>
 
-        .tag {
-          color: #00c896;
-          text-transform: uppercase;
-          font-size: 0.85rem;
-          margin-bottom: 10px;
-        }
-
-        .dpp-content h2 {
-          font-size: 2.5rem;
-          font-weight: 700;
-          margin-bottom: 20px;
-          color: #ffffff;
-        }
-
-        .dpp-content h2 span {
-          color: #00c896;
-        }
-
-        .dpp-content p {
-          color: rgba(255, 255, 255, 0.75);
-          margin-bottom: 20px;
-          line-height: 1.7;
-        }
-
-        .features {
-          list-style: none;
-          padding: 0;
-          margin-bottom: 25px;
-        }
-
-        .features li {
-          margin-bottom: 10px;
-          color: rgba(255, 255, 255, 0.8);
-          position: relative;
-          padding-left: 20px;
-        }
-
-        .features li::before {
-          content: "✓";
-          position: absolute;
-          left: 0;
-          color: #00c896;
-        }
-
-        .cta {
-          display: flex;
-          gap: 10px;
-        }
-
-        .primary-btn {
-          background: #00c896;
-          padding: 12px 24px;
-          border-radius: 6px;
-          color: #000;
-          font-weight: 600;
-        }
-
-        .secondary-btn {
-          border: 1px solid #fff;
-          padding: 12px 24px;
-          border-radius: 6px;
-          color: #fff;
-        }
-
-        .dpp-visual {
-          position: relative;
-          border-radius: 12px;
-          overflow: hidden;
-        }
-
-        .dpp-visual img {
-          width: 100%;
-          height: 420px;
-          object-fit: cover;
-          filter: brightness(0.8);
-        }
-
-        .dpp-visual .overlay {
-          position: absolute;
-          inset: 0;
-          background: linear-gradient(
-            180deg,
-            rgba(0, 0, 0, 0.2),
-            rgba(0, 0, 0, 0.6)
-          );
-        }
-
-        .floating-card {
-          position: absolute;
-          bottom: 20px;
-          left: 20px;
-          background: rgba(0, 0, 0, 0.7);
-          padding: 15px;
-          border-radius: 10px;
-          backdrop-filter: blur(6px);
-          border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .floating-card h5 {
-          margin: 0;
-          color: #00c896;
-        }
-
-        .floating-card p {
-          margin: 5px 0 0;
-          font-size: 0.85rem;
-          color: rgba(255, 255, 255, 0.7);
-        }
-
-        @media (max-width: 768px) {
-          .dpp-section {
-            padding: 60px 0;
-          }
-
-          .dpp-content h2 {
-            font-size: 1.8rem;
-          }
-
-          .dpp-visual img {
-            height: 260px;
-            margin-top: 30px;
-          }
-        }
-      `}</style>
-    </>
+      </div>
+    </section>
   );
 }

@@ -2,10 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --bg: #07060d;
+  --fg: #f4f1ff;
+  --mut: #9a95b5;
+  --a: #ff4d9d;
+  --b: #7c5cff;
+  --c: #00e0c6;
+  --font-syne: 'Syne', sans-serif;
+  --font-inter: 'Inter', sans-serif;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-inter);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: rgba(255, 77, 157, 0.35);
+  color: #ffffff;
 }
 
 a {
@@ -17,12 +40,67 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
+.grad {
+  background: linear-gradient(100deg, var(--a), var(--b), var(--c), var(--a));
+  background-size: 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: g 6s linear infinite;
+}
+
+@keyframes g {
+  to {
+    background-position: 300%;
   }
 }
+
+@keyframes fl {
+  to {
+    transform: translate(8vw, 6vw) scale(1.25);
+  }
+}
+
+@keyframes mq {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes shimmerSweep {
+  0% {
+    transform: translateX(-100%) rotate(25deg);
+  }
+  100% {
+    transform: translateX(200%) rotate(25deg);
+  }
+}
+
+@keyframes borderSpin {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-shimmer-sweep {
+  animation: shimmerSweep 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.animate-border-spin {
+  background-size: 200% 200%;
+  animation: borderSpin 4s ease infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
