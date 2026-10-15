@@ -27,13 +27,13 @@ const Header = (props) => {
 
         <ul>
           <li>
-            <Link href="/">
-              <a onClick={() => setMenuOpen(false)}>Home</a>
+            <Link href="/" onClick={() => setMenuOpen(false)}>
+              Home
             </Link>
           </li>
           <li>
-            <Link href="/project">
-              <a onClick={() => setMenuOpen(false)}>Projects</a>
+            <Link href="/project" onClick={() => setMenuOpen(false)}>
+              Projects
             </Link>
           </li>
 
@@ -45,13 +45,13 @@ const Header = (props) => {
             {submenuOpen && (
               <ul className="submenu">
                 <li>
-                  <Link href="/lifestylecalculator">
-                    <a onClick={() => setMenuOpen(false)}>Lifestyle Calculator</a>
+                  <Link href="/lifestylecalculator" onClick={() => setMenuOpen(false)}>
+                    Lifestyle Calculator
                   </Link>
                 </li>
                 <li>
-                  <Link href="/travelcalculator">
-                    <a onClick={() => setMenuOpen(false)}>Travel Calculator</a>
+                  <Link href="/travelcalculator" onClick={() => setMenuOpen(false)}>
+                    Travel Calculator
                   </Link>
                 </li>
               </ul>
@@ -82,30 +82,28 @@ const Header = (props) => {
           </li>
         </ul>
       </div>
-
       {/* OVERLAY */}
       {menuOpen && <div className="overlay" onClick={() => setMenuOpen(false)} />}
-
       {/* FIXED GLASS HEADER MIXED WITH HERO */}
       <header className={`header-container ${scrolled ? "scrolled" : ""}`}>
         <div className="container header-inner">
 
           {/* LOGO */}
           <div className="logo">
-            <Link href="/">
-              <a className="flex items-center gap-2">
-                <img src="/assets/img/home/logo.svg" alt="CarbonTrace Logo" className="h-9 w-auto brightness-125" />
-              </a>
+            <Link href="/" className="flex items-center gap-2">
+
+              <img src="/assets/img/home/logo.svg" alt="CarbonTrace Logo" className="h-9 w-auto brightness-125" />
+
             </Link>
           </div>
 
           {/* DESKTOP MENU */}
           <nav className="desktop-menu">
-            <Link href="/">
-              <a className="nav-link">Home</a>
+            <Link href="/" className="nav-link">
+              Home
             </Link>
-            <Link href="/project">
-              <a className="nav-link">Projects</a>
+            <Link href="/project" className="nav-link">
+              Projects
             </Link>
 
             <div className="dropdown" data-hover>
@@ -113,11 +111,11 @@ const Header = (props) => {
                 Calculators <span className="text-xs ml-1 opacity-70">▾</span>
               </span>
               <div className="dropdown-menu">
-                <Link href="/lifestylecalculator">
-                  <a className="dropdown-item">Lifestyle Calculator</a>
+                <Link href="/lifestylecalculator" className="dropdown-item">
+                  Lifestyle Calculator
                 </Link>
-                <Link href="/travelcalculator">
-                  <a className="dropdown-item">Travel Calculator</a>
+                <Link href="/travelcalculator" className="dropdown-item">
+                  Travel Calculator
                 </Link>
               </div>
             </div>
@@ -149,7 +147,6 @@ const Header = (props) => {
 
         </div>
       </header>
-
       {/* EMBEDDED SCOPED STYLES FOR PERFECT HERO BLENDING */}
       <style jsx>{`
         .header-container {
@@ -381,4 +378,4 @@ const Header = (props) => {
   );
 };
 
-export default Header;
+export default Header;
