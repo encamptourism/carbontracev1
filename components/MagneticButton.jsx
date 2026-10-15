@@ -93,16 +93,16 @@ export default function MagneticButton({
 
   if (href) {
     return (
-      <Link href={href}>
-        <a
-          ref={r}
-          data-hover
-          onPointerMove={handlePointerMove}
-          onPointerLeave={handlePointerLeave}
-          className={containerClasses}
-        >
-          {buttonInnerContent}
-        </a>
+      <Link
+        href={href}
+        ref={r}
+        data-hover
+        onPointerMove={handlePointerMove}
+        onPointerLeave={handlePointerLeave}
+        className={containerClasses}>
+
+        {buttonInnerContent}
+
       </Link>
     );
   }

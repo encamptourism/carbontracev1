@@ -95,12 +95,12 @@ export default function HeroSlider() {
                 <p>Turning climate data into real-world income for farmers.</p>
 
                 <div className="hero-btns">
-                  <Link href="/contact">
-                    <a className="primary-btn">Explore Platform</a>
+                  <Link href="/contact" className="primary-btn">
+                    Explore Platform
                   </Link>
 
-                  <Link href="/methodology">
-                    <a className="secondary-btn">How it works</a>
+                  <Link href="/methodology" className="secondary-btn">
+                    How it works
                   </Link>
                 </div>
 
@@ -123,7 +123,6 @@ export default function HeroSlider() {
           </SwiperSlide>
         </Swiper>
       </section>
-
       <style jsx>{`
         .hero-slider {
           height: 100vh;
