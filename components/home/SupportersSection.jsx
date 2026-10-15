@@ -184,7 +184,7 @@ export default function SupportersSection() {
                         />
                       </div>
                       <h3 className="text-lg font-bold text-[#f4f1ff] mb-3 group-hover:text-[#ff4d9d] transition-colors leading-snug" style={{ fontFamily: "var(--font-syne)" }}>
-                        "{item.title}"
+                        &quot;{item.title}&quot;
                       </h3>
                       <p className="text-xs text-[#9a95b5] leading-relaxed font-light mb-6 border-l-2 border-[#ff4d9d] pl-3 italic">
                         {item.quote}
