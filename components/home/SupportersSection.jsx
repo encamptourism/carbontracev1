@@ -78,18 +78,18 @@ export default function SupportersSection() {
     }
   ];
 
-  const filteredSupporters = activeTab === "all" 
-    ? supporters 
+  const filteredSupporters = activeTab === "all"
+    ? supporters
     : supporters.filter(s => s.category === activeTab);
 
   return (
     <section className="py-28 px-4 relative overflow-hidden text-[#f4f1ff]">
       <div className="container mx-auto max-w-6xl relative z-10">
-        
-        {/* INFINITE MARQUEE STRIP */}
+
+
         <Marquee words={marqueeWords} />
 
-        {/* SUPPORTERS */}
+
         <div className="mb-24">
           <Reveal i={0}>
             <div className="text-center max-w-5xl mx-auto mb-12">
@@ -97,7 +97,7 @@ export default function SupportersSection() {
                 SCENE 09 — ECOSYSTEM BACKING & INDUSTRY LEADERS
               </span>
 
-              <h2 
+              <h2
                 className="text-3xl sm:text-5xl font-extrabold text-[#f4f1ff] tracking-tight mb-4"
                 style={{ fontFamily: "var(--font-syne)", letterSpacing: "-0.03em" }}
               >
@@ -118,11 +118,10 @@ export default function SupportersSection() {
                   <button
                     key={tab.id}
                     onClick={() => setActiveTab(tab.id)}
-                    className={`px-6 py-2.5 rounded-full text-xs sm:text-sm font-semibold whitespace-nowrap transition-all duration-200 ${
-                      activeTab === tab.id
+                    className={`px-6 py-2.5 rounded-full text-xs sm:text-sm font-semibold whitespace-nowrap transition-all duration-200 ${activeTab === tab.id
                         ? "bg-[#ff4d9d] text-[#07060d] font-extrabold shadow-lg"
                         : "bg-white/5 text-[#9a95b5] hover:text-[#f4f1ff]"
-                    }`}
+                      }`}
                   >
                     {tab.label}
                   </button>
@@ -135,9 +134,9 @@ export default function SupportersSection() {
             {filteredSupporters.map((item, idx) => (
               <Reveal key={idx} i={idx}>
                 <div data-hover className="group p-4 h-28 flex items-center justify-center rounded-2xl bg-white/5 border border-white/5 hover:border-[#7c5cff]/40 transition-all duration-300 backdrop-blur-md">
-                  <img 
-                    src={item.src} 
-                    alt={item.alt} 
+                  <img
+                    src={item.src}
+                    alt={item.alt}
                     className="max-h-12 max-w-full object-contain filter brightness-90 group-hover:brightness-125 transition-all"
                     loading="lazy"
                   />
@@ -154,7 +153,7 @@ export default function SupportersSection() {
               <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#ff4d9d]/10 text-[#ff4d9d] border border-[#ff4d9d]/30 text-xs sm:text-sm font-extrabold uppercase tracking-[0.2em] mb-4">
                 GLOBAL RECOGNITION
               </span>
-              <h2 
+              <h2
                 className="text-3xl sm:text-5xl font-extrabold text-[#f4f1ff] tracking-tight mb-4"
                 style={{ fontFamily: "var(--font-syne)", letterSpacing: "-0.03em" }}
               >
@@ -176,9 +175,9 @@ export default function SupportersSection() {
                   <div className="group h-full p-8 rounded-3xl bg-white/5 border border-white/5 hover:border-[#ff4d9d]/40 backdrop-blur-md transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between">
                     <div>
                       <div className="h-10 mb-4 flex items-center">
-                        <img 
-                          src={item.src} 
-                          alt={item.publisher} 
+                        <img
+                          src={item.src}
+                          alt={item.publisher}
                           className="max-h-8 max-w-[140px] object-contain filter brightness-100 group-hover:brightness-125 transition-all"
                           loading="lazy"
                         />
