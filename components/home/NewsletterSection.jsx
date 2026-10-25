@@ -16,11 +16,6 @@ export default function NewsletterSection({
         
         <Reveal i={0}>
           <div>
-            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#ff4d9d]/10 text-[#ff4d9d] border border-[#ff4d9d]/30 text-xs sm:text-sm font-mono font-extrabold uppercase tracking-[0.2em] mb-6">
-              <span className="w-2 h-2 rounded-full bg-[#ff4d9d] animate-ping" />
-              EPILOGUE — JOIN THE PLANETARY MOVEMENT
-            </span>
-
             <h2 
               className="text-3xl sm:text-5xl font-extrabold text-[#f4f1ff] mb-4 leading-tight"
               style={{ fontFamily: "var(--font-syne)", letterSpacing: "-0.03em" }}

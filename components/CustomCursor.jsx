@@ -27,6 +27,23 @@ export default function CustomCursor() {
       targetY = e.clientY;
 
       const target = e.target;
+      const isInsideDisabled = !!(
+        target &&
+        target.closest &&
+        target.closest('[data-no-cursor], aside[role="dialog"], [role="dialog"], .contact-drawer')
+      );
+
+      if (isInsideDisabled) {
+        outer.style.opacity = "0";
+        dot.style.opacity = "0";
+        aura.style.opacity = "0";
+        isHovering = false;
+        return;
+      }
+
+      outer.style.opacity = "1";
+      dot.style.opacity = "1";
+      aura.style.opacity = "1";
       isHovering = !!(target && target.closest && target.closest("a, button, input, [data-hover], select, textarea"));
     };
 

@@ -25,11 +25,6 @@ export default function TeamSection() {
         
         <Reveal i={0}>
           <div className="text-center max-w-5xl mx-auto mb-16">
-            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#7c5cff]/10 text-[#7c5cff] border border-[#7c5cff]/30 text-xs sm:text-sm font-mono font-extrabold uppercase tracking-[0.2em] mb-4">
-              <span className="w-2 h-2 rounded-full bg-[#7c5cff] animate-ping" />
-              SCENE 10 — THE MINDS BEHIND CARBONTRACE
-            </span>
-
             <h2 
               className="text-3xl sm:text-5xl font-extrabold text-[#f4f1ff] tracking-tight mb-4"
               style={{ fontFamily: "var(--font-syne)", letterSpacing: "-0.03em" }}

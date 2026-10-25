@@ -35,19 +35,8 @@ export default function HomeHero({ setToggle }) {
 
       <div className="container mx-auto relative z-10 text-center max-w-5xl">
 
-        {/* Top Cinematic Scene Badge */}
-        <Reveal i={0}>
-          <div className="mb-6">
-            <span className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-xs font-mono font-bold uppercase tracking-[0.2em] text-[#ff4d9d]">
-              <span className="w-2 h-2 rounded-full bg-[#ff4d9d] animate-ping" />
-              SCENE 01 — CARBON INTELLIGENCE PLATFORM & PLANETARY ACTION
-            </span>
-          </div>
-        </Reveal>
-
-
         {/* Main Title matching Hero Pattern */}
-        <Reveal i={1}>
+        <Reveal i={0}>
           <h1
             className="text-[clamp(2.5rem,6vw,5.5rem)] font-extrabold leading-none mb-8 text-[#f4f1ff] max-w-5xl mx-auto tracking-tight"
             style={{ fontFamily: "var(--font-syne)", letterSpacing: "-0.03em" }}
@@ -64,14 +53,14 @@ export default function HomeHero({ setToggle }) {
           </h1>
         </Reveal>
 
-        <Reveal i={2}>
+        <Reveal i={1}>
           <p className="text-[#9a95b5] text-lg sm:text-xl max-w-2xl mx-auto mb-10 leading-relaxed font-light">
             Work out your personal or business climate impact, join our community of changemakers, and take on-the-ground climate action to save our planet.
           </p>
         </Reveal>
 
         {/* Magnetic Action Buttons */}
-        <Reveal i={3}>
+        <Reveal i={2}>
           <div className="flex flex-wrap items-center justify-center gap-5">
             <MagneticButton href="/lifestylecalculator">
               Calculate Footprint

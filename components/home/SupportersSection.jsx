@@ -93,10 +93,6 @@ export default function SupportersSection() {
         <div className="mb-24">
           <Reveal i={0}>
             <div className="text-center max-w-5xl mx-auto mb-12">
-              <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#7c5cff]/10 text-[#7c5cff] border border-[#7c5cff]/30 text-xs sm:text-sm font-mono font-extrabold uppercase tracking-[0.2em] mb-4">
-                SCENE 09 — ECOSYSTEM BACKING & INDUSTRY LEADERS
-              </span>
-
               <h2
                 className="text-3xl sm:text-5xl font-extrabold text-[#f4f1ff] tracking-tight mb-4"
                 style={{ fontFamily: "var(--font-syne)", letterSpacing: "-0.03em" }}

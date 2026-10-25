@@ -92,7 +92,7 @@ const Header = (props) => {
           <div className="logo">
             <Link href="/" className="flex items-center gap-2">
 
-              <img src="/assets/img/home/logo.svg" alt="CarbonTrace Logo" className="h-9 w-auto brightness-125" />
+              <img src="/assets/img/home/logonew2.svg" alt="CarbonTrace Logo" className="h-9 w-auto brightness-125" />
 
             </Link>
           </div>

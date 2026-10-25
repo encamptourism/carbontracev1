@@ -12,11 +12,6 @@ export default function NetZeroInfographic() {
         {/* 1. TOP GAUGE METER DISPLAY */}
         <Reveal i={0}>
           <div className="text-center mb-24">
-            <div className="inline-block mb-8">
-              <span className="px-6 py-2 rounded-full border border-[#ff4d9d] text-[#ff4d9d] text-xs sm:text-sm font-mono font-extrabold uppercase tracking-[0.2em] bg-[#ff4d9d]/10">
-                SCENE 02 — THE CLIMATE REALITY & 2.0 °C TARGET
-              </span>
-            </div>
 
 
             {/* Arc Gauge Graphic */}

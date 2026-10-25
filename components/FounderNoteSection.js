@@ -11,12 +11,6 @@ export default function FounderNoteSection() {
         
         <Reveal i={0}>
           <div>
-            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#7c5cff]/10 text-[#7c5cff] border border-[#7c5cff]/30 text-xs sm:text-sm font-mono font-extrabold uppercase tracking-[0.2em] mb-6">
-              <span className="w-2 h-2 rounded-full bg-[#7c5cff] animate-ping" />
-              SCENE 04 — FOUNDER’S VISION: TURNING INTELLIGENCE INTO VALUE
-            </span>
-
-
             <h2 
               className="text-4xl sm:text-6xl font-extrabold text-[#f4f1ff] leading-[1.1] mb-8 tracking-tight max-w-3xl mx-auto"
               style={{ fontFamily: "var(--font-syne)", letterSpacing: "-0.03em" }}

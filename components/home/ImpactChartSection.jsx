@@ -11,11 +11,6 @@ export default function ImpactChartSection() {
         
         <Reveal i={0}>
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#00e0c6]/10 text-[#00e0c6] border border-[#00e0c6]/30 text-xs sm:text-sm font-mono font-extrabold uppercase tracking-[0.2em] mb-6">
-              <span className="w-2 h-2 rounded-full bg-[#00e0c6] animate-pulse" />
-              SCENE 08 — REAL-TIME EMISSIONS REDUCTION CURVE
-            </span>
-
             <h2 
               className="text-4xl sm:text-6xl font-extrabold text-[#f4f1ff] tracking-tight mb-6"
               style={{ fontFamily: "var(--font-syne)", letterSpacing: "-0.03em" }}

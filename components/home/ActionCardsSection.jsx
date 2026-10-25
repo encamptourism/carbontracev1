@@ -46,11 +46,6 @@ export default function ActionCardsSection({ setToggle }) {
         
         <Reveal i={0}>
           <div className="text-center max-w-4xl mx-auto mb-20">
-            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#ff4d9d]/10 text-[#ff4d9d] border border-[#ff4d9d]/30 text-xs sm:text-sm font-mono font-extrabold uppercase tracking-[0.2em] mb-6">
-              <span className="w-2 h-2 rounded-full bg-[#ff4d9d] animate-ping" />
-              SCENE 07 — 3 WAYS TO TAKE TAILORED CLIMATE ACTION
-            </span>
-
             <h2 
               className="text-4xl sm:text-6xl font-extrabold text-[#f4f1ff] tracking-tight mb-6"
               style={{ fontFamily: "var(--font-syne)", letterSpacing: "-0.03em" }}

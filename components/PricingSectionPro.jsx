@@ -10,10 +10,6 @@ export default function PricingSectionPro({ toggle, setToggle }) {
         
         {/* HEADER */}
         <div className="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up" data-aos-duration="1000">
-          <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#00e0c6]/10 text-[#00e0c6] border border-[#00e0c6]/30 text-xs sm:text-sm font-mono font-extrabold uppercase tracking-[0.2em] mb-6">
-            <span className="w-2 h-2 rounded-full bg-[#00e0c6] animate-pulse" />
-            SCENE 06 — CARBON INFRASTRUCTURE PRICING ENGINE
-          </span>
 
           <h2 
             className="text-4xl sm:text-6xl font-extrabold text-[#f4f1ff] tracking-tight mb-6"

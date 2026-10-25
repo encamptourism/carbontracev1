@@ -25,6 +25,7 @@ import NewsletterSection from "../components/home/NewsletterSection";
 // Product & Investor Sections
 import FounderNoteSection from "../components/FounderNoteSection";
 import DigitalPassportSection from "../components/DigitalPassportSection";
+import ClimateIntelligenceArchitecture from "../components/ClimateIntelligenceArchitecture";
 import PricingSectionPro from "../components/PricingSectionPro";
 
 export default function Home() {
@@ -143,6 +144,7 @@ export default function Home() {
         {/* 4. Investor & Product Offerings */}
         <FounderNoteSection />
         <DigitalPassportSection toggle={toggle} setToggle={setToggle} />
+        <ClimateIntelligenceArchitecture setToggle={setToggle} />
         <PricingSectionPro toggle={toggle} setToggle={setToggle} />
 
         {/* 5. 3 Ways to Take Action */}
