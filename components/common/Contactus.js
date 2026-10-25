@@ -176,7 +176,7 @@ const Contactus = ({
               </button>
             </div>
             <p className="text-xs text-[#9a95b5] font-normal">
-              Send us a message and we'll get back to you shortly.
+              Send us a message and we&apos;ll get back to you shortly.
             </p>
           </div>
 
